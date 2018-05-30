@@ -1,0 +1,39 @@
+//COLORS//
+$color-primary: #EDB239;
+$color-secondary: #FFD98A;
+$color-tertiary: #D09214;
+
+$color-light-grey: #D8D8D8;
+$color-white: #fff;
+$color-dark-grey: #4C4C4C;
+
+//FONTS//
+$font-display: 'Roboto', sans-serif;
+
+//RESPONSIVE BREAKPOINTS//
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px
+$bp-small: 37.5em;    // 600px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px;    
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+    
+body {
+    font-family: $font-display;
+    color: $color-dark-grey;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+}

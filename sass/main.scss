@@ -1,15 +1,8 @@
-$color-primary: #EDB239;
-$color-secondary: #FFD98A;
+@import "base/base";
+@import "base/typography";
+@import "base/animation";
+@import "base/utilities";
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "layout/header";
 
-.header__logo{
-    fill:none;
-    stroke:$color-primary;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-width:21px;
-}
+
