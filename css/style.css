@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header__logo {
+  fill: none;
+  stroke: #EDB239;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 21px; }

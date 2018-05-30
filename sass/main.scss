@@ -1,0 +1,15 @@
+$color-primary: #EDB239;
+$color-secondary: #FFD98A;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo{
+    fill:none;
+    stroke:$color-primary;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:21px;
+}
