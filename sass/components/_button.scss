@@ -1,0 +1,121 @@
+//TRANSITION TIME//
+$transition-time-base: 0.4s;
+
+
+//LOGO//
+.navigation__logo {
+    &,
+    &:link
+    &:visited {
+        fill: none;
+        stroke: $color-primary;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 0;   
+        stroke-width: 2.1rem;
+        width: 7rem;
+        transition: $transition-time-base ease-out;
+        
+    }
+
+    &:hover,
+    &:active  {
+        stroke: $color-primary;
+        stroke-width: 1rem;
+        stroke-dasharray: 30;  
+        cursor: crosshair;       
+    }
+    
+    }
+
+//GeekWire VRscout WESA//
+.press-btn{
+    &,
+    &:link,
+    &:visited  {
+        height: 2rem;           
+        filter: grayscale(50%);
+        opacity: 0.6;
+        transition: opacity 0.2s ; 
+    }
+
+    &:hover,
+    &:active {
+        height: 2.1rem;           
+        filter: grayscale(0%);
+        opacity: 1; 
+    }                                                              
+}
+
+//SOCIAL MEDIA//
+.social-btn {
+    &,
+    &:link,
+    &:visited {
+        width: 1.8rem;
+        margin: 0;
+        margin-left: 2rem;
+        fill: $color-dark-grey-2; 
+        transition: $transition-time-base; 
+    }
+
+    &:hover,
+    &:active {
+        fill: $color-primary; 
+        cursor: pointer; 
+    }
+}
+
+.winner-btn {
+    &,
+    &:link,
+    &:visited {
+        margin-top: 1rem;
+        padding: 2rem;
+        width: 40rem;
+        display: block;
+        margin: 1rem auto;
+        transition: $transition-time-base;   
+    } 
+
+    &:hover,
+    &:active {
+        padding: 4rem;   
+    } 
+                        
+}
+
+//MS-STORE ME-WEBITE//
+.store-btn {
+    &,
+    &:link,
+    &:visited{
+        border-radius: 0.5rem;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        height: 4rem;
+        text-align: center;
+        width: auto;
+        transition: $transition-time-base;
+    
+    }
+
+    &:hover,
+    &:active{        
+        box-shadow: 0.1rem 0.1rem 2rem rgba($color-primary, 1);
+        
+    }
+   
+}
+
+//MORE WORK//
+.point-down-btn {            
+    width: 5rem;
+    fill: $color-primary;
+
+    &:hover {
+        animation: bounce 0.6s;
+        cursor: pointer;
+    }
+}
+    

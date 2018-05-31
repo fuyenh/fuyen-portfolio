@@ -1,0 +1,47 @@
+.navigation {
+    &__link {
+        text-decoration: none;
+        color: $color-dark-grey;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.heading-primary {
+    &--main {
+        font-weight: 700;
+        font-size: 4.7rem;
+        letter-spacing: 0.06rem;
+        display: block;
+        padding: 0;
+        line-height: 0.8;
+        margin-top: 6rem;
+        color: $color-dark-grey;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $color-primary;
+        }
+        
+    }
+
+    &--sub {
+        font-weight: 300;
+        font-size: 3rem;
+        padding: 0;       
+    }
+}
+
+.header-role {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    .heart {
+        color: $color-primary;
+        font-size: 1.9rem;
+    }
+}

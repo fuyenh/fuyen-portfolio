@@ -4,40 +4,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/faviocn.png">
 
         <title>Fu Yen Hsiao</title>
     </head>
     <body class="container">
-        <header class="header">
-            <svg class="header__logo">
-                <use xlink:href="img/myLogo.svg#logo"></use>
+        <nav class="navigation">
+            <svg class="navigation__logo">
+                <use xlink:href="img/home/myLogo.svg#logo"></use>
             </svg>
-                
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Dribbble</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Dribbble</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <header class="header">                                        
             <div class="header__text-box-role">
-                <h3 class="header-role">Hi, I'm Fu Yen!<br>A Product Designer 2D / 3D <br>Interaction &amp; Visual Design</h3>
+                <h3 class="header-role">Hi, I'm Fu Yen!<br>A Product Designer <span class="heart">&#x2665</span> 2D / 3D Interaction &amp; Visual Design.</h3>
             </div>
             <div class="header__text-box-me"> 
-                <h1 class="header-primary">MUSIC EVERYWHERE</h1>
-                <h2 class="header-sub">Play Music With Augmented Reality</h2>               
+                <h1 class="heading-primary">
+                    <span ><a class="heading-primary--main" href="#">MUSIC EVERYWHERE</a></span>                       
+                    <span class="heading-primary--sub">Play Music With Augmented Reality</span>
+                </h1>
+                <div class="header__text-box-store">
+                    <div class="img-btn-box">
+                        <a href="https://www.microsoft.com/en-us/store/p/music-everywhere/9pknh2tm05rm" target="blank">
+                            <img class="store-btn" src="img/home/ms-store.png">
+                        </a>
+                        <a href="http://www.music-everywhere.co" target="blank">
+                            <img class="store-btn" src="img/home/me_logo.png">
+                        </a>                                         
+                    </div>                                    
+                </div>                     
             </div>
-            <div class="header__img-box-me">                
-            </div>
-            <div class="header__social-icon">                
-            </div>
-            <div class="header__text-box-more-work">                
-            </div>
-
+            <div class="header__buttom-box">
+                <div class="header__more-work-box">                                              
+                    <svg class="point-down-btn">
+                        <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+                    </svg>                      
+                </div>
+                <div class="header__social-btn-box">
+                    <a href="https://www.linkedin.com/in/fuyenh" target="blank">
+                        <svg class="social-btn">
+                            <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                    <a href="http://fuyenh.dribbble.com/" target="blank">
+                        <svg class="social-btn">
+                            <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                         </svg>
+                    </a>
+                    <a href="https://github.com/fuyenh" target="blank">
+                        <svg class="social-btn">
+                            <use xlink:href="img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="https://codepen.io/fuyenh/" target="blank">
+                        <svg class="social-btn">
+                            <use xlink:href="img/sprite.svg#icon-codepen"></use>
+                        </svg>
+                    </a>
+                    <a href="http://medium.com/@fuyenh" target="blank"> 
+                        <svg class="social-btn">
+                            <use xlink:href="img/sprite.svg#icon-medium"></use>
+                        </svg>
+                    </a>                                        
+                </div>                
+            </div>            
+            <div class="header__winner-box">
+                <div class="winner-btn-box">
+                    <a href="#">
+                        <img class="winner-btn" src="img/home/winner_img.png">
+                    </a>
+                </div>
+                <div class="press-btn-box">
+                    <a href="https://www.geekwire.com/2018/inside-alphalab-pittsburghs-tech-accelerator-aims-solve-citys-startup-challenge/" target="blank">
+                        <img class="press-btn" src="img/geekWire.png">
+                    </a>
+                    <a href="https://vrscout.com/news/ar-app-teaches-how-to-play-piano/" target="blank">
+                        <img class="press-btn" src="img/VRScout.png">
+                    </a>
+                    <a href="https://vrscout.com/news/ar-app-teaches-how-to-play-piano/" target="blank">
+                        <img class="press-btn" src="img/WESA.jpg">
+                    </a>                    
+                </div>                                          
+            </div>            
         </header>
 
 

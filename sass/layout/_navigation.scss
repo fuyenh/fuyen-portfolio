@@ -1,0 +1,33 @@
+.navigation {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;        
+    }
+
+    &__item {
+        margin: 1.9rem;
+        padding-bottom: 0.6rem;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: solid 0.3rem $color-primary;
+        }
+    }
+
+    
+
+    
+
+}
+

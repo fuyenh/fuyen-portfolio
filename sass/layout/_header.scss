@@ -1,11 +1,78 @@
 .header {
-    &__logo {
-    fill: none;
-    stroke: $color-primary;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2.1rem;
-    width: 7rem;
-    }
-}
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
 
+    display: grid;
+    grid-template-rows: 20% 1fr 15%;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 9rem;
+    
+
+    &__text-box-role {
+        grid-row: 1 / 2;
+        grid-auto-columns: 1 / 2;
+    }
+
+    &__text-box-me {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        
+        margin-top: 1.2rem;
+
+        .img-btn-box {
+            display: flex;            
+        }        
+    }    
+
+    &__buttom-box {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;       
+    }
+
+    &__more-work-box {           
+
+        .point-down-btn {            
+            width: 5rem;
+            fill: $color-primary;
+        }
+    }
+
+    &__winner-box{
+        box-shadow: 0.1rem 0.1rem 4rem $color-primary;
+        border-radius: 1rem;
+        grid-row: 1 / 4;
+        grid-column: 2 / 3;
+
+        display: grid;
+        grid-template-rows: min-content, 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        
+        .winner-btn-box {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+
+        }
+        
+        .press-btn-box {
+            grid-row: 2 / 3;
+
+            padding-bottom: 2rem;   
+                     
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            justify-content: center;           
+              
+        }
+
+        
+    }
+
+    
+
+}
