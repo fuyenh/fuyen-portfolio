@@ -42,6 +42,7 @@
     }
 }
 
+//EG.AWARD WINNING WORK//
 .header__hint {
     margin-bottom: 1rem;
     color: $color-primary;
@@ -51,6 +52,10 @@
     margin-top: 5rem;
     font-size: 1.6rem;
     font-weight: 400;
+    
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+    }
 
     .heart {
         color: $color-primary;

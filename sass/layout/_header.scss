@@ -28,7 +28,11 @@
 
     &__text-box-role {
         grid-row: 1 / 2;
-        grid-column: 1 / 2;                        
+        grid-column: 1 / 2;  
+        
+        @media only screen and (max-width: $bp-small) {
+            text-align: center; 
+        }
     }
 
     &__text-box-me {

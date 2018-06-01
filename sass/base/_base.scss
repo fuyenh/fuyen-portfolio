@@ -32,7 +32,7 @@ html {
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        font-size: 40%;
+        font-size: 45%;
     }
 
 }
@@ -47,7 +47,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 12vh 80vh;
+    padding-top: 2rem;
+    grid-template-rows: 14vh 80vh;
     grid-template-columns: 14% 1fr 14%;
     justify-content: center;
     

@@ -7,7 +7,7 @@ $transition-time-base: 0.4s;
     &,
     &:link
     &:visited {
-        //display:block;
+        padding-bottom: 2rem;
         fill: none;
         stroke: $color-primary;
         stroke-linecap: round;
@@ -17,7 +17,7 @@ $transition-time-base: 0.4s;
         width: 7rem;
         transition: $transition-time-base ease-out;  
         
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             width: 5rem;
         }
     }
@@ -87,7 +87,7 @@ $transition-time-base: 0.4s;
         transition: $transition-time-base;   
         
         @media only screen and (max-width: $bp-smallest) {
-            width: 27rem;
+            width: 30rem;
         }
         
     } 
