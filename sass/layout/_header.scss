@@ -1,28 +1,55 @@
 .header {
-    grid-row: 2 / 3;
+    grid-row: 2 / 4;
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-rows: 20% 1fr 15%;
+    grid-template-rows: 15% 1fr 15%;
     grid-template-columns: max-content 1fr;
     grid-column-gap: 9rem;
+    align-items: center;
+
+  
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: min-content 1fr;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: min-content 1fr;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(3, min-content) 6rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2.6rem;
+        justify-items: center;
+    }
+
     
 
     &__text-box-role {
         grid-row: 1 / 2;
-        grid-auto-columns: 1 / 2;
+        grid-column: 1 / 2;                        
     }
 
     &__text-box-me {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
-        
-        margin-top: 1.2rem;
-
+       
+              
         .img-btn-box {
-            display: flex;            
-        }        
-    }    
+            display: flex;                             
+        } 
+        
+        @media only screen and (max-width: $bp-small) {
+            text-align: center; 
+            .img-btn-box {
+               justify-content: center;                    
+            } 
+
+        }
+    } 
+    
+    //BUTTOM BOX//
 
     &__buttom-box {
         grid-row: 3 / 4;
@@ -30,15 +57,16 @@
 
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;       
+        
+        @media only screen and (max-width: $bp-small) {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;                                       
+        }               
     }
 
-    &__more-work-box {           
-
-        .point-down-btn {            
-            width: 5rem;
-            fill: $color-primary;
-        }
+    &__social-btn-box {
+        display: flex;
+        align-items: flex-start;
     }
 
     &__winner-box{
@@ -46,17 +74,23 @@
         border-radius: 1rem;
         grid-row: 1 / 4;
         grid-column: 2 / 3;
+        justify-self: end;
+        
+
 
         display: grid;
         grid-template-rows: min-content, 1fr;
         grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            justify-self: center;
+        }       
         
         .winner-btn-box {
             grid-row: 1 / 2;
             grid-column: 1 / 2;
-
         }
         
         .press-btn-box {
@@ -66,13 +100,8 @@
                      
             display: grid;
             grid-template-columns: repeat(3, 30%);
-            justify-content: center;           
-              
-        }
-
-        
-    }
-
-    
-
+            justify-content: center;  
+            text-align: center;                       
+        }        
+    }    
 }

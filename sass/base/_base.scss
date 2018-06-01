@@ -16,11 +16,12 @@ $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px
 $bp-small: 37.5em;    // 600px
+$bp-smallest: 25em;    // 400px
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;    
 }
 
 html {
@@ -30,6 +31,10 @@ html {
         font-size: 50%;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 40%;
+    }
+
 }
     
 body {
@@ -37,12 +42,33 @@ body {
     color: $color-dark-grey;
     font-weight: 300;
     line-height: 1.6;
+    
 }
 
 .container {
     display: grid;
-    grid-template-rows: 15vh 80vh;
+    grid-template-rows: 12vh 80vh;
     grid-template-columns: 14% 1fr 14%;
+    justify-content: center;
+    
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 8% 1fr 8%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 8% 1fr 8%;        
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 5% 1fr 5%;
+    }
+
+   
+
+
+    
+
+    
     
 }
 

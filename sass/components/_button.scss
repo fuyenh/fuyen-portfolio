@@ -7,6 +7,7 @@ $transition-time-base: 0.4s;
     &,
     &:link
     &:visited {
+        //display:block;
         fill: none;
         stroke: $color-primary;
         stroke-linecap: round;
@@ -14,8 +15,11 @@ $transition-time-base: 0.4s;
         stroke-dasharray: 0;   
         stroke-width: 2.1rem;
         width: 7rem;
-        transition: $transition-time-base ease-out;
+        transition: $transition-time-base ease-out;  
         
+        @media only screen and (max-width: $bp-smallest) {
+            width: 5rem;
+        }
     }
 
     &:hover,
@@ -37,11 +41,17 @@ $transition-time-base: 0.4s;
         filter: grayscale(50%);
         opacity: 0.6;
         transition: opacity 0.2s ; 
-    }
+        
+        @media only screen and (max-width: $bp-medium) {
+            height: 1.8rem;
+        }
 
-    &:hover,
-    &:active {
-        height: 2.1rem;           
+        @media only screen and (max-width: $bp-smallest) {
+            height: 1.2rem;
+        }
+    }
+    
+    &:hover {         
         filter: grayscale(0%);
         opacity: 1; 
     }                                                              
@@ -53,7 +63,6 @@ $transition-time-base: 0.4s;
     &:link,
     &:visited {
         width: 1.8rem;
-        margin: 0;
         margin-left: 2rem;
         fill: $color-dark-grey-2; 
         transition: $transition-time-base; 
@@ -76,6 +85,11 @@ $transition-time-base: 0.4s;
         display: block;
         margin: 1rem auto;
         transition: $transition-time-base;   
+        
+        @media only screen and (max-width: $bp-smallest) {
+            width: 27rem;
+        }
+        
     } 
 
     &:hover,
@@ -87,6 +101,7 @@ $transition-time-base: 0.4s;
 
 //MS-STORE ME-WEBITE//
 .store-btn {
+
     &,
     &:link,
     &:visited{
@@ -97,21 +112,28 @@ $transition-time-base: 0.4s;
         text-align: center;
         width: auto;
         transition: $transition-time-base;
-    
+        opacity: 0.75;
+
+        &.btn-me {
+            margin-right: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 3rem;
+        }
     }
 
     &:hover,
     &:active{        
-        box-shadow: 0.1rem 0.1rem 2rem rgba($color-primary, 1);
-        
-    }
-   
+        box-shadow: 0.1rem 0.1rem 2rem rgba($color-primary, 1);        
+    }   
 }
 
 //MORE WORK//
 .point-down-btn {            
     width: 5rem;
     fill: $color-primary;
+    margin-right: 3rem; 
 
     &:hover {
         animation: bounce 0.6s;
