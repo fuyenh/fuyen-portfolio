@@ -15,29 +15,22 @@
     &__list {
         list-style: none;
         display: flex;
-        align-items: center;      
+        align-items: center;  
+           
     }
 
     &__item {
+        position: relative; 
         margin: 1.9rem;
         &:last-child {
             margin-right: 0;
         }
         &:first-child {
             margin-left: 0;
-        }
-
-        &:hover,
-        &:active {
-            border-bottom: solid 0.3rem $color-primary;
-        }
-        
-        
-        
+        }                       
     }
 
     
-
     
 
 }

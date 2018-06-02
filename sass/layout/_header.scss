@@ -1,21 +1,18 @@
 .header {
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-rows: 15% 1fr 15%;
+    grid-template-rows: 15rem 44rem 3rem;
     grid-template-columns: max-content 1fr;
     grid-column-gap: 9rem;
     align-items: center;
 
-  
+    
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: min-content 1fr;
     }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: min-content 1fr;
-    }
 
     @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(3, min-content) 6rem;
@@ -61,6 +58,7 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
         
         @media only screen and (max-width: $bp-small) {
             grid-row: 4 / 5;

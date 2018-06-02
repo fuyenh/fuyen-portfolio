@@ -1,0 +1,27 @@
+@mixin hover-line {
+    &:after {
+        content:"";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.8rem;
+        height: 0.3rem;
+        background-color: $color-primary;
+      }
+      
+    &:after {
+        opacity: 0;
+        -webkit-transform: translateY(0.8rem);
+        -ms-transform: translateY(0.8rem);
+        transform: translateY(0.8rem);
+        -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+    }
+        
+    &:hover:after {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);              
+    }    
+}

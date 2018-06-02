@@ -6,10 +6,15 @@
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
+
+        @include hover-line;
     }
 }
 
 .heading-primary {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+
     &--main {
         font-weight: 700;
         font-size: 4.7rem;
@@ -22,12 +27,14 @@
         @media only screen and (max-width: $bp-small) {
             font-size: 4rem;
         }
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3.85rem;
+        }
 
         &:hover {
             text-decoration: underline;
             text-decoration-color: $color-primary;
-        }
-        
+        }        
     }
 
     &--sub {
@@ -39,6 +46,20 @@
         @media only screen and (max-width: $bp-small) {
             font-size: 2.5rem;
         }
+    }
+
+    &--hover {
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 0.3rem;
+          background-color: $color-primary;
+        }
+          
+        @include hover-line;
     }
 }
 
@@ -54,7 +75,7 @@
     font-weight: 400;
     
     @media only screen and (max-width: $bp-small) {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .heart {
@@ -62,3 +83,33 @@
         font-size: 1.9rem;
     }
 }
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+
+    &::after {
+        display:block;
+        margin: 0 auto;
+        background-color: $color-primary;
+        content: "";        
+        height: 0.4rem;
+        width: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.footer__creadit {
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 0.09rem;
+    line-height: 2;
+}
+

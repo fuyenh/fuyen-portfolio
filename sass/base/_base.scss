@@ -12,11 +12,16 @@ $color-dark-grey: #4C4C4C;
 $font-display: 'Roboto', sans-serif;
 
 //RESPONSIVE BREAKPOINTS//
+
+$bp-xlarge: 160em;   // 2560px
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px
-$bp-small: 37.5em;    // 600px
-$bp-smallest: 25em;    // 400px
+$bp-small: 37.5em;   // 600px
+$bp-smallest: 25em;  // 400px
+
+//CONTENT MARGIN//
+$content-margin: 13%;
 
 * {
     margin: 0;
@@ -48,32 +53,20 @@ body {
 .container {
     display: grid;
     padding-top: 2rem;
-    grid-template-rows: 14vh 80vh;
-    grid-template-columns: 14% 1fr 14%;
+    grid-template-rows: 14vh auto 3rem [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    grid-template-columns: $content-margin 1fr $content-margin;
     justify-content: center;
     
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 8% 1fr 8%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 8% 1fr 8%;        
-    }
-
     @media only screen and (max-width: $bp-small) {
         grid-template-columns: 5% 1fr 5%;
-    }
-
-   
-
-
-    
-
-    
-    
+    } 
 }
 
-
-
-
+section {
+    margin-top: 6rem;
+}
 

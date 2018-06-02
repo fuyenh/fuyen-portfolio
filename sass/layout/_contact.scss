@@ -1,0 +1,23 @@
+.section__contact {
+    grid-row: contact-start / contact-end;
+    grid-column: 2 / 3;
+  
+    text-align: center;
+
+    &__email-box {
+        position: relative;
+        display:inline-block;        
+    }
+
+    &__btn-box {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 30%;
+        margin-top: 4rem;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 20%;              
+        }
+    }
+    
+}
