@@ -57,13 +57,15 @@
               opacity: 0.8;                            
             }
 
-            .funder-img {
+            .me-video {
+                width: 110%;
+                height: auto;
                 position: absolute;
-                bottom: 0rem;
-                display: block;
-                width: 100%;
-            }  
-        }        
+                bottom: -1rem;
+                opacity: .9;
+
+            }        
+        }       
 
         .publication {
             grid-row: 2 / 3;

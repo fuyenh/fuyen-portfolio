@@ -26,13 +26,12 @@
             opacity: 1;
             -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
-            transform: translateY(0);   
-            color: $color-dark-grey;           
+            transform: translateY(0);              
     }        
 }
 
 @mixin box-shadow-primary {
-    box-shadow: 0.1rem 0.1rem 4rem $color-primary;
+    box-shadow: 0.1rem 0.1rem 2.1rem $color-primary;
 }
 
 @mixin border-radius {

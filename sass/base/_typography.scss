@@ -43,13 +43,7 @@ span {
         }
         @media only screen and (max-width: $bp-smallest) {
             font-size: 3.85rem;
-        }
-
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: $color-primary;
-            color: $color-dark-grey;
-        }        
+        }    
     }
 
     &--sub {
@@ -74,6 +68,7 @@ span {
 
 //EG.AWARD WINNING WORK//
 .header__hint {
+    font-weight: 300;
     margin-bottom: 1rem;
     color: $color-primary;
 }
@@ -123,7 +118,8 @@ a  {
     
     &:link,
     &:visited {
-        color: $color-dark-grey;        
+        color: $color-dark-grey; 
+        transition: 0.2s;       
     }
 
     &:hover,

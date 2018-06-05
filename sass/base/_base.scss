@@ -9,7 +9,7 @@ html {
     font-size: 62.5%; //1rem = 10px; 
 
     @media only screen and (min-width: $bp-xlarge) {
-        font-size: 105%;
+        font-size: 70%;
     }
 
     @media only screen and (max-width: $bp-largest) {
@@ -33,7 +33,7 @@ body {
 .container {
     display: grid;
     padding-top: 2rem;
-    grid-template-rows: min-content max-content [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    grid-template-rows: min-content auto 8rem [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
     grid-template-columns: $content-margin 1fr $content-margin;
     justify-content: center;
     
