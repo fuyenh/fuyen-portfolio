@@ -2,27 +2,22 @@
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     
-
     display: grid;
     grid-template-rows: 15rem 44rem 3rem;
     grid-template-columns: max-content 1fr;
     grid-column-gap: 9rem;
     align-items: center;
-
     
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: min-content 1fr;
     }
-
 
     @media only screen and (max-width: $bp-small) {
         grid-template-rows: repeat(3, min-content) 6rem;
         grid-template-columns: 1fr;
         grid-gap: 2.6rem;
         justify-items: center;
-    }
-
-    
+    }    
 
     &__text-box-role {
         grid-row: 1 / 2;
@@ -84,8 +79,6 @@
         grid-column: 2 / 3;
         justify-self: end;
         
-
-
         display: grid;
         grid-template-rows: min-content, 1fr;
         grid-template-columns: 1fr;

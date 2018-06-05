@@ -1,11 +1,11 @@
 .footer {
     grid-row: footer-start / footer-end;
     grid-column: 1 / 4;
-    background-color: $color-light-grey;
+    background-color: $color-primary;
 
     margin-top: 2rem;
     padding: 2.5rem;
 
     text-align: center;
-    color: $color-dark-grey;
+    color: $color-white;
 }

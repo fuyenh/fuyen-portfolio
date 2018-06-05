@@ -19,9 +19,9 @@ $transition-time-base: 0.4s;
         transition: $transition-time-base ease-out;  
         
         @media only screen and (max-width: $bp-small) {
-            width: 20rem;
-            height: 20rem;
-            margin: 0;
+            width: 4rem;
+            height: 4rem;
+            margin: 0.8rem;
         }
     }
 
