@@ -47,9 +47,6 @@ body {
 }
 
 section {
-    margin-bottom: 8rem;
-    &:first-of-type {
-        margin-top: 4rem;
-    }
+    padding: $section-padding-tb 0;
 }
 
