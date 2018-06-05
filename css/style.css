@@ -316,7 +316,6 @@ p, a, li {
     .section__about .section__content-box .my-text {
       grid-row: 1 / 2;
       grid-column: 3 / -1;
-      padding-top: 3rem;
       padding-bottom: 2rem;
       margin-bottom: 1rem;
       border-bottom: solid 0.1rem #EDB239; }
