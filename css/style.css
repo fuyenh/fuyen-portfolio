@@ -36,7 +36,7 @@ body {
       grid-template-columns: 6% 1fr 6%; } }
 
 section {
-  padding: 10rem 0; }
+  padding: 8rem 0; }
 
 @-webkit-keyframes pulse {
   from {
@@ -170,6 +170,9 @@ h2 {
     .subtile-primary--role .heart {
       color: #EDB239;
       font-size: 1.9rem; }
+      @media only screen and (max-width: 37.5em) {
+        .subtile-primary--role .heart {
+          font-size: 1.2rem; } }
 
 a {
   text-decoration: none; }
@@ -221,7 +224,7 @@ p, a, li {
   grid-template-columns: max-content 1fr;
   grid-column-gap: 9rem;
   align-items: center;
-  padding-bottom: 8rem; }
+  padding-bottom: 3rem; }
   @media only screen and (max-width: 62.5em) {
     .header {
       grid-template-columns: min-content 1fr; } }
@@ -296,7 +299,7 @@ p, a, li {
   grid-row: about-start / about-end;
   grid-column: 1 / -1;
   background-color: #fffcf5;
-  padding: 10rem 13%; }
+  padding: 8rem 13%; }
   .section__about .section__content-box {
     display: grid;
     grid-template-rows: 30% repeat(3, min-content);
@@ -319,31 +322,69 @@ p, a, li {
         .section__about .section__content-box .my-text {
           grid-row: 1 / 2;
           grid-column: 1 / 2; } }
-    .section__about .section__content-box .funder-box {
+    .section__about .section__content-box--video-box {
       grid-row: 1 / -1;
       grid-column: 1 / 2;
       box-shadow: 0.1rem 0.1rem 2.1rem #EDB239;
       border-radius: 1rem;
       align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       position: relative;
-      overflow: hidden;
-      padding-top: 9%; }
+      overflow: hidden; }
       @media only screen and (max-width: 37.5em) {
-        .section__about .section__content-box .funder-box {
+        .section__about .section__content-box--video-box {
           grid-row: 2 / 3;
           grid-column: 1 / 2; } }
-      .section__about .section__content-box .funder-box .me-logo {
-        width: 50%;
-        opacity: 0.8; }
-      .section__about .section__content-box .funder-box .me-video {
-        width: 110%;
-        height: auto;
+      .section__about .section__content-box--video-box .hover-caption {
         position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+        z-index: 99;
+        text-align: center;
+        opacity: 0;
+        color: #fff;
+        transition: all 0.4s ease-out;
+        transition-delay: 0.1s; }
+        .section__about .section__content-box--video-box .hover-caption img {
+          width: 100%;
+          transition: all 0.4s ease-out;
+          transition-delay: 0.1s; }
+          .section__about .section__content-box--video-box .hover-caption img:hover, .section__about .section__content-box--video-box .hover-caption img:active {
+            width: 90%; }
+        .section__about .section__content-box--video-box .hover-caption h3 {
+          font-size: 1.4rem;
+          letter-spacing: 0.1rem;
+          margin-top: 1rem; }
+        .section__about .section__content-box--video-box .hover-caption:hover {
+          transform: translateY(-40%);
+          opacity: 1; }
+      .section__about .section__content-box--video-box::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+        opacity: 0;
+        border-radius: 0.6rem;
+        background-color: #D09214;
+        transition: all 0.4s ease-out; }
+      .section__about .section__content-box--video-box:hover::after {
+        opacity: 0.9;
+        cursor: pointer; }
+      .section__about .section__content-box--video-box:hover .hover-caption {
+        transform: translateY(-50%);
+        opacity: 1; }
+      .section__about .section__content-box--video-box .me-video-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: -1rem;
-        opacity: .9; }
+        width: 110%; }
+      .section__about .section__content-box--video-box .me-video {
+        width: 100%;
+        height: auto; }
     .section__about .section__content-box .publication {
       grid-row: 2 / 3;
       grid-column: 3 / -1; }

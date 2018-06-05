@@ -109,6 +109,10 @@ h2 {
         .heart {
             color: $color-primary;
             font-size: 1.9rem;
+             
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.2rem;
+            }                        
         }
     }        
 }
