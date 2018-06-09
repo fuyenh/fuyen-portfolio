@@ -16,14 +16,14 @@
                 <use xlink:href="img/home/myLogo.svg#logo"></use>
             </svg>
             <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" id="focus-link" href="#">Work</a></li>
+                <li class="navigation__item"><a class="navigation__link" id="focus-link">Work</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="http://fuyenh.dribbble.com/" target="blank">Dribbble</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#about">About</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         
-        <header class="header">                                        
+        <header class="header" id="work">                                        
             <div class="header__text-box-role">
                 <h3 class="subtile-primary">
                     <span class="subtile-primary--role">Hi, I'm Fu Yen!<br>A Product Designer <span class="heart">&#x2665</span> 2D / 3D Interaction &amp; UI Design.</span>
@@ -47,10 +47,12 @@
                 </div>                     
             </div>
             <div class="header__buttom-box">
-                <div class="header__more-work-box">                                              
-                    <svg class="point-down-btn">
-                        <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
-                    </svg>                      
+                <div class="header__more-work-box">    
+                    <a href="#about">
+                        <svg class="point-down-btn">
+                            <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+                        </svg>     
+                    </a>                                                                               
                 </div>
                 <div class="header__social-btn-box">
                     <a href="https://www.linkedin.com/in/fuyenh" target="blank">
@@ -100,7 +102,7 @@
             </div>            
         </header>
         
-        <section class="section__about">
+        <section class="section__about" id="about">
             <div class="section__title-box">
                 <h2>about</h2>
             </div>
@@ -123,7 +125,7 @@
                     <p> I use AR visual instruction to teach people to play musical instruments.</p>                                     
                 </div>                   
                 <div class="publication">
-                    <h3 class="subtile-primary">Publication</h3>
+                    <h3 class="subtile-primary">Published Work</h3>
                     <p><a href="http://homes.create.aau.dk/dano/nime17/papers/0104/paper0104.pdf" target="blank">Music Everywhere – Augmented Reality Piano Improvisation Learning System</a></p>
                     <span>Interfaces For Music Expression 2017, Copenhagen</span>  
                 </div>                    
@@ -141,7 +143,7 @@
                 </div>
             </div>          
         </section>
-        <section class="section__contact">
+        <section class="section__contact" id="contact">
             <div class="section__title-box">
                 <h2>contact</h2>
             </div>                                  
@@ -179,12 +181,25 @@
              </div>                                
                      
          </section>
-         <footer class="footer">
-            <h3 class="footer__creadit">Designed / Coded by <br> Fu Yen Hsiao with &#x266B &#169  2018</h3>
-                   
+         <footer class="footer">                            
+            <nav class="navigation navigation__footer">
+                    <div class="footer__credit-box">
+                        <svg class="navigation__logo navigation__logo--footer">
+                            <use xlink:href="img/home/myLogo.svg#logo"></use>
+                        </svg>
+                         <h3 class="footer__credit">Designed / Coded by <br> Fu Yen Hsiao with &#x266B &#169  2018</h3>                
+                    </div>                    
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link navigation__link--footer" id="focus-link" href="#work">Work</a></li>
+                        <li class="navigation__item"><a class="navigation__link navigation__link--footer" href="http://fuyenh.dribbble.com/" target="blank">Dribbble</a></li>
+                        <li class="navigation__item"><a class="navigation__link navigation__link--footer" href="#about">About</a></li>
+                        <li class="navigation__item"><a class="navigation__link navigation__link--footer" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>                   
          </footer>
          
-        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script src="vendors/js/jquery.waypoints.min.js"></script>
          <script src="js/script.js"></script>
     </body>
 

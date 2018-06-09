@@ -1,3 +1,18 @@
+a  {
+    text-decoration: none;
+    color: $color-dark-grey;
+    
+    &:link,
+    &:visited {         
+        transition: 0.2s;       
+    }
+
+    &:hover,
+    &:active {
+        color: $color-primary;        
+    }
+}
+
 span {
     font-size: 1.3rem;
     line-height: 1.3;
@@ -11,18 +26,24 @@ span {
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-
+       
         &:hover {
             color: $color-dark-grey;
+            cursor: pointer;
         }
 
-        @include hover-line;
-    }
+        @include hover-line; 
 
-    #focus-link {
-        outline: rgba(0, 0, 0,1);
-    }
+        &--footer {
+            color: white;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }                
+    }       
 }
+
 
 //H1//
 .heading-primary {
@@ -68,9 +89,10 @@ span {
 
 //EG.AWARD WINNING WORK//
 .header__hint {
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1rem;
     color: $color-primary;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -93,8 +115,8 @@ h2 {
 
 //H3//
 .subtile-primary {
-    font-size: 1.8rem;
-    margin-bottom: 0.7rem; 
+    font-size: 2.0rem;
+    margin-bottom: 0.3rem; 
 
     &--role {
         margin-top: 0.6rem;
@@ -117,30 +139,18 @@ h2 {
     }        
 }
 
-a  {
-    text-decoration: none;
-    
-    &:link,
-    &:visited {
-        color: $color-dark-grey; 
-        transition: 0.2s;       
-    }
-
-    &:hover,
-    &:active {
-        color: $color-primary;        
-    }
-}
 
 p, a, li {
     font-size: 1.7rem;
     line-height: 1.3;
+    font-weight: 400;
 }
 
-.footer__creadit {
-    font-weight: 300;
-    font-size: 1.2rem;
-    letter-spacing: 0.09rem;
-    line-height: 2;
+.footer__credit {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 3rem;
 }
 

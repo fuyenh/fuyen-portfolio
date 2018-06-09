@@ -94,7 +94,7 @@
                 bottom: 5%;                
                 opacity: 0; 
                 border-radius: 0.6rem;
-                background-color: $color-tertiary;
+                background-color: $color-primary;
                 transition: all $transition-time-base ease-out;                                          
         }
 
@@ -118,7 +118,8 @@
 
             .me-video {                
                 width: 100%; 
-                height: auto;        
+                height: auto; 
+                opacity: 0.9;       
             }       
         }       
 
