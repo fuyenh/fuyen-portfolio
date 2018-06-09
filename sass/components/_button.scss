@@ -35,7 +35,7 @@
             stroke: $color-secondary;
         }
         stroke-width: 1.8rem;
-        opacity: 0.7;
+        opacity: 0.8;
     }
 }
 
@@ -100,13 +100,13 @@
     }
 
     &:hover {
-        animation: pulse 0.3s;
+        animation: pulse $transition-time-base ease;
         cursor: pointer; 
     }
 }
 
 
-.winner-btn {
+.winner-btn {    
     &,
     &:link,
     &:visited {

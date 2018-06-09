@@ -21,13 +21,15 @@
         justify-items: center;
     }    
 
-    &__text-box-role {
+    &__text-box-role {        
         grid-row: 1 / 2;
         grid-column: 1 / 2;  
         
         @media only screen and (max-width: $bp-small) {
             text-align: center; 
         }
+
+        animation: moveInLeft $transition-time-base ease-in;
     }
 
     &__text-box-me {
@@ -48,8 +50,9 @@
             .img-btn-box {
                justify-content: center;                    
             } 
-
         }
+
+        animation: moveInLeft $transition-time-base ease-in;
     } 
     
     //BUTTOM BOX//
@@ -68,7 +71,9 @@
             grid-row: 4 / 5;
             grid-column: 1 / 2; 
             margin-top: 4rem;                                      
-        }               
+        } 
+
+        animation: moveInBottom $transition-time-base ease-in;             
     }
 
     &__social-btn-box {
@@ -82,6 +87,8 @@
         grid-row: 1 / 4;
         grid-column: 2 / 3;
         justify-self: end;
+
+        animation: moveInRight $transition-time-base ease-in;
         
         display: grid;
         grid-template-rows: min-content, 1fr;
@@ -97,7 +104,7 @@
         
         .winner-btn-box {
             grid-row: 1 / 2;
-            grid-column: 1 / 2;
+            grid-column: 1 / 2;           
         }
         
         .press-btn-box {
