@@ -1,4 +1,3 @@
-
 //SET THE DEFAULT STATE AS FOCUS//
 document.getElementById('focus-link').focus();
 

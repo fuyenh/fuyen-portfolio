@@ -84,7 +84,6 @@
 }
 
 .contact-social-btn {
-
     &,
     &:link,
     &:visited {
@@ -167,7 +166,7 @@
     margin-right: 3rem; 
 
     &:hover {
-        animation: bounce 1s;
+        animation: pulse $transition-time-base;
         cursor: pointer;
     }
 }
