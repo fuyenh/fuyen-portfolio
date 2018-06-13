@@ -64,7 +64,16 @@ span {
         }
         @media only screen and (max-width: $bp-smallest) {
             font-size: 3.85rem;
-        }    
+        } 
+        
+        &--wrong {
+            font-size: 20rem;
+            color: $color-primary;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 15rem;
+            }
+        }
     }
 
     &--sub {

@@ -37,6 +37,7 @@ body {
     grid-template-columns: $content-margin 1fr $content-margin;
     justify-content: center;
     
+    
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 8% 1fr 8%;
     }
@@ -44,6 +45,11 @@ body {
     @media only screen and (max-width: $bp-small) {
         grid-template-columns: 6% 1fr 6%;
     } 
+}
+
+
+.container__wrong {
+    grid-template-rows: min-content 1fr;
 }
 
 section {
