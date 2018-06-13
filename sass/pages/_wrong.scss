@@ -1,3 +1,7 @@
+.container__wrong {
+    grid-template-rows: min-content 1fr;
+}
+
 .header--wrong {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -12,16 +16,17 @@
     }
 
     &--img-box {            
-        position: relative; 
-        
-        &:hover {
-            animation: swing $transition-time-base;
-        }
+        position: relative;         
 
         img {                        
             position: relative;         
             z-index: 999;
-            width: 90%;                            
+            opacity: .9;
+            width: 90%;
+            
+            &:hover {
+                animation: swing $transition-time-base;
+            }
         }
         
         &::after {
