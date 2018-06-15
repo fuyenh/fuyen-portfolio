@@ -1,11 +1,11 @@
 //------HEADER------//
 
-.header {
+.header--home {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     
     display: grid;
-    grid-template-rows: 15rem 44rem 3rem;
+    grid-template-rows: 10rem 44rem 3rem;
     grid-template-columns: max-content 1fr;
     grid-column-gap: 9rem;
     align-items: center;
@@ -239,13 +239,15 @@
                 left: 50%;
                 transform: translateX(-50%);
                 bottom: -1rem;                                 
-                width: 110%;                                                           
+                width: 130%;   
+                @media only screen and (max-width: $bp-small) {
+                    width: 110%;                                    
+                }                                                           
             }
 
             .me-video {                
-                width: 100%; 
-                height: auto; 
-                opacity: 0.9;       
+                width: 100%;                 
+                opacity: 0.9;                      
             }       
         }       
 

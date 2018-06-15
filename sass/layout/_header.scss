@@ -1,0 +1,11 @@
+.header {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+
+    margin-bottom: 7rem;
+
+    background-image: url("img/brand-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

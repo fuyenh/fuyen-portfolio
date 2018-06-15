@@ -21,11 +21,18 @@ $bp-small: 37.5em;   // 600px
 $bp-smallest: 25em;  // 400px
 
 //CONTENT MARGIN//
-$content-margin: 13%;
+$content-margin: 16%;
 
-//SECTION PADDING TOP BOTTOM//
-$section-padding-tb: 8rem;
+//SECTION--HOME PADDING TOP BOTTOM//
+$section-padding-tb: 7rem;
+
+//SECTION--WORK MARGIN-BOTTOM//
+$section-work-margin-bottom: 6rem;
 
 //TRANSITION TIME//
 $transition-time-base: 0.4s;
+
+//HEARDER HEIGHT IN WORK PAGES//
+$header-work-height: 65vh;
+
 

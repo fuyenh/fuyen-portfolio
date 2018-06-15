@@ -1,0 +1,52 @@
+.intro {
+    grid-row: intro-start / intro-end;    
+    text-align: center;
+
+    &::after {
+        display:block;
+        margin: 0 auto;
+        background-color: $color-primary;
+        content: "";        
+        height: 0.4rem;
+        width: 8rem;
+        margin-top: 4rem;        
+    }
+}
+
+.rt {
+    grid-row: rt-start / rt-end;
+              
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;  
+    justify-content: center;   
+
+    text-align: left;         
+
+    & > div {
+        border-left: solid $color-light-grey 0.2rem;
+        padding-left: 2rem;  
+        word-break: normal;                                 
+    }
+
+    &__about-company {
+        grid-column: auto / span 2;        
+    }        
+}
+
+.cotx {
+    grid-row: cotx-start / cotx-end;
+}
+
+.chalge {
+    grid-row: chalge-start / chalge-end;
+}
+
+
+.pros {
+    grid-row: pros-start / pros-end;
+}
+
+.rr {
+    grid-row: rr-start / rr-end;
+}

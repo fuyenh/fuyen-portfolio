@@ -32,12 +32,11 @@ body {
 
 .container {
     display: grid;
-    padding-top: 2rem;
-    grid-template-rows: min-content auto 8rem [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    padding-top: 1.2rem;
+    grid-template-rows: min-content $header-work-height [intro-start] min-content [intro-end rt-start] min-content [rt-end cotx-start] min-content [cotx-end chalge-start] min-content [chalge-end pros-start] min-content [pros-end rr-start] min-content [rr-end];
     grid-template-columns: $content-margin 1fr $content-margin;
     justify-content: center;
-    
-    
+        
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 8% 1fr 8%;
     }
@@ -47,7 +46,29 @@ body {
     } 
 }
 
-section {
+.container--home {
+    display: grid;
+    padding-top: 1.2rem;
+    grid-template-rows: min-content auto 8rem [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    grid-template-columns: $content-margin 1fr $content-margin;
+    justify-content: center;
+        
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 8% 1fr 8%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 6% 1fr 6%;
+    } 
+}
+
+
+.section--home {
     padding: $section-padding-tb 0;
+}
+
+.section--work {
+    grid-column: 2 / 3; 
+    margin-bottom: $section-work-margin-bottom;
 }
 
