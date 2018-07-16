@@ -1,0 +1,48 @@
+.lightbox {
+    position: fixed;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    &--container {   
+        max-width: 80%;       
+    }
+
+    &--img {       
+        max-width:100%;
+        max-height:100%;
+        @include box-shadow-primary;
+    }
+
+    &[data-state="visible"] {   
+        opacity: 1;
+        z-index: 999;
+    }
+}
+
+.btn--close {
+    position: absolute;
+    top: 6%;
+    right: 8%;
+
+    & > svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: white;
+        opacity: 0.6;
+        transition: all ease-in 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            animation: pulse $transition-time-base;
+            opacity: 1;            
+        }
+    }    
+}

@@ -31,8 +31,14 @@
 
     &__about-company {
         grid-column: auto / span 2;        
-    }        
+    }     
+
+    li {
+        list-style: none;
+    }
 }
+
+
 
 .cotx {
     grid-row: cotx-start / cotx-end;
@@ -41,7 +47,6 @@
 .chalge {
     grid-row: chalge-start / chalge-end;
 }
-
 
 .pros {
     grid-row: pros-start / pros-end;

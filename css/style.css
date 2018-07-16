@@ -317,7 +317,8 @@ p, a, li {
   margin-top: 2rem;
   padding: 1rem 16%;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   .footer__credit-box {
     display: flex;
     align-items: center; }
@@ -469,7 +470,8 @@ p, a, li {
         .section__about .section__content-box--video-box .hover-caption h3 {
           font-size: 1.4rem;
           letter-spacing: 0.1rem;
-          margin-top: 1rem; }
+          margin-top: 1rem;
+          color: white; }
         .section__about .section__content-box--video-box .hover-caption:hover {
           transform: translateY(-40%);
           opacity: 1; }
@@ -642,6 +644,8 @@ p, a, li {
     word-break: normal; }
   .rt__about-company {
     grid-column: auto / span 2; }
+  .rt li {
+    list-style: none; }
 
 .cotx {
   grid-row: cotx-start / cotx-end; }
@@ -768,3 +772,38 @@ p, a, li {
   .point-down-btn:hover, .point-right-btn:hover {
     animation: pulse 0.4s;
     cursor: pointer; }
+
+.lightbox {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .lightbox--container {
+    max-width: 80%; }
+  .lightbox--img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0.1rem 0.1rem 2.1rem #EDB239; }
+  .lightbox[data-state="visible"] {
+    opacity: 1;
+    z-index: 999; }
+
+.btn--close {
+  position: absolute;
+  top: 6%;
+  right: 8%; }
+  .btn--close > svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: white;
+    opacity: 0.6;
+    transition: all ease-in 0.3s; }
+    .btn--close > svg:hover {
+      cursor: pointer;
+      animation: pulse 0.4s;
+      opacity: 1; }

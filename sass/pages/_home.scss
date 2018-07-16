@@ -202,6 +202,7 @@
                     font-size: 1.4rem;
                     letter-spacing: 0.1rem;
                     margin-top: 1rem;
+                    color: white
                 }
 
                 &:hover {
@@ -211,7 +212,7 @@
             }
 
             &::after {
-                display: inline-block;
+                display: inline-block;              
                 position: absolute;
                 content: "";
                 top: 5%;
