@@ -1,43 +1,157 @@
 //LOGO//
-.navigation__logo {
-    &,
-    &:link
-    &:visited {
+
+
+// #outline {
+//     &,
+//     &:link
+//     &:visited {
+//         margin: 2rem 0;
+//             fill: none;
+//             stroke: $color-primary;
+//             stroke-linecap: round;
+//             stroke-linejoin: round;
+//             stroke-dasharray: 0;   
+//             stroke-width: 2.1rem;
+//             width: 8rem;
+//             height: 8rem;
+//             transition: $transition-time-base ease-out;  
+            
+//             @media only screen and (max-width: $bp-small) {
+//                 width: 4rem;
+//                 height: 4rem;
+//                 margin: 0.8rem;
+//             }
+//     }
+   
+//     &:hover,
+//     &:active {
+//         stroke-width: 0rem;
+//     }
+// }
+
+.navigation__logo { 
         margin: 2rem 0;
-        fill: none;
-        stroke: $color-primary;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-dasharray: 0;   
-        stroke-width: 2.1rem;
         width: 8rem;
-        height: 8rem;
-        transition: $transition-time-base ease-out;  
-        
+        height: 8rem;        
+
         @media only screen and (max-width: $bp-small) {
             width: 4rem;
             height: 4rem;
             margin: 0.8rem;
         }
+
+        &,
+        &:link
+        &:visited {
+            #fill {            
+                opacity: 0;
+                fill: $color-primary;
+                stroke-width: 0.6rem;
+                stroke: $color-primary; 
+                transition: $transition-time-base ease-out; 
+            }
+
+            #outline {
+                fill: none;
+                stroke: $color-primary;                                
+                stroke-width: 2.1rem;
+                transition: 20 ease-out;                    
+            }
+
+        }
+        &:hover,
+        &:active  {          
+            #fill {
+                opacity: 100;
+            }
+            #outline {
+                stroke-width: 0rem;
+            }                                          
+        }             
+ }
+
+ .footer__logo { 
+    margin: 2rem 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 8rem;
+    height: 8rem;        
+
+    @media only screen and (max-width: $bp-small) {
+        width: 4rem;
+        height: 4rem;
+        margin: 0.8rem;
     }
 
-    &:hover,
-    &:active  {
-        stroke: $color-primary;
-        stroke-width: 1rem;
-        stroke-dasharray: 30;  
-        cursor: crosshair;               
-    }
-    
-    &--footer {
-        stroke: white;
-        &:hover {
-            stroke: $color-secondary;
+    &,
+    &:link
+    &:visited {
+        #fill {            
+            opacity: 0;
+            fill: white;
+            stroke-width: 0.4rem;
+            stroke: white; 
+            transition: $transition-time-base ease-out; 
         }
-        stroke-width: 1.8rem;
-        opacity: 0.8;
+
+        #outline {
+            fill: none;
+            stroke: white;                                
+            stroke-width: 2.1rem;
+            transition: 20 ease-out;                    
+        }
+
     }
+    &:hover,
+    &:active  {          
+        #fill {
+            opacity: 100;
+        }
+        #outline {
+            stroke-width: 0rem;
+        }                                          
+    }             
 }
+
+.btn-back {
+    display: inline-block;
+    border: 0.2rem solid $color-primary;
+    margin-top: 9rem;
+    width: 10rem;
+    text-align:center;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    transition: $transition-time-base ease-out; 
+
+    &,
+    &:link
+    &:visited {
+        color: $color-primary;
+        background: rgba( $color-primary, 0 );                  
+    } 
+
+    &:hover,
+    &:active {
+        color: white;
+        background: rgba( $color-primary, 1 );                
+    }    
+}
+ 
+        
+
+    
+    
+    // &--footer {
+    //     stroke: white;
+    //     &:hover {
+    //         stroke: $color-secondary;
+    //     }
+    //     stroke-width: 1.8rem;
+    //     opacity: 0.8;
+    // }
+
 
 //GeekWire VRscout WESA//
 .press-btn{

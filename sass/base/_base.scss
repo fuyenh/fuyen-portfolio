@@ -8,10 +8,6 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px; 
 
-    @media only screen and (min-width: $bp-xlarge) {
-        font-size: 74%;
-    }
-
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
     }
@@ -49,10 +45,34 @@ body {
 .container--home {
     display: grid;
     padding-top: 1.2rem;
-    grid-template-rows: min-content auto 8rem [about-start] min-content [about-end contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    grid-template-rows: min-content auto 1fr [more-start] min-content [more-end contact-start] auto [contact-end footer-start] min-content [footer-end];
     grid-template-columns: $content-margin 1fr $content-margin;
     justify-content: center;
         
+    @media only screen and (min-width: 2500px) {
+        grid-template-columns: auto 1920px auto;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 8% 1fr 8%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 6% 1fr 6%;
+    } 
+}
+
+.container--about {
+    display: grid;
+    padding-top: 1.2rem;
+    grid-template-rows: min-content auto auto [contact-start] 1fr [contact-end footer-start] min-content [footer-end];
+    grid-template-columns: $content-margin 1fr $content-margin;
+    justify-content: center;
+        
+    @media only screen and (min-width: 2500px) {
+        grid-template-columns: auto 1920px auto;
+    }
+
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 8% 1fr 8%;
     }
@@ -64,7 +84,7 @@ body {
 
 
 .section--home {
-    padding: $section-padding-tb 0;
+    margin-bottom: $section-work-margin-bottom;
 }
 
 .section--work {

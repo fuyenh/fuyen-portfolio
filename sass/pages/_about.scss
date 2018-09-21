@@ -1,0 +1,28 @@
+.section--about {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;   
+    text-align: left;
+    
+    .img-profile {
+        border-radius: 10rem;
+        box-shadow: 0.1rem 0.5rem 2rem rgba($color-primary, 1);        
+        height: 10rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    ul {
+        display: inline-block;   
+        text-align: left;   
+        p {
+            text-align: center;
+        }  
+    }               
+}
+
