@@ -1,28 +1,43 @@
-.section--about {
+.section__about {
     grid-row: 2 / 3;
     grid-column: 2 / 3;   
-    text-align: left;
+    text-align: center; 
     
     .img-profile {
         border-radius: 10rem;
         box-shadow: 0.1rem 0.5rem 2rem rgba($color-primary, 1);        
         height: 10rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 6rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
+  
     div {
-        text-align: center;
+        display: grid;      
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+        justify-items: start;        
+        align-items: center;  
+        
+        margin-bottom: 4rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            justify-items: center; 
+        }
     }
 
+    .img-traction {                        
+        justify-self: center; 
+        border-radius: 1rem; 
+        box-shadow: 0.1rem 0.2rem 2rem rgba($color-dark-grey, 0.2);  
+        width: 250px;
+    }    
+
     ul {
-        display: inline-block;   
-        text-align: left;   
-        p {
-            text-align: center;
-        }  
+        display: block;          
+        padding-left: 2.5rem;        
+        text-align: left;           
     }               
 }
 

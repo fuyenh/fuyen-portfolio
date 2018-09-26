@@ -1,34 +1,3 @@
-//LOGO//
-
-
-// #outline {
-//     &,
-//     &:link
-//     &:visited {
-//         margin: 2rem 0;
-//             fill: none;
-//             stroke: $color-primary;
-//             stroke-linecap: round;
-//             stroke-linejoin: round;
-//             stroke-dasharray: 0;   
-//             stroke-width: 2.1rem;
-//             width: 8rem;
-//             height: 8rem;
-//             transition: $transition-time-base ease-out;  
-            
-//             @media only screen and (max-width: $bp-small) {
-//                 width: 4rem;
-//                 height: 4rem;
-//                 margin: 0.8rem;
-//             }
-//     }
-   
-//     &:hover,
-//     &:active {
-//         stroke-width: 0rem;
-//     }
-// }
-
 .navigation__logo { 
         margin: 2rem 0;
         stroke-linecap: round;
@@ -115,12 +84,15 @@
     }             
 }
 
-.btn-back {
+.btn--round {
     display: inline-block;
-    border: 0.2rem solid $color-primary;
+    border: 0.2rem solid $color-primary;    
     margin-top: 9rem;
     width: 10rem;
     text-align:center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
     padding: 1.5rem;
     border-radius: 0.8rem;
     transition: $transition-time-base ease-out; 
@@ -138,21 +110,30 @@
         background: rgba( $color-primary, 1 );                
     }    
 }
- 
-        
 
+.gotop__btn {  
+    margin-top: 10rem;  
+    text-align: center;
+
+    svg {               
+        width: 2.0rem;
+        height: 2.0rem;        
+    }
+       
+    &,
+    &:link,
+    {
+        fill: $color-dark-grey-2;        
+        transition: 0.1; 
+    }
+
+    &:hover {
+        fill: $color-primary; 
+        color: $color-primary;
+        cursor: pointer;         
+    }                 
+}
     
-    
-    // &--footer {
-    //     stroke: white;
-    //     &:hover {
-    //         stroke: $color-secondary;
-    //     }
-    //     stroke-width: 1.8rem;
-    //     opacity: 0.8;
-    // }
-
-
 //GeekWire VRscout WESA//
 .press-btn{
     &,

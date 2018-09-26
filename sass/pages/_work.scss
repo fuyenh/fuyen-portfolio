@@ -1,0 +1,101 @@
+.section__header {
+    grid-row: header-start / header-end;
+    grid-column: 1 / 4;   
+    text-align: center;    
+    
+    .work__header {            
+        height: 52vh;    
+        background-size: cover;
+        background-repeat: none;
+        background-position: 50% 50%;        
+        
+        &--holo {
+            background-image: linear-gradient(to bottom right, $color-orange, rgba(white, 0.2)), url("img/work-hololens.png");                                 
+        }
+    }   
+    
+    .workname {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);            
+    }
+}
+
+.section__meta {
+    grid-row: meta-start / meta-end;
+    grid-column: 2 / 3;
+          
+    .workname {
+        margin-bottom: 3rem;
+        border-left: solid $color-orange 0.2rem;
+        padding: 0.5rem 2rem;
+    }
+
+    &--item {
+        display: inline-block;
+        border-left: solid $color-light-grey 0.2rem;
+        padding: 0.5rem 2rem;          
+        text-align: left;             
+    }       
+}
+
+.section__content {
+    grid-row: content-start / content-end;
+    grid-column: 2 / 3;
+
+    iframe {
+        display:block;
+        width: 100%;
+        height: 40rem;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width:100%;
+        margin: 1.5rem 0 1.5rem 0; 
+    }
+
+    &--section {
+        margin-bottom: 4rem;
+        ul {
+            list-style: none;
+        }
+    
+        p {
+            margin: 0.1rem 0 1.3rem 0;       
+        }   
+    }    
+}
+
+.flexBox {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -2.4rem;
+    width: 100%;
+
+    div {
+        margin-right: 2.4rem;
+    }
+
+    
+    a {
+        margin-right: 2.4rem;
+        transition: 1.0;
+        margin-bottom: 3.5rem;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}
+
+.section__page {
+    text-align: center;
+    grid-row: page-start / page-end;
+    grid-column: 2 / 3;
+    margin-bottom: 5rem;
+}
+

@@ -1,24 +1,30 @@
 .lightbox {
     position: fixed;
     
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9);
     z-index: -1;
     opacity: 0;
     transition: all ease-in-out 0.2s;
+    
     width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
+    min-height: 100vh;
+    
+            
     &--container {   
-        max-width: 80%;       
+        position: absolute;
+        top: 50%;
+        left: 50%;    
+        transform: translate(-50%, -50%);
+        width: 100%;   
+        max-height: 100%;   
+        padding: 4rem;
+        text-align: center;          
     }
 
     &--img {       
         max-width:100%;
-        max-height:100%;
-        @include box-shadow-primary;
+        margin: 0 auto; 
+        box-shadow: 0.1rem 0.2rem 2rem rgba($color-dark-grey, 0.2);          
     }
 
     &[data-state="visible"] {   
@@ -33,9 +39,9 @@
     right: 8%;
 
     & > svg {
-        width: 3.5rem;
-        height: 3.5rem;
-        fill: white;
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: $color-light-grey;
         opacity: 0.6;
         transition: all ease-in 0.3s;
 
@@ -45,4 +51,13 @@
             opacity: 1;            
         }
     }    
+}
+
+.thumbnails {
+    a {
+        &:hover {
+            cursor: zoom-in;
+        }
+    }
+    
 }

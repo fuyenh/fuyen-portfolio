@@ -1,36 +1,4 @@
-a  {
-    text-decoration: none;
-    color: $color-dark-grey;
-    letter-spacing: 0.09rem;
-    
-    &:link,
-    &:visited {         
-        transition: 0.2s;       
-    }
-
-    &:hover,
-    &:active {
-        color: $color-primary;        
-    }
-}
-
-span {
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-
-//H1//
-h4 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
-    color: lighten($color-dark-grey, 20);
-    text-transform: capitalize;
-}
-h1 {
-    letter-spacing: 0.2rem;
-}
-
-.heading-primary {
+.header-primary {
     font-size: 4.2rem;
     letter-spacing: 0.08rem;
     margin-bottom: 0.8rem;
@@ -80,18 +48,37 @@ h1 {
     }
 
     &--hover { 
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 0.2rem;          
         @include hover-line;
+
+        &::selection {
+            background: $color-primary;
+            color: white;
+        }
     }
 }
 
-//EG.AWARD WINNING WORK//
-.header__hint {
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: $color-primary;
-    font-size: 1.5rem;
+.header__work {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;        
+    text-align: left;
+    color: $color-dark-grey;  
+    margin-bottom: 1.2rem;  
+    
+    &--main {
+        font-size: 2.5rem;
+        margin-bottom: 0.2rem; 
+        letter-spacing: 0.1rem;
+    }
+       
+    &--sub {
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem; 
+        margin-bottom: 0.1rem;        
+    }    
 }
 
 h2 {
@@ -99,7 +86,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 
     &::after {
         display:block;
@@ -117,6 +104,7 @@ h2 {
 .subtile-primary {
     font-size: 2.2rem;
     margin-bottom: 0.5rem; 
+    font-weight: 500;
 
     &--role {
         margin-top: 0.8rem;
@@ -140,11 +128,65 @@ h2 {
     }        
 }
 
+h4 {
+    font-size: 1.5rem;    
+    color: lighten($color-dark-grey, 20);
+    text-transform: capitalize;
+}
 
-p, a, li {
-    font-size: 1.7rem;
+
+a  {
+    text-decoration: none;
+    color: $color-dark-grey;
+    letter-spacing: 0.09rem;
+    
+    &:link,
+    &:visited {         
+        transition: 0.2s;       
+    }
+
+    &:hover,
+    &:active {
+        color: $color-primary;        
+    }
+}
+
+span {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+p, li {
+    font-size: 1.6rem;
     line-height: 1.4;
-    font-weight: 400;
+    font-weight: 300;
+    letter-spacing: 0.06rem;
+}
+
+.link {
+    color: $color-dark-grey-2;    
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+
+
+.orange {
+    color: $color-orange;
+}
+
+.green {
+    color: $color-green;
+}
+
+p a {
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-light-grey;
+    }
 }
 
 .footer__credit {
