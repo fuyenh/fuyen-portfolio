@@ -12,6 +12,6 @@ $thumbs.on('click', 'a', function(link){
 
 var $btnClose = $('.btn--close');
 
-$btnClose.on('click','svg', function(close) {
+$btnClose.on('click','img', function(close) {
     $lb.attr('data-state', 'hidden');
 })
