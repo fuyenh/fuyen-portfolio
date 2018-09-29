@@ -194,14 +194,13 @@ body {
       right: 0;
       bottom: -0.8rem;
       height: 0.3rem;
-      background-color: #2962ff; }
-    .header-primary--hover:after {
+      background-color: #2962ff;
       opacity: 0;
       -webkit-transform: translateY(0.8rem);
       -ms-transform: translateY(0.8rem);
       transform: translateY(0.8rem);
-      -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+      -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
     .header-primary--hover:hover:after, .header-primary--hover:focus:after {
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -328,6 +327,35 @@ p a {
   .navigation__list {
     list-style: none;
     display: flex; }
+    .navigation__list .active:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -0.8rem;
+      height: 0.3rem;
+      background-color: #2962ff; }
+    .navigation__list .nav--hover {
+      animation: pulse 0.4s ease; }
+      .navigation__list .nav--hover:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.8rem;
+        height: 0.3rem;
+        background-color: #2962ff;
+        opacity: 0;
+        -webkit-transform: translateY(0.8rem);
+        -ms-transform: translateY(0.8rem);
+        transform: translateY(0.8rem);
+        -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+      .navigation__list .nav--hover:hover:after, .navigation__list .nav--hover:focus:after {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
   .navigation__item {
     position: relative;
     margin: 0 1.9rem; }
@@ -335,55 +363,17 @@ p a {
       margin-right: 0; }
     .navigation__item:first-child {
       margin-left: 0; }
-  .navigation__link {
-    text-decoration: none;
-    color: #4C4C4C;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem; }
-    .navigation__link:hover {
+    .navigation__item a {
+      text-decoration: none;
       color: #4C4C4C;
-      cursor: pointer; }
-    .navigation__link:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -0.8rem;
-      height: 0.3rem;
-      background-color: #2962ff; }
-    .navigation__link:after {
-      opacity: 0;
-      -webkit-transform: translateY(0.8rem);
-      -ms-transform: translateY(0.8rem);
-      transform: translateY(0.8rem);
-      -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
-    .navigation__link:hover:after, .navigation__link:focus:after {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
-    .navigation__link--footer {
-      color: white; }
-      .navigation__link--footer:hover {
-        color: #5c87ff; }
-  .navigation__about {
-    text-decoration: none;
-    color: #4C4C4C;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem; }
-    .navigation__about:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -0.8rem;
-      height: 0.3rem;
-      background-color: #2962ff; }
+      font-weight: 500;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem; }
+  .navigation .navigation__footer {
+    color: white; }
+    .navigation .navigation__footer:hover {
+      color: #5c87ff; }
 
 .header {
   grid-row: 2 / 3;
@@ -605,8 +595,10 @@ p a {
     background-size: cover;
     background-repeat: none;
     background-position: 50% 50%; }
-    .section__header .work__header--holo {
+    .section__header .work__header--holoLens {
       background-image: linear-gradient(to bottom right, #ffb24e, rgba(255, 255, 255, 0.2)), url("img/work-hololens.png"); }
+    .section__header .work__header--instantMusician {
+      background-image: linear-gradient(to bottom right, #51CE81, rgba(255, 255, 255, 0.2)), url("img/work-instantMusician.png"); }
 
 .section__meta {
   grid-row: meta-start / meta-end;

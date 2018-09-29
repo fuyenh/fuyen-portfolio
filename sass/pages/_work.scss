@@ -9,17 +9,14 @@
         background-repeat: none;
         background-position: 50% 50%;        
         
-        &--holo {
+        &--holoLens {
             background-image: linear-gradient(to bottom right, $color-orange, rgba(white, 0.2)), url("img/work-hololens.png");                                 
         }
-    }   
-    
-    // .workname {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translateX(-50%) translateY(-50%);            
-    // }
+
+        &--instantMusician {
+            background-image: linear-gradient(to bottom right, $color-green, rgba(white, 0.2)), url("img/work-instantMusician.png");                                 
+        }
+    }          
 }
 
 .section__meta {

@@ -16,7 +16,24 @@
 
     &__list {
         list-style: none;
-        display: flex;         
+        display: flex; 
+
+        .active {            
+            &:after {
+                content:"";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -0.8rem;
+                height: 0.3rem;
+                background-color: $color-primary;
+              } 
+        } 
+        
+        .nav--hover {
+           @include hover-line; 
+            animation: pulse $transition-time-base ease; 
+        }
     }
 
     &__item {
@@ -27,50 +44,29 @@
         }
         &:first-child {
             margin-left: 0;
-        }                       
-    } 
-    
-    &__link {
-        text-decoration: none;
-        color: $color-dark-grey;
-        font-weight: 500;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-       
-        &:hover {
+        } 
+        
+        a {
+            text-decoration: none;
             color: $color-dark-grey;
-            cursor: pointer;
-        }
-
-        @include hover-line;         
-
-        &--footer {
-            color: white;
-            
-            &:hover {
-                color: $color-secondary;
-            }
+            font-weight: 500;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;                                                                                            
         }                 
-    }
-    
-    &__about {
-        text-decoration: none;
-        color: $color-dark-grey;
-        font-weight: 500;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
+    } 
 
-        &:after {
-            content:"";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -0.8rem;
-            height: 0.3rem;
-            background-color: $color-primary;
-          }
-    }   
+    .navigation__footer {
+        color: white;
+                
+        &:hover {
+            color: $color-secondary;
+        }
+    }
 }
+
+
+
+
+
 
