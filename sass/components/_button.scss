@@ -1,9 +1,8 @@
 .navigation__logo { 
         margin: 2rem 0;
-        stroke-linecap: round;
-        stroke-linejoin: round;
         width: 8rem;
-        height: 8rem;        
+        height: 8rem;   
+
 
         @media only screen and (max-width: $bp-small) {
             width: 4rem;
@@ -16,16 +15,12 @@
         &:visited {
             #fill {            
                 opacity: 0;
-                fill: $color-primary;
-                stroke-width: 0.6rem;
-                stroke: $color-primary; 
+                fill: $color-primary;                                
                 transition: $transition-time-base ease-out; 
             }
 
             #outline {
-                fill: none;
-                stroke: $color-primary;                                
-                stroke-width: 2.1rem;
+                fill: $color-primary;               
                 transition: 20 ease-out;                    
             }
 
@@ -36,7 +31,7 @@
                 opacity: 100;
             }
             #outline {
-                stroke-width: 0rem;
+                opacity: 0;
             }                                          
         }             
  }
@@ -59,16 +54,14 @@
     &:visited {
         #fill {            
             opacity: 0;
-            fill: white;
-            stroke-width: 0.4rem;
+            fill: white;            
             stroke: white; 
             transition: $transition-time-base ease-out; 
         }
 
-        #outline {
-            fill: none;
-            stroke: white;                                
-            stroke-width: 2.1rem;
+        #outline {            
+            fill: white;                                         
+            stroke-width: 0rem;
             transition: 20 ease-out;                    
         }
 
@@ -79,7 +72,7 @@
             opacity: 100;
         }
         #outline {
-            stroke-width: 0rem;
+            opacity: 0;
         }                                          
     }             
 }

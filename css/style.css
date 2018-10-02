@@ -422,7 +422,7 @@ p a {
     border-radius: 1rem;
     transition: 0.4s; }
     .section__work img, .section__work img:link, .section__work img:visited {
-      box-shadow: 0.1rem 0.2rem 2rem rgba(76, 76, 76, 0.2); }
+      box-shadow: 0.1rem 0.1rem 1rem rgba(76, 76, 76, 0.2); }
     .section__work img:hover, .section__work img:active {
       box-shadow: 0.1rem 0.5rem 2rem #2962ff; }
 
@@ -665,8 +665,6 @@ p a {
 
 .navigation__logo {
   margin: 2rem 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
   width: 8rem;
   height: 8rem; }
   @media only screen and (max-width: 37.5em) {
@@ -678,19 +676,15 @@ p a {
   .navigation__logo:link .navigation__logo:visited #fill {
     opacity: 0;
     fill: #2962ff;
-    stroke-width: 0.6rem;
-    stroke: #2962ff;
     transition: 0.4s ease-out; }
   .navigation__logo #outline,
   .navigation__logo:link .navigation__logo:visited #outline {
-    fill: none;
-    stroke: #2962ff;
-    stroke-width: 2.1rem;
+    fill: #2962ff;
     transition: 20 ease-out; }
   .navigation__logo:hover #fill, .navigation__logo:active #fill {
     opacity: 100; }
   .navigation__logo:hover #outline, .navigation__logo:active #outline {
-    stroke-width: 0rem; }
+    opacity: 0; }
 
 .footer__logo {
   margin: 2rem 0;
@@ -707,19 +701,17 @@ p a {
   .footer__logo:link .footer__logo:visited #fill {
     opacity: 0;
     fill: white;
-    stroke-width: 0.4rem;
     stroke: white;
     transition: 0.4s ease-out; }
   .footer__logo #outline,
   .footer__logo:link .footer__logo:visited #outline {
-    fill: none;
-    stroke: white;
-    stroke-width: 2.1rem;
+    fill: white;
+    stroke-width: 0rem;
     transition: 20 ease-out; }
   .footer__logo:hover #fill, .footer__logo:active #fill {
     opacity: 100; }
   .footer__logo:hover #outline, .footer__logo:active #outline {
-    stroke-width: 0rem; }
+    opacity: 0; }
 
 .btn--round {
   display: inline-block;
