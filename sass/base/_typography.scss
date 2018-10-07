@@ -66,6 +66,7 @@
     text-align: left;
     color: $color-dark-grey;  
     margin-bottom: 1.2rem;  
+    margin-top: 3.5rem;  
     
     &--main {
         font-size: 2.5rem;
@@ -76,9 +77,9 @@
     &--sub {
         font-size: 1.8rem;
         font-weight: 400;
-        letter-spacing: 0.05rem; 
-        margin-top: 0.5rem;
-        margin-bottom: 0.1rem;        
+        letter-spacing: 0.05rem;         
+        margin-bottom: 0.5rem;
+        margin-top: 1.6rem;          
     }    
 }
 
@@ -102,13 +103,7 @@ h2 {
 }
 
 //H3//
-.subtile-primary {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem; 
-    font-weight: 500;
-
-    &--role {
-        margin-top: 0.8rem;
+h3 {  
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.4;
@@ -117,16 +112,15 @@ h2 {
         @media only screen and (max-width: $bp-small) {
             font-size: 1.4rem;
         }
-    
-        .heart {
-            color: $color-primary;
-            font-size: 1.9rem;
-             
-            @media only screen and (max-width: $bp-small) {
-                font-size: 1.2rem;
-            }                        
-        }
-    }        
+}
+
+.heart {
+    color: $color-primary;
+    font-size: 1.9rem;
+     
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+    }                        
 }
 
 h4 {
@@ -161,7 +155,6 @@ p, li {
     font-size: 1.6rem;
     line-height: 1.4;
     font-weight: 300;
-    letter-spacing: 0.06rem;
 }
 
 .link {
@@ -182,6 +175,10 @@ p, li {
     color: $color-green;
 }
 
+.bold {
+    font-weight: 400;
+}
+
 p a {
     text-decoration: underline;
 
@@ -189,6 +186,14 @@ p a {
         color: $color-light-grey;
     }
 }
+
+#img-caption {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0;  
+}
+
 
 .footer__credit {
     font-weight: 300;

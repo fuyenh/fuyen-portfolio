@@ -21,7 +21,7 @@
         </script>                     
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.3">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.4">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
         <title>Fu Yen Hsiao - Instant Musician</title>
@@ -98,7 +98,7 @@
                 <img src="img/instanMusician/learningCurve_before.png" alt="learning curve">       
                 <p>
                     While playtesting Music Everywhere with the HoloLens, we observed a funny thing: <br>
-                    <strong class="green">People didn’t want to learn, they just wanted to play.</strong> 
+                    <span class="green">People didn’t want to learn, they just wanted to play.</span> 
                 </p>
                 <h1 class="header__work--sub">Solution</h1> 
                 <p>
@@ -106,175 +106,297 @@
                      and skip to fun part - playing songs!                                        
                 </p>   
                 <img src="img/instanMusician/learningCurve_bypass.png" alt="shortcut">
-                <img src="img/instanMusician/IMproduct.jpg" alt="solution">
+                <!-- <img src="img/instanMusician/IMproduct.jpg" alt="solution"> -->
                       
                 <h1 class="header__work--sub">End User</h1> 
-                <p>
-                    We want to reach users who feel left behind from learning music due to limitations in conventional music education. Our AR solution presents a flexible approach and innovative technology that opens the door for new 
-                    students to discover real musical experiences that can enrich their lives. 
-                </p>    
+                <p>                    
+                    My team  want to reach users who feel left behind from learning music due to limitations in 
+                    conventional music education. Our AR solution opens the door for people to play music in the moment, 
+                    regardless of musical ability.                    
+                </p> 
+                <h1 class="header__work--sub">Competitive Landscape</h1>
+                <img src="img/instanMusician/competive landscape.png" alt="Competitive landscape">    
             </div>
-
+            
             <div class="section__content--section">
-                <h1 class="header__work orange">Stage 2 - Making the setup experience seamless</h1>
-                <h1 class="header__work--sub">Challenge 1- Integrating technology - Bluetooth</h1>
+                <h1 class="header__work green">Stage 2 - Integrating mobile AR with the  piano</h1>
+                <h1 class="header__work--sub">Challenge 1- Holding the phone while playing</h1>
                 <p>
-                    In order to determine which note users played on the keyboard, we used a Bluetooth
-                    connection to send out a MIDI signal from the digital piano to the HoloLens. This made ensuring a good connection critical to the experience.     
+                    It’s awkward playing the piano with one hand, especially while holding an iPhone at the same time.                                         
                 </p>
 
-                <h1 class="header__work--sub">Challenge 2 - Account for different piano keyboard sizes</h1>
+                <h1 class="header__work--sub">Challenge 2 - Lowering  the product’s friction</h1>
                 <p>
-                     Our first version was intended for the full 88 keyed piano (full size), but there are many products in 
-                     the market that feature different sizes. How do we design an experience that works for the majority of these products?
+                    My team’s  primary goal for this app was to make piano playing easy for our users, 
+                    regardless of their music knowledge. In some instances, this meant eliminating the obstacles 
+                    that keep people playing the piano in the first place. In others, it meant eliminating the 
+                    friction that came with an AR interface.                                          
                 </p>                
     
-                <h1 class="header__work--sub">Challenge 3 - Guiding users to setup keyboard alignment</h1>
-                <p>
-                    Calibration to ensure proper alignment gives the foundation for the entire experience. Without it, the instructions are useless. In our academic project, our team was always on hand to help assist users in tech setup and user calibration - we often relied on instinct, which (let’s face it) is a truly mysterious endeavor. 
-                </p>
-                <p>
-                    For a shipped product, we knew we needed to create an intuitive process for users to do this themselves, successfully and reliably.                  
-                </p>
-                <h1 class="header__work--sub orange">Design Solutions</h1>
-                <div class="thumbnails">
-                    <a href="img/hololens/SettingFlow.png">
-                        <img src="img/hololens/SettingFlow.png" alt="settingflow">
-                    </a>                                                         
-                </div> 
-                <h1 class="header__work--sub">Bluetooth Connection</h1>
-                    <p>
-                         Due to the native HoloLens environment, users must pair Bluetooth devices through the device’s system settings. To help guide users, I created an animation to 
-                         teach them how to complete this process, and included a tutorial for the Bluetooth connection process 
-                         troubleshooting as well, in case the original setup was not done correctly.
+                <h1 class="header__work--sub green">Design Solutions</h1>                
+                <h1 class="header__work--sub">Making it comfortable to hold a phone</h1>                    
+                    <p> 
+                        I know, holding a phone can get tiring (the thought of holding an iPhone XS Max for an hour makes my thumbs cramp!). 
+                        To help mitigate this, My team made the songs shorter (00:30-1:00 in length), and I organized the songs in skill level 
+                        order to give users a sense of accomplishment with each completed song. This broke up the experience into cycles that helped offset any fatigue. 
                     </p>
-                    <iframe src="https://www.youtube.com/embed/jl60BKAcdRQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                    <img src="img/hololens/bluetoothConnection.jpg" alt="bluetooth connection">                                                              
-                    <h1 class="header__work--sub">Piano Size Configuration</h1>
+                <h1 class="header__work--sub">Finding a universal marker</h1>                    
+                    <p> 
+                        To ensure stable alignment, image tracking markers are used in many AR experiences. 
+                        From developing the HoloLens experience, I knew I wanted to avoid a custom marker (more friction for the user) 
+                        and focus on something the user already had. Using a $1.00 bill allowed us to use a marker that was readily available 
+                        for most users.                       
+                    </p> 
+                    <img src="img/instanMusician/IMproduct.jpg">
+            </div>        
+            <div class="section__content--section">
+                <h1 class="header__work green">Stage 3 - Designing the user interface</h1>
+                <h1 class="header__work--sub">Challenge 1 - Identifying the player function</h1>  
+                <p>
+                    The app’s core function is guiding users to play songs with AR musical notations. 
+                    To achieve that, we needed to consider how people interact with a song’s background music.
+                </p>
+
+                <h1 class="header__work--sub">Challenge 2 - laying out UI elements</h1> 
+                <span class="green bold">Principles:</span>               
+                <p class="bold">Big AR camera screen<p>
+                <p>                                    
+                    The most important AR design principle is making the AR camera feed as big as possible on the screen. 
+                    A well-arranged UI layout is critical to achieve this goal.                         
+                </p>
+                <p class="bold">Left hand friendly</p>
+                <p>
+                    Users will hold the phone with their left hand, and play songs with right hand. 
+                    So, all the on-screen interactions are better to be “left hand friendly” to allow users to 
+                    select options in an efficient way.
+                </p>
+
+                <h1 class="header__work--sub"> Challenge 3 - Helping users see every note</h1> 
                     <p>
-                        We cover 88, 61 , 49 and 25 keys of size of pianos, which accounts for almost every kind. 
-                        The system can detect the piano size after users press the first and the last key, and adapts the AR interface to the keys.
+                        The visibility of the musical notes is critical to the experience. 
+                        What happens if it’s out of frame on the phone screen? How do users know where to 
+                        look on the keyboard first?
                     </p>
-                    <img src="img/hololens/keyboardSize.jpg" alt="keyboard size">
-                    <h1 class="header__work--sub">AR interface Alignment</h1>
+                <h1 class="header__work--sub green">Design Solutions</h1>                
+                <h1 class="header__work--sub">Designing Play Mode / Practice Mode</h1>
                     <p>
-                        A customized image tracking marker is within hand’s reach for the user to spawn the AR interface. 
-                        By looking at the tracking marker, users can spawn the interface. 
-                        Then place it on the middle C to adjust the alignment by easily moving the markers around.                        
+                        In play mode, users can adjust the background music like its speed and accompaniment styles.
+                        For active users, we design the practice mode for them to rehearse the song, one musical phrase at a time.
+                    </p>
+                    <div class="flexBox">
+                            <div>
+                                <img src="img/instanMusician/playMode.jpg" alt="play mode">                    
+                            </div>
+                            <div>
+                                <img src="img/instanMusician/practiceMode.jpg" alt="practice mode">
+                            </div>
+                    </div>
+                <h1 class="header__work--sub">Making the “UI Drawer” system</h1>
+                    <p>
+                        In order to create a clean and big space for the AR camera feed, 
+                        I designed an UI drawer system to store UI elements, like switching between play / practice mode, 
+                        changing speed, etc.                                                
                     </p>  
-                    <p><strong>Finding Middle C</strong></p>
-                    <img src="img/hololens/findMiddleC.jpg" alt="find Middle C">  
-                    <p><strong>Aligning the Marker on Middle C</strong></p>
-                    <img src="img/hololens/alignMarker.jpg" alt="align marker">                        
-            </div>
+                    <div class="flexBox">
+                            <div>
+                                <img id="gif" src="img/instanMusician/gif-setting.gif" alt="UI drawer Interaction">
+                                <p id="img-caption">UI drawer Interaction</p>
+                            </div>   
+                            <div>
+                                <img id="gif" src="img/instanMusician/uiLayout.jpg" alt="UI drawer closes">
+                                <p id="img-caption">Drawer closes</p>
+                            </div>    
+                            <div>
+                                <img id="gif" src="img/instanMusician/uiDrawer.jpg" alt="UI drawer opens">
+                                <p id="img-caption">Drawer opens</p>
+                            </div>                                                          
+                    </div>
+                        <h1 class="header__work--sub">Designing the note location indicators</h1>
+                            <p>
+                                1. A white boundary on the sides of the screen will appear when there are notes outside the 
+                                screen’s view to guide users to move the phone in that direction to see them.                                                                       
+                            </p> 
+                        <div class="flexBox">
+                            <div>
+                                <img class="border" src="img/instanMusician/gif-boundary.gif" alt="White Boundary- Find the notes outside the view">
+                                <p id="img-caption">Find the notes outside the view</p>
+                            </div>   
+                            <div>
+                                <img class="border" src="img/instanMusician/leftBoundary.jpg" alt="Left boundary">
+                                <p id="img-caption">Left boundary</p>
+                            </div>    
+                            <div>
+                                <img class="border" src="img/instanMusician/rightBoundary.jpg" alt="Right boundary">
+                                <p id="img-caption">Right boundary</p>
+                            </div>                                                          
+                        </div>                    
+                        <p>
+                            2. An interactive compass will help users to find the start point after they pick a song. 
+                            Instead of playing immediately, in this way, they have more time to get prepared.                                                
+                        </p> 
+                        <div class="flexBox">
+                            <div>
+                                <img id="gif" src="img/instanMusician/gif-findStartPoint.gif" alt="Interactive start point finder">
+                                <p id="img-caption">Interactive start point finder</p>
+                            </div>   
+                            <div>
+                                <img id="gif" src="img/instanMusician/findStartKey.jpg" alt="Campss finder">
+                                <p id="img-caption">Campass finder</p>
+                            </div>    
+                            <div>
+                                <img id="gif" src="img/instanMusician/startKey.jpg" alt="Start point">
+                                <p id="img-caption">Start point</p>
+                        </div>                
+                    </div>    
+                    
+                    <div class="section__content--section">
+                        <h1 class="header__work green">Stage 4 - Guiding users how to play</h1>
+                        <h1 class="header__work--sub">Challenge 1 - Onboarding users</h1>
+                            <p> 
+                                iOS AR is still new to the majority. Therefore, the onboarding session plays an 
+                                important role to give users an overview of how the AR technology work in this app at beginning.
+                            </p>
+                            <h1 class="header__work--sub">Challenge 2 - Guiding how to register the AR interface</h1>
+                            <p> 
+                                Like our HoloLens product, we needed to teach users where to put the image tracking marker 
+                                (a dollar bill in this case) to spawn the AR interface, and adjust its alignment as well.                                
+                            </p>
 
-            <div class="section__content--section">
-                 <h1 class="header__work orange">Stage 3 - Making lessons more engaging</h1>
-                 
-                 <h1 class="header__work--sub">Challenge 1 - Designing a scalable lesson structure</h1>
-                    <p>
-                        Our first version enabled user to pick lessons according to genre, which posed some problems when we tried to expand the lesson content later. 
-                        The problem we faced in this structure was the difficulty in making it modular and scalable. 
-                        We knew we needed to redesign it.
-                    </p>                                  
-                 <h1 class="header__work--sub">Challenge 2 - Building the troubleshoot function</h1>
-                    <p>
-                        AR experiences often tend to be unstable due to technical limitations today. 
-                        For example,  the AR interface might drift away from the current alignment or the Bluetooth connection might disappear. 
-                        Relaunching the app was annoying, but during the period we developed this at school, it was a simple fix for many bugs. When we were building our next version to publish, we knew it was critical to craft troubleshooting functions for users within the app. 
-                    </p>                 
-                 <h1 class="header__work--sub">Challenge 3 - AR character development & energizing the experience</h1>
-                 <p>
-                    People love animated characters. They’re fun, liven up a scene, and provide a fun way to instill the context of music playing with a band. 
-                    To achieve this in a meaningful way, I built up more animations to sync with music beats and created more interaction scenarios.
-                 </p>
-                <h1 class="header__work--sub orange">Design Solutions</h1>
-                <div class="thumbnails">
-                     <a href="img/hololens/LessonFlow.png">
-                         <img src="img/hololens/LessonFlow.png" alt="lessonflow">
-                     </a>                                                         
-                 </div>                 
-                <h1 class="header__work--sub">Lesson Structure</h1>
-                <p>
-                    We designed the lesson packages which included several lessons within them. 
-                    This allowed us to design a system that accounted for every music level, to define each lesson package’s level, and to upload more materials for the future.
-                </p>
-                <div class="flexBox">
-                    <div>
-                        <img src="img/hololens/lesson_package.jpg" alt="lesson package">
-                    </div>
-                    <div>
-                        <img src="img/hololens/lessons.jpg" alt="lessons">
-                    </div>
-                </div>                
-                <h1 class="header__work--sub">Troubleshooting function</h1>
-                <p>
-                    When problems happen, users can pause the experience in place to resolve the issue.
-                </p>
-                <img src="img/hololens/troubleshooting.jpg" alt="troubleshooting">
-                <h1 class="header__work--sub">Better virtual bands</h1>
-                <p>
-                    I optimized all the 3D topology which allowed me to create more complicated animations.
-                    With these changes, the animated virtual musician step towards the user to teach them how to play, and react to the music rhythm beat by beat. This captures the user’s attention in a playful way. 
-                </p>                                                                       
-                <div class="flexBox">
-                    <div>
-                        <img src="img/hololens/character_talk.jpg" alt="talk">
-                    </div>
-                    <div>
-                        <img src="img/hololens/character_play.jpg" alt="play">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section__content--section">
-                <h1 class="header__work orange">Stage 4 - Materials to give the app a brand identity</h1>  
-                <p>
-                    Since we were publishing this app to the Microsoft Store, I knew we needed to create a brand identity that mirrored the design of the app. 
-                    Below are the materials I created that represented our app’s design and experience.
-                </p>
-                 <img src="img/hololens/branding-01.png" alt="branding">
-            </div>
-
-            <div class="section__content--section">
-                <h1 class="header__work orange">Recognition</h1>  
-                <h1 class="header__work--sub">Conference</h1>
-                <img src="img/hololens/conference.png" alt="conference">
-                <h1 class="header__work--sub">Articles & Reviews</h1>
-                <div class="flexBox">
-                    <a href="https://www.ft.com/reports/revitalised-cities-pittsburgh" target="blank">
-                        <img src="img/hololens/FinancialTimes.jpg" alt="Financial-Times">
-                    </a>
-                    <a href="https://www.geekwire.com/2018/inside-alphalab-pittsburghs-tech-accelerator-aims-solve-citys-startup-challenge/" target="blank">
-                        <img src="img/hololens/geekWire.png" alt="GeekWire">
-                    </a>
-                    <a href="https://vrscout.com/news/ar-app-teaches-how-to-play-piano/" target="blank">
-                        <img src="img/hololens/VRScout.png" alt="VRScout">
-                    </a>
-                    <a href="http://www.wesa.fm/post/pittsburgh-startup-uses-augmented-reality-teach-piano#stream/0" target="blank">
-                        <img src="img/hololens/WESA.jpg" alt="WESA">
-                    </a>                            
-                </div>
+                         <h1 class="header__work--sub">Challenge 3 - Guiding how to play</h1>
+                            <p> 
+                                We needed to have a tutorial to guide users through the important UI functions.                                
+                            </p>
+                            
+                        <h1 class="header__work--sub green">Design Solutions</h1>                
+                        <h1 class="header__work--sub">Creating functional onboarding pages</h1>
+                            <p>
+                                I combined the welcome messages and the AR setting overview to create an 
+                                appealing and functional onboarding session.
+                            </p>
+                            <div class="flexBox">
+                                    <div>
+                                        <img class="border" src="img/instanMusician/onboard-1.PNG" alt="onbaord 1">                    
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/onboard-2.PNG" alt="onbaord 2">
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/onboard-3.PNG" alt="onbaord 3">
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/onboard-4.PNG" alt="onbaord 4">
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/onboard-5.PNG" alt="onbaord 5">
+                                    </div>
+                            </div>
+                        <h1 class="header__work--sub">Making an interactive marker alignment guidance</h1>
+                            <p>
+                                I combined the welcome messages and the AR setting overview to create an appealing 
+                                and functional onboarding session.
+                            </p>
+                            <div class="flexBox">
+                                    <div>
+                                        <img src="img/instanMusician/1_middleC.jpg" alt="Find Middle C">                    
+                                    </div>
+                                    <div>
+                                        <img src="img/instanMusician/2_alignDollar.jpg" alt="Align the dollar bill">
+                                    </div>
+                                    <div>
+                                        <img src="img/instanMusician/3_registrateUI.jpg" alt="Register AR UI">
+                                    </div>
                 
-                <h1 class="header__work--sub">Funding Partners</h1>
-                <div class="flexBox">
-                    <a href="https://alphalab.org/" target="blank">
-                        <img src="img/hololens/alphalab.png" alt="Alphalab">
-                    </a>   
-                    <a href="https://www.laireastlabs.com/" target="blank">
-                        <img src="img/hololens/laireast.png" alt="LairEast">
-                    </a>                   
-                </div>                
-            </div>
+                                </div>
+                        <h1 class="header__work--sub">Creating step-by-step play instructions</h1>
+                            <p>
+                                I illustrated a sequence of graphics to cover core functions.
+                            </p>  
+                            <div class="flexBox">
+                                    <div>
+                                        <img class="border" src="img/instanMusician/play-1.PNG" alt="play 1">                    
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/play-2.PNG" alt="play 2">
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/play-3.PNG" alt="play 3">
+                                    </div>
+                                    <div>
+                                        <img class="border" src="img/instanMusician/play-4.PNG" alt="play 4">
+                                    </div>                                   
+                            </div>             
+                    </div>
+                    <div class="section__content--section">
+                        <h1 class="header__work green">Stage 5 - Designing the Store Page - Songbook</h1>
+                        <h1 class="header__work--sub">Challenge - What’s the business model? </h1>
+                        <p>
+                            The in-app purchase flow tights with the business model. 
+                            How we monetize the app determines the design for the store spage.
+                        </p>
+
+                        <h1 class="header__work--sub green">Design Solution</h1>                
+                        <h1 class="header__work--sub">Buying complete genres for songs</h1>
+                        <p>
+                            The licensing for an individual song can change. For example, songs on Spotify or iTunse grayed out after the licensing transferred to others. We decided to make a genre package includes 5~8 free songs, and 15+ locked songs. Users can buy the complete genre for all songs. 
+                            In this way, we can replace the grayed out songs to protect their purchases.
+                        </p>
+                        <div class="flexBox">
+                                <div>
+                                    <img id="gif" src="img/instanMusician/gif-songbook.gif" alt="Songbook interaction">
+                                    <p id="img-caption">Songbook Interaction</p>
+                                </div>   
+                                <div>
+                                    <img id="gif" src="img/instanMusician/songbookButton.jpg" alt="Songbook button">
+                                    <p id="img-caption">Songbook button</p>
+                                </div>    
+                                <div>
+                                    <img id="gif" src="img/instanMusician/songbookIAP.jpg" alt="Song book IAP">
+                                    <p id="img-caption">Buying complete genres for songs</p>
+                                </div>                                                          
+                        </div>
+                    </div>
+                    <div class="section__content--section">
+                            <h1 class="header__work green">Stage 6 - Materials to give the app a brand identity</h1>
+                            <p>
+                                Below are the materials I created that represented our app’s design and experience.
+                            </p>
+                            <img src="img/instanMusician/branding.jpg" alt="branding">
+                    </div>
+
+                    <div class="section__content--section">
+                            <h1 class="header__work green">Stage 7 - Test & Iteration</h1>
+                            <p>
+                                A usability testing was conducted with a beta version of 
+                                Instant Musician using Apple’s TestFlight. The test was designed to assess 
+                                the success of the AR play function; its efficiency and usability when performing 
+                                the designed tasks flows; The overall test findings identify errors and gain user’s feedback.
+                            </p>
+                            <div class="thumbnails">
+                                    <a href="img/instanMusician/IM-flow.png">
+                                        <img src="img/instanMusician/IM-flow.png" alt="flow">
+                                    </a>                                                         
+                            </div>                             
+                            <p class="green bold">Future Design Improvements</p>
+                            <p class="bold">Play tutorial session</p>
+                            <p>                               
+                                A good tutorial experience will guide users to learn by doing instead of providing still images. 
+                                To do so, we can design a simple song with tutorial contents for users to learn interface functions while playing.                                    
+                            </p>
+                            <p class="bold">Access to the songbook</p>
+                            <p>  
+                                The songbook should be always accessible. No AR interface registration required.                                                                                                                           
+                            </p>
+                    </div>                               
 
             <div class="section__content--section">                
                  <h1 class="header__work">Looking Ahead</h1>
                  <p>
-                    Working on the Microsoft HoloLens platform allowed us to be an early publisher of AR music learning content. We got early recognition from industry leaders, but knew that our future would depend on Mobile AR. The HoloLens, though an established platform, is too expensive to ever achieve widespread adoption ($3K USD). 
+                    Creating a consumer-focused AR piano playing experience that utilizes both hands at once is the ultimate goal. 
+                    Our eyes are on Apple’s coming consumer-ready AR glasses (2021), and adapt Instant Musician to this exciting new platform, 
+                    converting iOS users from our current app.
                  </p>
-                 <p>
-                    Looking ahead, we knew we would make our next experience using ARKit for iOS, bringing our user base pool from early adopter AR enthusiasts to the population at large. Hello, iPhone.                         
-                 </p>
+                 <img class="border" src="img/instanMusician/roadmap.png" alt="Road map">
+                <p id="img-caption">AR piano learning road map </p>
             </div> 
 
             <div class="gotop__btn">
@@ -298,7 +420,7 @@
         
 
         <section class="section__page">
-            <a class="btn--round" href="index.html">Back</a>
+            <a class="btn--round" href="work-hololens.html">Back</a>                      
         </section>
 
         <section class="section__home section__contact" id="contact">              
@@ -317,12 +439,7 @@
                             <svg class="social-btn contact-social-btn">
                                 <use xlink:href="img/sprite.svg#icon-github"></use>
                             </svg>
-                        </a>
-                        <a href="https://codepen.io/fuyenh/" target="blank">
-                            <svg class="social-btn contact-social-btn">
-                                <use xlink:href="img/sprite.svg#icon-codepen"></use>
-                            </svg>
-                        </a>
+                        </a>                      
                         <a href="http://medium.com/@fuyenh" target="blank"> 
                             <svg class="social-btn contact-social-btn">
                                 <use xlink:href="img/sprite.svg#icon-medium"></use>

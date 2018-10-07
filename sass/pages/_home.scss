@@ -43,10 +43,28 @@
     grid-row: more-start / more-end;
     grid-column: 2 / 3;
     text-align: center;
-    margin-bottom: 22rem; 
+    margin-bottom: 25rem; 
 
     animation: swing $transition-time-base ease-in;  
 }
+
+
+.hello {      
+    opacity: 0;
+    width: 11rem; 
+    &:hover {
+        animation: pulse $transition-time-base ease;
+    }  
+}
+
+.bounceIn{   
+    animation: bounceIn 0.7s; 
+}
+
+.swing{  
+    animation: swing 0.6s; 
+}
+
 
 .section__contact {
     grid-row: contact-start / contact-end;

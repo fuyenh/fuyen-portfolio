@@ -18,6 +18,7 @@ $(document).ready(function() {
             }
             });                            
     });
+    
     $("#footer").load("footer.html");
  
     /* Navigation Scroll */
@@ -34,14 +35,29 @@ $(document).ready(function() {
                 return false;
             }
         }    
-     });    
+     });  
+     
+     
+     /* Animation on scroll*/
+    $('.js--wp-1').waypoint(function(direction){
+            if (direction === 'down'){
+                $('.js--wp-1').addClass('bounceIn');
+                $('.js--wp-1').removeClass('swing');
+                $('.hello').fadeTo( "slow", 1 );                               
+            }   
+            else if (direction ==='up') {
+                $('.js--wp-1').removeClass('bounceIn'); 
+                $('.js--wp-1').addClass('swing');
+                $('.hello').fadeTo( "slow", 0 );  
+            }     
+        }, {offset: '50%'}
+        );
+
+
 });
 
 
 
-
-//SET THE DEFAULT STATE AS FOCUS//
-// document.getElementById('focus-link').focus();
 
 //HIDE HOVER VIDEO TIMELINE UI//
 //document.getElementById('me-video').controls = false;
