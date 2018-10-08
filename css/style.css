@@ -672,28 +672,37 @@ p a {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-auto-rows: 28rem;
   grid-gap: 0.5rem;
-  align-items: start;
-  justify-items: center;
-  margin: auto; }
+  grid-auto-flow: dense;
+  align-items: center;
+  justify-items: center; }
   @media only screen and (max-width: 37.5em) {
     .gallery {
       grid-template-columns: 1fr; } }
-  .gallery img {
-    max-width: 100%; }
-  .gallery img:nth-child(2) {
-    grid-column: span 2;
-    grid-row: span 3; }
-    @media only screen and (max-width: 37.5em) {
-      .gallery img:nth-child(2) {
-        grid-column: span 1; } }
+  .gallery .item {
+    width: 100%;
+    height: 100%; }
+    .gallery .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0; }
 
 .section__page {
   text-align: center;
   grid-row: page-start / page-end;
   grid-column: 2 / 3;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  text-align: center; }
+  .section__page--box {
+    display: flex;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center; }
+    .section__page--box a {
+      margin: 2rem; }
 
 .navigation__logo {
   margin: 2rem 0;
@@ -785,15 +794,18 @@ p a {
     cursor: pointer; }
 
 .social-btn, .social-btn:link, .social-btn:visited {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-left: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
   fill: #535353;
   transition: 0.4s; }
 
 .social-btn:hover, .social-btn:active {
   fill: #2962ff;
   cursor: pointer; }
+
+.grid {
+  width: 4.5rem;
+  height: 4.5rem; }
 
 .contact-social-btn, .contact-social-btn:link, .contact-social-btn:visited {
   width: 2.8rem;
