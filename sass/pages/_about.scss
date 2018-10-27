@@ -12,27 +12,38 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .introLine {
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
   
     div {
         display: grid;      
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 2rem;
-        justify-items: start;        
-        align-items: center;  
+        align-items: center;
         
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
         
         @media only screen and (max-width: $bp-small) {
             justify-items: center; 
         }
+        
+        
     }
 
     .img-traction {                        
         justify-self: center; 
         border-radius: 1rem; 
-        box-shadow: 0.1rem 0.2rem 2rem rgba($color-dark-grey, 0.2);  
-        width: 250px;
-    }    
+        box-shadow: 0.08rem 0.2rem 0.5rem rgba($color-dark-grey, 0.5);  
+        width: 27rem;       
+    }   
+    
+    .img-habit {
+        width: 10rem;
+        justify-self: start; 
+    }
 
     ul {
         display: block;          
