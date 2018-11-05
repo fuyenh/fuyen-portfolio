@@ -23,7 +23,7 @@
         </script>                     
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.6">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.7">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
         <title>Fu Yen Hsiao - Music Everywhere</title>
@@ -118,46 +118,51 @@
 
             <div class="section__content--section">
                 <h1 class="header__work orange">Stage 2 - Making the setup experience seamless</h1>
-                <h1 class="header__work--sub">Challenge 1- Integrating technology - Bluetooth</h1>
-                <p>
-                    In order to determine which note users played on the keyboard, we used a Bluetooth
-                    connection to send out a MIDI signal from the digital piano to the HoloLens. This made ensuring a good connection critical to the experience.     
-                </p>
-
-                <h1 class="header__work--sub">Challenge 2 - Account for different piano keyboard sizes</h1>
-                <p>
-                     Our first version was intended for the full 88 keyed piano (full size), but there are many products in 
-                     the market that feature different sizes. How do we design an experience that works for the majority of these products?
-                </p>                
-    
-                <h1 class="header__work--sub">Challenge 3 - Guiding users to setup keyboard alignment</h1>
-                <p>
-                    Calibration to ensure proper alignment gives the foundation for the entire experience. Without it, the instructions are useless. In our academic project, our team was always on hand to help assist users in tech setup and user calibration - we often relied on instinct, which (let’s face it) is a truly mysterious endeavor. 
-                </p>
-                <p>
-                    For a shipped product, we knew we needed to create an intuitive process for users to do this themselves, successfully and reliably.                  
-                </p>
-                <h1 class="header__work--sub orange">Design Solutions</h1>
                 <div class="thumbnails">
                     <a href="img/hololens/SettingFlow.png">
                         <img src="img/hololens/SettingFlow.png" alt="settingflow">
-                    </a>                                                         
+                    </a>                                                                             
                 </div> 
-                <h1 class="header__work--sub">Bluetooth Connection</h1>
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 1 - Integrating technology - Bluetooth</h1>
+                    <p>
+                        In order to determine which note users played on the keyboard, we used a Bluetooth
+                        connection to send out a MIDI signal from the digital piano to the HoloLens. This made ensuring a good connection critical to the experience.     
+                    </p>
+                    <h1 class="header__work--sub">Solution - Bluetooth Connection</h1>
                     <p>
                          Due to the native HoloLens environment, users must pair Bluetooth devices through the device’s system settings. To help guide users, I created an animation to 
                          teach them how to complete this process, and included a tutorial for the Bluetooth connection process 
                          troubleshooting as well, in case the original setup was not done correctly.
                     </p>
                     <iframe src="https://www.youtube.com/embed/jl60BKAcdRQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                    <img src="img/hololens/bluetoothConnection.jpg" alt="bluetooth connection">                                                              
-                    <h1 class="header__work--sub">Piano Size Configuration</h1>
+                    <img src="img/hololens/bluetoothConnection.jpg" alt="bluetooth connection">  
+                </div>
+
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 2 - Account for different piano keyboard sizes</h1>
+                    <p>
+                         Our first version was intended for the full 88 keyed piano (full size), but there are many products in 
+                         the market that feature different sizes. How do we design an experience that works for the majority of these products?
+                    </p> 
+                    <h1 class="header__work--sub">Solution - Piano Size Configuration</h1>
                     <p>
                         We cover 88, 61 , 49 and 25 keys of size of pianos, which accounts for almost every kind. 
                         The system can detect the piano size after users press the first and the last key, and adapts the AR interface to the keys.
                     </p>
                     <img src="img/hololens/keyboardSize.jpg" alt="keyboard size">
-                    <h1 class="header__work--sub">AR interface Alignment</h1>
+                </div>
+
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 3 - Guiding users to setup keyboard alignment</h1>
+                    <p>
+                        Calibration to ensure proper alignment gives the foundation for the entire experience. Without it, the instructions are useless. In our academic project, our team was always on hand to help assist users in tech setup and user calibration - we often relied on instinct, which (let’s face it) is a truly mysterious endeavor. 
+                    </p>
+                    <p>
+                        For a shipped product, we knew we needed to create an intuitive process for users to do this themselves, successfully and reliably.                  
+                    </p>
+
+                    <h1 class="header__work--sub">Solution - AR interface Alignment</h1>
                     <p>
                         A customized image tracking marker is within hand’s reach for the user to spawn the AR interface. 
                         By looking at the tracking marker, users can spawn the interface. 
@@ -166,66 +171,74 @@
                     <p><strong>Finding Middle C</strong></p>
                     <img src="img/hololens/findMiddleC.jpg" alt="find Middle C">  
                     <p><strong>Aligning the Marker on Middle C</strong></p>
-                    <img src="img/hololens/alignMarker.jpg" alt="align marker">                        
+                    <img src="img/hololens/alignMarker.jpg" alt="align marker"> 
+                </div>                                                                                                                                                                                                                                        
             </div>
 
             <div class="section__content--section">
                  <h1 class="header__work orange">Stage 3 - Making lessons more engaging</h1>
-                 
-                 <h1 class="header__work--sub">Challenge 1 - Designing a scalable lesson structure</h1>
+                 <div class="thumbnails">
+                    <a href="img/hololens/LessonFlow.png">
+                        <img src="img/hololens/LessonFlow.png" alt="lessonflow">
+                    </a>                                                         
+                </div> 
+                                     
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 1 - Designing a scalable lesson structure</h1>
                     <p>
                         Our first version enabled user to pick lessons according to genre, which posed some problems when we tried to expand the lesson content later. 
                         The problem we faced in this structure was the difficulty in making it modular and scalable. 
                         We knew we needed to redesign it.
-                    </p>                                  
-                 <h1 class="header__work--sub">Challenge 2 - Building the troubleshoot function</h1>
+                    </p>    
+                    <h1 class="header__work--sub">Solution - Lesson Structure</h1>
+                    <p>
+                        We designed the lesson packages which included several lessons within them. 
+                        This allowed us to design a system that accounted for every music level, to define each lesson package’s level, and to upload more materials for the future.
+                    </p>
+                    <div class="flexBox">
+                        <div>
+                            <img src="img/hololens/lesson_package.jpg" alt="lesson package">
+                        </div>
+                        <div>
+                            <img src="img/hololens/lessons.jpg" alt="lessons">
+                        </div>
+                    </div>         
+                </div>
+
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 2 - Building the troubleshoot function</h1>
                     <p>
                         AR experiences often tend to be unstable due to technical limitations today. 
                         For example,  the AR interface might drift away from the current alignment or the Bluetooth connection might disappear. 
                         Relaunching the app was annoying, but during the period we developed this at school, it was a simple fix for many bugs. When we were building our next version to publish, we knew it was critical to craft troubleshooting functions for users within the app. 
-                    </p>                 
-                 <h1 class="header__work--sub">Challenge 3 - AR character development & energizing the experience</h1>
-                 <p>
-                    People love animated characters. They’re fun, liven up a scene, and provide a fun way to instill the context of music playing with a band. 
-                    To achieve this in a meaningful way, I built up more animations to sync with music beats and created more interaction scenarios.
-                 </p>
-                <h1 class="header__work--sub orange">Design Solutions</h1>
-                <div class="thumbnails">
-                     <a href="img/hololens/LessonFlow.png">
-                         <img src="img/hololens/LessonFlow.png" alt="lessonflow">
-                     </a>                                                         
-                 </div>                 
-                <h1 class="header__work--sub">Lesson Structure</h1>
-                <p>
-                    We designed the lesson packages which included several lessons within them. 
-                    This allowed us to design a system that accounted for every music level, to define each lesson package’s level, and to upload more materials for the future.
-                </p>
-                <div class="flexBox">
-                    <div>
-                        <img src="img/hololens/lesson_package.jpg" alt="lesson package">
-                    </div>
-                    <div>
-                        <img src="img/hololens/lessons.jpg" alt="lessons">
-                    </div>
-                </div>                
-                <h1 class="header__work--sub">Troubleshooting function</h1>
-                <p>
-                    When problems happen, users can pause the experience in place to resolve the issue.
-                </p>
-                <img src="img/hololens/troubleshooting.jpg" alt="troubleshooting">
-                <h1 class="header__work--sub">Better virtual bands</h1>
-                <p>
-                    I optimized all the 3D topology which allowed me to create more complicated animations.
-                    With these changes, the animated virtual musician step towards the user to teach them how to play, and react to the music rhythm beat by beat. This captures the user’s attention in a playful way. 
-                </p>                                                                       
-                <div class="flexBox">
-                    <div>
-                        <img src="img/hololens/character_talk.jpg" alt="talk">
-                    </div>
-                    <div>
-                        <img src="img/hololens/character_play.jpg" alt="play">
-                    </div>
+                    </p>
+                    <h1 class="header__work--sub">Solution - Troubleshooting function</h1>
+                    <p>
+                        When problems happen, users can pause the experience in place to resolve the issue.
+                    </p>
+                    <img src="img/hololens/troubleshooting.jpg" alt="troubleshooting">  
                 </div>
+
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub">Challenge 3 - AR character development & energizing the experience</h1>
+                    <p>
+                       People love animated characters. They’re fun, liven up a scene, and provide a fun way to instill the context of music playing with a band. 
+                       To achieve this in a meaningful way, I built up more animations to sync with music beats and created more interaction scenarios.
+                    </p>     
+                    <h1 class="header__work--sub">Solution - Better virtual bands</h1>
+                    <p>
+                        I optimized all the 3D topology which allowed me to create more complicated animations.
+                        With these changes, the animated virtual musician step towards the user to teach them how to play, and react to the music rhythm beat by beat. This captures the user’s attention in a playful way. 
+                    </p>                                                                       
+                    <div class="flexBox">
+                        <div>
+                            <img src="img/hololens/character_talk.jpg" alt="talk">
+                        </div>
+                        <div>
+                            <img src="img/hololens/character_play.jpg" alt="play">
+                        </div>
+                    </div>
+                </div> 
             </div>
 
             <div class="section__content--section">

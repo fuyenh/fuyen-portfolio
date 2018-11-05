@@ -252,7 +252,7 @@ body {
     margin-bottom: 0.2rem;
     letter-spacing: 0.1rem; }
   .header__work--sub {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 400;
     letter-spacing: 0.05rem;
     margin-bottom: 0.5rem;
@@ -648,6 +648,18 @@ p a {
       list-style: none; }
     .section__content--section p {
       margin: 0.1rem 0 0.5rem 0; }
+
+.challengeBox {
+  padding-left: 1.5rem;
+  margin-top: 4rem; }
+  .challengeBox:first-of-type {
+    margin-top: 0; }
+
+.border-green {
+  border-left: #51CE81 solid 0.2rem; }
+
+.border-orange {
+  border-left: #ffb24e solid 0.2rem; }
 
 .flexBox {
   display: flex;

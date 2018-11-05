@@ -23,7 +23,7 @@
         </script>                     
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.6">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.7">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
         <title>Fu Yen Hsiao - Instant Musician</title>
@@ -122,65 +122,46 @@
             
             <div class="section__content--section">
                 <h1 class="header__work green">Stage 2 - Integrating mobile AR with the  piano</h1>
-                <h1 class="header__work--sub">Challenge 1- Holding the phone while playing</h1>
-                <p>
-                    It’s awkward playing the piano with one hand, especially while holding an iPhone at the same time.                                         
-                </p>
+                <div class="challengeBox border-green">
+                    <h1 class="header__work--sub">Challenge 1- Holding the phone while playing</h1>
+                    <p>
+                        It’s awkward playing the piano with one hand, especially while holding an iPhone at the same time.                                         
+                    </p>
+                    <h1 class="header__work--sub">Solution - Making it comfortable to hold a phone</h1>                    
+                    <p> 
+                        I know, holding a phone can get tiring (the thought of holding an iPhone XS Max for an hour makes my thumbs cramp!). 
+                        To help mitigate this, My team made the songs shorter (00:30-1:00 in length), and I organized the songs in skill level 
+                        order to give users a sense of accomplishment with each completed song. This broke up the experience into cycles that helped offset any fatigue. 
+                    </p>                       
+                </div>
 
-                <h1 class="header__work--sub">Challenge 2 - Lowering  the product’s friction</h1>
+                <div class="challengeBox border-green">
+                    <h1 class="header__work--sub">Challenge 2 - Lowering  the product’s friction</h1>
                 <p>
                     My team’s  primary goal for this app was to make piano playing easy for our users, 
                     regardless of their music knowledge. In some instances, this meant eliminating the obstacles 
                     that keep people playing the piano in the first place. In others, it meant eliminating the 
                     friction that came with an AR interface.                                          
-                </p>                
-    
-                <h1 class="header__work--sub green">Design Solutions</h1>                
-                <h1 class="header__work--sub">Making it comfortable to hold a phone</h1>                    
-                    <p> 
-                        I know, holding a phone can get tiring (the thought of holding an iPhone XS Max for an hour makes my thumbs cramp!). 
-                        To help mitigate this, My team made the songs shorter (00:30-1:00 in length), and I organized the songs in skill level 
-                        order to give users a sense of accomplishment with each completed song. This broke up the experience into cycles that helped offset any fatigue. 
-                    </p>
-                <h1 class="header__work--sub">Finding a universal marker</h1>                    
+                </p>  
+                <h1 class="header__work--sub">Solution - Finding a universal marker</h1>                    
                     <p> 
                         To ensure stable alignment, image tracking markers are used in many AR experiences. 
                         From developing the HoloLens experience, I knew I wanted to avoid a custom marker (more friction for the user) 
                         and focus on something the user already had. Using a $1.00 bill allowed us to use a marker that was readily available 
                         for most users.                       
-                    </p> 
+                    </p>    
+                </div>                                                                                             
                     <img src="img/instanMusician/IMproduct.jpg">
             </div>        
             <div class="section__content--section">
                 <h1 class="header__work green">Stage 3 - Designing the user interface</h1>
-                <h1 class="header__work--sub">Challenge 1 - Identifying the player function</h1>  
-                <p>
-                    The app’s core function is guiding users to play songs with AR musical notations. 
-                    To achieve that, we needed to consider how people interact with a song’s background music.
-                </p>
-
-                <h1 class="header__work--sub">Challenge 2 - laying out UI elements</h1> 
-                <span class="green bold">Principles:</span>               
-                <p class="bold">Big AR camera screen<p>
-                <p>                                    
-                    The most important AR design principle is making the AR camera feed as big as possible on the screen. 
-                    A well-arranged UI layout is critical to achieve this goal.                         
-                </p>
-                <p class="bold">Left hand friendly</p>
-                <p>
-                    Users will hold the phone with their left hand, and play songs with right hand. 
-                    So, all the on-screen interactions are better to be “left hand friendly” to allow users to 
-                    select options in an efficient way.
-                </p>
-
-                <h1 class="header__work--sub"> Challenge 3 - Helping users see every note</h1> 
+                <div class="challengeBox border-green">
+                    <h1 class="header__work--sub">Challenge 1 - Identifying the player function</h1>  
                     <p>
-                        The visibility of the musical notes is critical to the experience. 
-                        What happens if it’s out of frame on the phone screen? How do users know where to 
-                        look on the keyboard first?
+                        The app’s core function is guiding users to play songs with AR musical notations. 
+                        To achieve that, we needed to consider how people interact with a song’s background music.
                     </p>
-                <h1 class="header__work--sub green">Design Solutions</h1>                
-                <h1 class="header__work--sub">Designing Play Mode / Practice Mode</h1>
+                    <h1 class="header__work--sub">Solution - Designing Play Mode / Practice Mode</h1>
                     <p>
                         In play mode, users can adjust the background music like its speed and accompaniment styles.
                         For active users, we design the practice mode for them to rehearse the song, one musical phrase at a time.
@@ -193,7 +174,24 @@
                                 <img src="img/instanMusician/practiceMode.jpg" alt="practice mode">
                             </div>
                     </div>
-                <h1 class="header__work--sub">Making the “UI Drawer” system</h1>
+                </div>
+                
+                <div class="challengeBox border-green">
+                    <h1 class="header__work--sub">Challenge 2 - laying out UI elements</h1> 
+                    <p class="bold">- Big AR camera screen</p>       
+                    <p>                                    
+                        The most important AR design principle is making the AR camera feed as big as possible on the screen. 
+                        A well-arranged UI layout is critical to achieve this goal.                         
+                    </p>
+
+                    <p class="bold">- Left hand friendly</p>
+                    <p>
+                        Users will hold the phone with their left hand, and play songs with right hand. 
+                        So, all the on-screen interactions are better to be “left hand friendly” to allow users to 
+                        select options in an efficient way.
+                    </p>
+                   
+                    <h1 class="header__work--sub">Solution - Making the “UI Drawer” system</h1>
                     <p>
                         In order to create a clean and big space for the AR camera feed, 
                         I designed an UI drawer system to store UI elements, like switching between play / practice mode, 
@@ -213,7 +211,16 @@
                                 <p id="img-caption">Drawer opens</p>
                             </div>                                                          
                     </div>
-                        <h1 class="header__work--sub">Designing the note location indicators</h1>
+                </div>                                      
+                
+                <div class="challengeBox border-green">
+                    <h1 class="header__work--sub"> Challenge 3 - Helping users see every note</h1> 
+                    <p>
+                        The visibility of the musical notes is critical to the experience. 
+                        What happens if it’s out of frame on the phone screen? How do users know where to 
+                        look on the keyboard first?
+                    </p>
+                    <h1 class="header__work--sub">Solution - Designing the note location indicators</h1>
                          <p>
                             1. An interactive compass will help users to find the start point after they pick a song. 
                             Instead of playing immediately, in this way, they have more time to get prepared.                                                
@@ -249,27 +256,19 @@
                                 <img class="border" src="img/instanMusician/rightBoundary.jpg" alt="Right boundary">
                                 <p id="img-caption">Right boundary</p>
                             </div>                                                          
-                        </div>                                                              
-                    <div class="section__content--section">
-                        <h1 class="header__work green">Stage 4 - Guiding users how to play</h1>
-                        <h1 class="header__work--sub">Challenge 1 - Onboarding users</h1>
-                            <p> 
-                                iOS AR is still new to the majority. Therefore, the onboarding session plays an 
-                                important role to give users an overview of how the AR technology work in this app at beginning.
-                            </p>
-                            <h1 class="header__work--sub">Challenge 2 - Guiding how to register the AR interface</h1>
-                            <p> 
-                                Like our HoloLens product, we needed to teach users where to put the image tracking marker 
-                                (a dollar bill in this case) to spawn the AR interface, and adjust its alignment as well.                                
-                            </p>
-
-                         <h1 class="header__work--sub">Challenge 3 - Guiding how to play</h1>
-                            <p> 
-                                We needed to have a tutorial to guide users through the important UI functions.                                
-                            </p>
+                        </div>     
+                </div>
                             
-                        <h1 class="header__work--sub green">Design Solutions</h1>                
-                        <h1 class="header__work--sub">Creating functional onboarding pages</h1>
+                <div class="section__content--section">
+                        <h1 class="header__work green">Stage 4 - Guiding users how to play</h1>
+                        <div class="challengeBox border-green">
+                                <h1 class="header__work--sub">Challenge 1 - Onboarding users</h1>
+                                <p> 
+                                    iOS AR is still new to the majority. Therefore, the onboarding session plays an 
+                                    important role to give users an overview of how the AR technology work in this app at beginning.
+                                </p>
+
+                                <h1 class="header__work--sub">Solution - Creating functional onboarding pages</h1>
                             <p>
                                 I combined the welcome messages and the AR setting overview to create an 
                                 appealing and functional onboarding session.
@@ -291,71 +290,86 @@
                                         <img class="border" src="img/instanMusician/onboard-5.PNG" alt="onbaord 5">
                                     </div>
                             </div>
-                        <h1 class="header__work--sub">Making an interactive marker alignment guidance</h1>
-                            <p>
-                                I combined the welcome messages and the AR setting overview to create an appealing 
-                                and functional onboarding session.
-                            </p>
-                            <div class="flexBox">
-                                    <div>
-                                        <img src="img/instanMusician/1_middleC.jpg" alt="Find Middle C">                    
-                                    </div>
-                                    <div>
-                                        <img src="img/instanMusician/2_alignDollar.jpg" alt="Align the dollar bill">
-                                    </div>
-                                    <div>
-                                        <img src="img/instanMusician/3_registrateUI.jpg" alt="Register AR UI">
-                                    </div>
-                
-                                </div>
-                        <h1 class="header__work--sub">Creating step-by-step play instructions</h1>
-                            <p>
-                                I illustrated a sequence of graphics to cover core functions.
-                            </p>  
-                            <div class="flexBox">
-                                    <div>
-                                        <img class="border" src="img/instanMusician/play-1.PNG" alt="play 1">                    
-                                    </div>
-                                    <div>
-                                        <img class="border" src="img/instanMusician/play-2.PNG" alt="play 2">
-                                    </div>
-                                    <div>
-                                        <img class="border" src="img/instanMusician/play-3.PNG" alt="play 3">
-                                    </div>
-                                    <div>
-                                        <img class="border" src="img/instanMusician/play-4.PNG" alt="play 4">
-                                    </div>                                   
-                            </div>             
-                    </div>
+                    
+                        </div>
+
+                        <div class="challengeBox border-green">
+                                <h1 class="header__work--sub">Challenge 2 - Guiding how to register the AR interface</h1>
+                                <p> 
+                                    Like our HoloLens product, we needed to teach users where to put the image tracking marker 
+                                    (a dollar bill in this case) to spawn the AR interface, and adjust its alignment as well.                                
+                                </p>
+                                <h1 class="header__work--sub">Solution - Making an interactive marker alignment guidance</h1>                                
+                                <div class="flexBox">
+                                        <div>
+                                            <img src="img/instanMusician/1_middleC.jpg" alt="Find Middle C">                    
+                                        </div>
+                                        <div>
+                                            <img src="img/instanMusician/2_alignDollar.jpg" alt="Align the dollar bill">
+                                        </div>
+                                        <div>
+                                            <img src="img/instanMusician/3_registrateUI.jpg" alt="Register AR UI">
+                                        </div>
+                    
+                                    </div>                                
+                        </div>
+                        
+                        <div class="challengeBox border-green">
+                                <h1 class="header__work--sub">Challenge 3 - Guiding how to play</h1>
+                                <p> 
+                                    We needed to have a tutorial to guide users through the important UI functions.                                
+                                </p>
+                                <h1 class="header__work--sub">Solution - Creating step-by-step play instructions</h1>
+                                <p>
+                                    I illustrated a sequence of graphics to cover core functions.
+                                </p>  
+                                <div class="flexBox">
+                                        <div>
+                                            <img class="border" src="img/instanMusician/play-1.PNG" alt="play 1">                    
+                                        </div>
+                                        <div>
+                                            <img class="border" src="img/instanMusician/play-2.PNG" alt="play 2">
+                                        </div>
+                                        <div>
+                                            <img class="border" src="img/instanMusician/play-3.PNG" alt="play 3">
+                                        </div>
+                                        <div>
+                                            <img class="border" src="img/instanMusician/play-4.PNG" alt="play 4">
+                                        </div>                                   
+                                </div>      
+                        </div>                                                                                                                                                                               
+                </div>
+                                                  
                     <div class="section__content--section">
                         <h1 class="header__work green">Stage 5 - Designing the Store Page - Songbook</h1>
-                        <h1 class="header__work--sub">Challenge - What’s the business model? </h1>
-                        <p>
-                            The in-app purchase flow tights with the business model. 
-                            How we monetize the app determines the design for the store spage.
-                        </p>
-
-                        <h1 class="header__work--sub green">Design Solution</h1>                
-                        <h1 class="header__work--sub">Buying complete genres for songs</h1>
-                        <p>
-                            The licensing for an individual song can change. For example, songs on Spotify or iTunse grayed out after the licensing transferred to others. We decided to make a genre package includes 5~8 free songs, and 15+ locked songs. Users can buy the complete genre for all songs. 
-                            In this way, we can replace the grayed out songs to protect their purchases.
-                        </p>
-                        <div class="flexBox">
-                                <div>
-                                    <img id="gif" src="img/instanMusician/gif-songbook.gif" alt="Songbook interaction">
-                                    <p id="img-caption">Songbook Interaction</p>
-                                </div>   
-                                <div>
-                                    <img id="gif" src="img/instanMusician/songbookButton.jpg" alt="Songbook button">
-                                    <p id="img-caption">Songbook button</p>
-                                </div>    
-                                <div>
-                                    <img id="gif" src="img/instanMusician/songbookIAP.jpg" alt="Song book IAP">
-                                    <p id="img-caption">Buying complete genres for songs</p>
-                                </div>                                                          
+                        <div class="challengeBox border-green">
+                                <h1 class="header__work--sub">Challenge - What’s the business model? </h1>
+                                <p>
+                                    The in-app purchase flow tights with the business model. 
+                                    How we monetize the app determines the design for the store spage.
+                                </p> 
+                                <h1 class="header__work--sub">Solution - Buying complete genres for songs</h1>
+                                <p>
+                                    The licensing for an individual song can change. For example, songs on Spotify or iTunse grayed out after the licensing transferred to others. We decided to make a genre package includes 5~8 free songs, and 15+ locked songs. Users can buy the complete genre for all songs. 
+                                    In this way, we can replace the grayed out songs to protect their purchases.
+                                </p>
+                                <div class="flexBox">
+                                        <div>
+                                            <img id="gif" src="img/instanMusician/gif-songbook.gif" alt="Songbook interaction">
+                                            <p id="img-caption">Songbook Interaction</p>
+                                        </div>   
+                                        <div>
+                                            <img id="gif" src="img/instanMusician/songbookButton.jpg" alt="Songbook button">
+                                            <p id="img-caption">Songbook button</p>
+                                        </div>    
+                                        <div>
+                                            <img id="gif" src="img/instanMusician/songbookIAP.jpg" alt="Song book IAP">
+                                            <p id="img-caption">Buying complete genres for songs</p>
+                                        </div>                                                          
+                                </div>
+                            </div>                           
                         </div>
-                    </div>
+                                                                      
                     <div class="section__content--section">
                             <h1 class="header__work green">Stage 6 - Materials to give the app a brand identity</h1>
                             <p>
@@ -419,7 +433,6 @@
                 </div>
         </div>
         
-
         
         <section class="section__page">
             <div class="section__page--box">

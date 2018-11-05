@@ -71,6 +71,20 @@
     }    
 }
 
+.challengeBox {      
+    padding-left: 1.5rem; 
+    margin-top: 4rem;
+    &:first-of-type {
+        margin-top: 0;
+    } 
+}
+.border-green {
+    border-left: $color-green solid 0.2rem;
+}
+
+.border-orange {
+    border-left: $color-orange solid 0.2rem;
+}
 
 .flexBox {
     display: flex;    
