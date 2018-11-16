@@ -1,3 +1,4 @@
+
 .header-primary {
     font-size: 4.2rem;
     letter-spacing: 0.08rem;
@@ -60,26 +61,36 @@
 }
 
 .header__work {
-    font-size: 2.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 2.9rem;
+    letter-spacing: -0.05rem;
     font-weight: 500;        
     text-align: left;
-    color: $color-dark-grey;  
+    color: $color-dark-grey; 
+    text-transform: uppercase; 
     margin-bottom: 1.2rem;  
-    margin-top: 3.5rem;  
+    margin-top: 1.2rem;  
     
     &--main {
-        font-size: 2.5rem;
+        font-size: 4.2rem;
         margin-bottom: 0.2rem; 
         letter-spacing: 0.1rem;
     }
        
     &--sub {
-        font-size: 1.9rem;
-        font-weight: 400;
+        font-size: 2.2rem;
+        
+        font-weight: 500;
         letter-spacing: 0.05rem;         
-        margin-bottom: 0.5rem;
-        margin-top: 1.6rem;          
+        margin-bottom: 1rem;
+        margin-top: 2.0rem;          
+    }    
+
+    &--up {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        font-weight: 500;                  
+        margin-top: 5.0rem;  
+        letter-spacing: -0.05rem;         
     }    
 }
 
@@ -152,7 +163,7 @@ span {
 }
 
 p, li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 300;
 }
@@ -175,6 +186,10 @@ p, li {
     color: $color-green;
 }
 
+.white {
+    color: white;
+}
+
 .bold {
     font-weight: 400;
 }
@@ -187,11 +202,13 @@ p a {
     }
 }
 
+
 #img-caption {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: 0;  
+    letter-spacing: 0;
+    margin-top: -2rem;  
 }
 
 

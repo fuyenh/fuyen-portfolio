@@ -13,9 +13,8 @@
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;    
     align-items: center; 
 
     animation: moveInBottom $transition-time-base ease-in;  
@@ -24,6 +23,7 @@
         width: 100%;
         object-fit: cover;
         border-radius: 1rem; 
+        margin-bottom: 2rem;
         transition: $transition-time-base;
         &,
         &:link,
@@ -34,8 +34,8 @@
         &:hover,
         &:active
         {        
-            box-shadow: 0.1rem 0.5rem 2rem rgba($color-primary, 1);        
-        }   
+            box-shadow: 0.1rem 0.7rem 2rem rgba($color-primary, 1);        
+        }                 
     }
 }
 
