@@ -56,12 +56,15 @@
                             I led the design and 3D art of <i>Music Everywhere</i> on the Microsoft HoloLens 
                             since the project’s inception in Sept 2016. In Nov 2017, I led the team’s global 
                             launch of the product on the Microsoft App store.<br>
-                            <strong>We won the worldwide first place in the Microsoft HoloLens competition. Along with the grand prize of $100K.</strong>                  
-                         <br><a class="orange bold" href="https://goo.gl/MXwX3A" target="blank">To read more about my experience with the Microsoft HoloLens Competition, please visit my design blog. </a>
+                            <strong>We won the 1st place in the Microsoft HoloLens Contest. Along with the $100K grand prize.</strong>                  
                         </p>                        
                             <a href="https://unity3d.com/partners/microsoft/hololens-contest" target="blank">
                                 <img src="img/hololens/win.jpg" alt="1st place">
-                            </a>                                   
+                            </a>     
+                         <p>
+                            <a class="orange bold" href="https://goo.gl/MXwX3A" target="blank">To read more about my experience with the Microsoft HoloLens Competition, please visit my design blog. </a>
+                         </p>
+
                         <!-- <ul class="bulletPoints">
                                 <li>
                                     <h1 class="header__work--sub">Customer Insights & Ideation</h1>
@@ -126,12 +129,13 @@
                 <h1 class="header__work">Context</h1>
                 <p>
                     Music Everywhere started as a graduate school project during my time at Carnegie Mellon University. Our team consisted of two programmers, one musician and one designer—me. 
+                    <br>
                     Our goal: build an Augmented Reality (AR) piano learning tool.
                 </p>
-                <p>
+                <!-- <p>
                     After graduating, our success with this academic project soon inspired us to spin off into a startup to continue using AR for music learning. 
                     In April 2017, we formed our company <a class="bold orange" href="https://www.music-everywhere.co" target="blank"><i>Music Everywhere, Inc.</i></a> 
-                </p> 
+                </p>  -->
                 <iframe src="https://www.youtube.com/embed/QdlJMc5ek_8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                              
             </div>
 
@@ -179,19 +183,19 @@
                     </li>
                 </ul> -->
                                                                             
-                <h1 class="header__work--up orange">The Vision</h1>
+                <!-- <h1 class="header__work--up orange">The Vision</h1>
                 <h1 class="header__work">Unleash Your Musical Expression</h1> 
                 <p>
                     We want to reach users who feel left behind from learning music due to limitations in conventional music education. Our AR solution presents a flexible approach and innovative technology that opens the door for new 
                     students to discover real musical experiences that can enrich their lives. 
                 </p>
-                <img src="img/hololens/siggraphPlay.jpg" alt="play in the Siggraph">
+                <img src="img/hololens/siggraphPlay.jpg" alt="play in the Siggraph"> -->
             </div>
 
             <div class="section__content--section">
                 <h1 class="header__work--up orange">Design Process</h1>
                 <h1 class="header__work">How We Got There</h1> 
-                <p>
+                <!-- <p>
                     During the CMU, ETC semester, we already built a workable prototype, 
                     and demo’ed at the GDC (Game Developer Conference) in San Fransisco, 
                     NIME (New Interfaces for Musical Expression) in Copenhagen. 
@@ -207,42 +211,109 @@
                     <li>
                          3. Improving the quality of art and design in the app (UI / 3D assets).
                     </li>
-                </ul>         
+                </ul>          -->
+                <div class="challengeBox border-orange">
+                    <h1 class="header__work--sub orange">Sketch First</h1>
+                    <p>I previsualized the experience by sketching down the key component - Interactive piano lessons.</p>
+                    <div class="flexBox">
+                        <div>
+                            <img src="img/hololens/12_1_stage_3_1.jpg" alt="sketch-1">
+                            <p id="img-caption"></p>
+                        </div>
+                        <div>
+                            <img src="img/hololens/11_1_stage_2_2.jpg" alt="sketch-1">
+                            <p id="img-caption"></p>
+                        </div>
+                    </div>
+
+                    <h1 class="header__work--sub orange">Developing the AR 3D piano interface</h1>
+                    <p class="bold">-- Design problem</p>
+                    <p>
+                        HoloLens’ FOV (feild of view) causes users to have to angle their head
+                        downward in order to see the cut-off keyboard.
+                    </p>                    
+                    <img  src="img/hololens/ui-ARKeyboardDev_1.png" alt="AR UI Dev FOV">
+                    <p class="bold">-- Design approach</p>
+                    <ul class="bulletPoint">
+                        <li>
+                            First, Start with overlays on keys, then cut the overlay to half to quarter in order to decrease the dependency of the overlay gradually. 
+                        </li>
+                        <li>
+                            Second, in order to guide users to look up a little bit, we remove the overlay on keys and put markers which point the key to play.
+                        </li>
+                        <li>
+                            Last, we design floating keys hovering in the air and a mirror keyboard in order to encourage users to look up.                            
+                        </li>
+                    </ul>          
+                    <img  src="img/hololens/ui-ARKeyboardDev_2.png" alt="AR UI Dev FOV">
+                    <h1 class="header__work--sub">​Note Overlay Development</h1>
+                    <div class="flexBox">
+                        <div>
+                            <img src="/img/hololens/​noteOverlayDev_1.gif" alt="Note Overlay Dev">
+                            <p id="img-caption">Accurate Shape<br>
+                                <i>No expectation for the next note</i>  
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <img src="/img/hololens/​noteOverlayDev_2.gif" alt="Note Overlay Dev">
+                            <p id="img-caption">Charging Bar<br>
+                                <i>Show a sequence of note for one key?</i>  
+                            </p>
+                        </div>
+                        <div>
+                            <img src="/img/hololens/​noteOverlayDev_3.gif" alt="Note Overlay Dev">
+                            <p id="img-caption">Layer Bar<br>
+                                <i>​Too many colors</i>  
+                            </p>
+                        </div>
+                        <div>
+                            <img src="/img/hololens/​noteOverlayDev_4.gif" alt="Note Overlay Dev">
+                            <p id="img-caption">Sequence​-Final Version<br>
+                                <i>Clean visual/Show a sequence/expectation of note</i>
+                                  
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
                 <div class="challengeBox border-orange">
                 <h1 class="header__work--sub orange">Making the setup experience seamless</h1>
+                <p>
+                        In order to ensure a smooth setup, we needed account for:  
+                        <!-- How to lead the user’s vision within the limited field of view(FOV) to see the whole virtual graphic without being cut off.                     -->
+                    </p>      
+                    <ul>                        
+                        <li>
+                            1. Connecting the HoloLens with the digital piano via Bluetooth.
+                        </li>
+                        <li>
+                            2. The user’s digital piano size.
+                        </li>
+                        <li>
+                            3. Generate, align, and lock the virtual keyboard on the real piano.
+                        </li>
+                        <li>
+                            4. Solve a Bluetooth disconnection.                        
+                        </li>
+                        <li>
+                            5. Re-align the piano when it drifts away.
+                        </li>                                          
+                    </ul>                   
                 <div class="thumbnails">
                     <a href="img/hololens/SettingFlow.png">
                         <img src="img/hololens/SettingFlow.png" alt="settingflow">
                     </a>                                                                             
                 </div> 
                 <caption >
-                <p>
-                    In order to ensure a smooth setup, we needed account for:  
-                    How to lead the user’s vision within the limited field of view(FOV) to see the whole virtual graphic without being cut off.                    
-                </p>      
-                <ul>                        
-                    <li>
-                        1. Connecting the HoloLens with the digital piano via Bluetooth.
-                    </li>
-                    <li>
-                        2. The user’s digital piano size.
-                    </li>
-                    <li>
-                        3. Generate, align, and lock the virtual keyboard on the real piano.
-                    </li>
-                    <li>
-                        4. Solve a Bluetooth disconnection.                        
-                    </li>
-                    <li>
-                        5. Re-align the piano when it drifts away.
-                    </li>                                          
-                </ul>                                                 
+                                              
                     <h1 class="header__work--sub">1 - Integrating technology - Bluetooth</h1>
                     <p>
                         In order to determine which note users played on the keyboard, we used a Bluetooth
                         connection to send out a MIDI signal from the digital piano to the HoloLens. This made ensuring a good connection critical to the experience.     
                     </p>
-                    <div class="img-four">
+                    <div class="img-five">
                         <img src="img/hololens/blueToothConnection.png" alt="bluetooth">
                     </div>
                     <p id="img-caption">We used a Bluetooth connection to send out a MIDI signal from the digital piano to the HoloLens.</p> 
@@ -294,12 +365,14 @@
                     <!-- <h1 class="header__work--sub">Solution - AR interface Alignment</h1> -->
                     <p>
                         A customized image tracking marker is within hand’s reach for the user to spawn the AR interface. 
-                        By looking at the tracking marker, users can spawn the interface. 
-                        Then place it on the middle C to adjust the alignment by easily moving the markers around.                        
+                        By looking at the tracking marker, users can spawn the interface.                         
                     </p>  
-                    <p class="bold">Finding Middle C</p>
+                    <p>
+                        Then place it on the middle C to adjust the alignment by easily moving the markers around.                        
+                    </p>
+                    <p class="bold">-- Finding Middle C</p>
                     <img src="img/hololens/findMiddleC.jpg" alt="find Middle C">  
-                    <p><strong>Aligning the Marker on Middle C</strong></p>
+                    <p class="bold">-- Aligning the Marker on Middle C</p>
                     <img src="img/hololens/alignMarker.jpg" alt="align marker">                                                                                                                                                                                                                                                        
             </div>
 
@@ -313,7 +386,7 @@
                     <p>
                         Our goal is to guide and inspire people on how they can express themselves with playing piano, through improvisation. 
                         In our lessons, the virtual musicians teach improv knowledge. Users can follow along with instructions in Following Mode, or experiment with different notes in Improv Mode.
-                        It’s not about learning to play perfectly, it’s more about learning the value of jumping right into playing music.
+                        <!-- It’s not about learning to play perfectly, it’s more about learning the value of jumping right into playing music. -->
                     </p>                                                        
                 </div> 
                                      
@@ -347,7 +420,9 @@
                     <p>
                         AR experiences often tend to be unstable due to technical limitations today. 
                         For example,  the AR interface might drift away from the current alignment or the Bluetooth connection might disappear. 
-                        Relaunching the app was annoying, but during the period we developed this at school, it was a simple fix for many bugs. When we were building our next version to publish, we knew it was critical to craft troubleshooting functions for users within the app. 
+                        We knew it was critical to craft troubleshooting functions for users within the app to build our next version. 
+                        <!-- Relaunching the app was annoying, but during the period we developed this at school, it was a simple fix for many bugs. 
+                        When we were building our next version to publish, we knew it was critical to craft troubleshooting functions for users within the app.  -->
                     </p>
                     <!-- <h1 class="header__work--sub">Solution - Troubleshooting function</h1> -->
                     <p>
@@ -392,9 +467,9 @@
                     <i>“What if our design totally fails, or for people who don’t have the Bluetooth compatible digital piano?”</i><br>
                     Considering the worst cases, I design the “No-Piano Demo”option for people who can’t get the settings to work, or without a proper piano. Through this demo, people can get a preliminary understanding for how Music Everywhere works.                     
                     From this pessimistic perspective, we developed a full FAQ section. Here, users could troubleshoot by themselves with guided instructions, and get to know more details about Music Everywhere.<br>
-                    Developing for the HoloLens, we’ve encountered many surprises. Between navigating the foundation UX of AR, integrating with other hardware, 
+                    <!-- Developing for the HoloLens, we’ve encountered many surprises. Between navigating the foundation UX of AR, integrating with other hardware, 
                     working around a limited FOV, experience stability is not guaranteed. Thinking pessimistically drove us to discover some fundamental problems 
-                    we ignored earlier in our process, led us to optimize more playing conditions.
+                    we ignored earlier in our process, led us to optimize more playing conditions. -->
                 </p>
                 <img src="img/hololens/faq.jpg" alt="FAQ">
                 <p id="img-caption">FAQ: Supported Piano, No-Piano Demo</p>                
@@ -473,7 +548,7 @@
 
         <section class="section__page">
             <div class="section__page--box">
-                <a href="work-music-everywhere-branding.html">
+                <a href="work-design-ideas.html">
                     <svg class="social-btn">
                         <use xlink:href="img/sprite.svg#icon-triangle-left"></use>
                     </svg>

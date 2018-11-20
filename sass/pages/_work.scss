@@ -22,6 +22,15 @@
             background-image: linear-gradient(to bottom right, rgba($color-grey, 0.9), rgba(black, 0.5)), url("img/work-meBranding.png");                                 
         }
 
+        &--prototype {
+            background-image: linear-gradient(to bottom right, rgba($color-red, 0.9), rgba(black, 0.5)), url("img/work-rapidPrototype.png");                                 
+        }
+
+        &--designIdeas {
+            background-image: linear-gradient(to bottom right, rgba($color-blue, 0.9), rgba(black, 0.5)), url("img/work-designIdeas.png");                                 
+        }
+
+
         
 
         .store-icon {
@@ -62,7 +71,7 @@
 
     img {        
         width:100%;
-        margin: 1.5rem 0 3rem 0; 
+        margin: 1.5rem 0 2rem 0; 
     }
 
     &--item {
@@ -88,12 +97,12 @@
 
     img {        
         width:100%;
-        margin: 1.5rem 0 3rem 0; 
+        margin: 1.5rem 0 2rem 0; 
         
     }
 
-    .img-four {
-        width: 40%;
+    .img-five {
+        width: 50%;
         text-align: center;
         margin: 0 auto;
     }
@@ -142,16 +151,14 @@
         align-self: center;       
     }
 
-    div {
+    div  {
         width: 100%;        
         margin-right: 1.5rem;
         &:last-of-type {
             margin-right: 0;
         }  
         
-        .border {
-            border: 0.1rem solid $color-light-grey;
-        }
+      
     }  
     
 
@@ -170,13 +177,35 @@
     }
 }
 
-.bulletPoints li {
+.border {
+    border: 0.1rem solid $color-light-grey;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));   
+    grid-gap: 2%;
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns:1fr;         
+    }
+    align-items: center;
+
+
+}
+
+.bulletPoint li {
     list-style-type: disc;
+    margin-left:2rem;
 }
 
 .divider {
     content: "";
     height: 3.5rem;
+
+    &--underline {       
+        border-bottom: solid 0.5rem $color-light-grey;
+        margin: 10rem;       
+    }
 }
 
 .gallery { 

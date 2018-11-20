@@ -245,7 +245,7 @@ body {
   font-weight: 500;
   text-align: left;
   color: #4C4C4C;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1.2rem;
   margin-top: 1.2rem; }
   .header__work--main {
@@ -331,11 +331,15 @@ p, li {
 .green {
   color: #51CE81; }
 
+.red {
+  color: #E8615B; }
+
 .white {
   color: white; }
 
 .bold {
-  font-weight: 400; }
+  font-weight: 400;
+  font-style: italic; }
 
 p a {
   text-decoration: underline; }
@@ -347,7 +351,7 @@ p a {
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0;
-  margin-top: -2rem; }
+  margin-top: -1rem; }
 
 .footer__credit {
   font-weight: 300;
@@ -468,7 +472,7 @@ p a {
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.8rem;
     transition: 0.4s; }
     .section__work img, .section__work img:link, .section__work img:visited {
       box-shadow: 0.1rem 0.1rem 1rem rgba(76, 76, 76, 0.2); }
@@ -628,6 +632,10 @@ p a {
       background-image: linear-gradient(to bottom right, rgba(81, 206, 129, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-instantMusician.png"); }
     .section__header .work__header--meBranding {
       background-image: linear-gradient(to bottom right, rgba(32, 32, 32, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-meBranding.png"); }
+    .section__header .work__header--prototype {
+      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-rapidPrototype.png"); }
+    .section__header .work__header--designIdeas {
+      background-image: linear-gradient(to bottom right, rgba(99, 168, 217, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-designIdeas.png"); }
     .section__header .work__header .store-icon {
       width: 12rem;
       height: auto;
@@ -651,7 +659,7 @@ p a {
       border-left: solid #202020 0.2rem; }
   .section__meta img {
     width: 100%;
-    margin: 1.5rem 0 3rem 0; }
+    margin: 1.5rem 0 2rem 0; }
   .section__meta--item {
     display: inline-block;
     border-left: solid #D8D8D8 0.2rem;
@@ -669,9 +677,9 @@ p a {
     margin: 2rem 0 2rem 0; }
   .section__content img {
     width: 100%;
-    margin: 1.5rem 0 3rem 0; }
-  .section__content .img-four {
-    width: 40%;
+    margin: 1.5rem 0 2rem 0; }
+  .section__content .img-five {
+    width: 50%;
     text-align: center;
     margin: 0 auto; }
   .section__content--section {
@@ -710,8 +718,6 @@ p a {
     margin-right: 1.5rem; }
     .flexBox div:last-of-type {
       margin-right: 0; }
-    .flexBox div .border {
-      border: 0.1rem solid #D8D8D8; }
   .flexBox a {
     margin-right: 2.8rem;
     transition: 1.0;
@@ -722,12 +728,28 @@ p a {
       animation: pulse 0.4s;
       cursor: pointer; }
 
-.bulletPoints li {
-  list-style-type: disc; }
+.border {
+  border: 0.1rem solid #D8D8D8; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-gap: 2%;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .grid-2 {
+      grid-template-columns: 1fr; } }
+
+.bulletPoint li {
+  list-style-type: disc;
+  margin-left: 2rem; }
 
 .divider {
   content: "";
   height: 3.5rem; }
+  .divider--underline {
+    border-bottom: solid 0.5rem #D8D8D8;
+    margin: 10rem; }
 
 .gallery {
   display: grid;

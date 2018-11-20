@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <meta name="description" content="Fu Yen Hsiao is the startup co-funder and product designer at Music Everywhere, Inc. Skill: 2D / 3D Interaction, UI Design" />
+        <meta property="og:url"                content="http://www.fuyenh.com" />
+        <meta property="og:type"               content="profile" />
+        <meta property="og:title"              content="Fu Yen Hsiao - Design Portfolio" />
+        <meta property="og:description"        content="Startup Co-Funder / Product Designer" />
+        <meta property="og:image"              content="https://s3.us-east-2.amazonaws.com/www.fuyenh.com/img/fb-thumbnail-logo.jpg" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120602130-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-120602130-1');
+        </script>                     
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.9">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <title>Fu Yen Hsiao - Rapid Prototype</title>
+    </head>
+    <body class="container__work">
+        <nav class="navigation" id="nav">          
+        </nav>
+
+        <section class="section__home section__header" id="header">      
+            <div class="work__header work__header--prototype">
+                <div>
+                    <div class="divider"></div>
+                    <h1 class="header__work--main white">Rapid Prototyping</h1>                    
+                    <h3 class="white">Mobile / VR</h3>                                                         
+                </div>                    
+            </div> 
+        </section>  
+
+        <section class="section__meta"> 
+            <h1 class="header__work">My Role</h1>
+            <p>
+                During my years in CMU, I routinely led the design within an Agile framework and 
+                tested prototypes quickly to reach our creative goals in small teams with programmers, artist and producer.           
+            </p>                                     
+        </section>  
+            
+        
+        <section class="section__content">
+            <div class="section__content--section">   
+                <h1 class="header__work--up red">Mobile - Web App</h1>
+                <h1 class="header__work">Give Me Your Gun</h1>
+                <h1 class="header__work--sub">Context</h1>
+                <p>
+                    <span class="bold">Give Me Your Gun</span> is a mobile interactive theater experience which deals with the controversial topic of gun violence in the U.S.  It ran at the Games for Change Festival (G4C) 2016 in New York City, to a crowd of more than 200 people. 
+                </p>
+                <div class="flexBox">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/cHpVhyQnHHI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p id="img-caption">30 seconds trailer</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/B8iuOhzfr0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p id="img-caption">Full experience at the Games for Change Festival</p>
+                    </div>
+                </div>
+
+                <h1 class="header__work--sub">The Challenge</h1>
+                <p>
+                    The goal of this project was to define, design, develop and execute a live game experience for the June 2016 G4C Festival in New York City. We were tasked with defining the design and physical elements of a live game  to run during the Festival.
+                    The game needed to consider the following criteria:
+                </p>
+                <img src="img/prototype/gun-challenge.png" alt="Criteria">
+                <h1 class="header__work--sub">The Approach</h1>
+                <p class="bold">-- Ideation</p>
+                <p>
+                    On a high level, we sought to create an experience that empowered 
+                    people with understanding and empathy of others' beliefs. We wanted to 
+                    leverage this to cultivate meaningful conversation around the issue 
+                    of Gun Violence in the U.S
+                </p>
+                <div class="grid-2">
+                    <img src="img/prototype/gun-ideation.png" alt="Ideation">
+                    <ul class="bulletPoints">
+                            <li><b>What:</b> Is the transformation really valuable?</li>
+                            <li><b>How:</b> Does the strategy execute the transformation?</li>
+                            <li><b>Design:</b> Does the design lead to the the strategy?</li>
+                        </ul>
+                </div>
+                <div class="divider"></div>
+                <p class="bold">-- The Experience</p>
+                <p>
+                    In this live experience, an audience controls a conversation that is happening on stage between 
+                    two actors with opposing gun control view points. By keying in questions on a custom made 
+                    web application, the audience controls what one of the actors says to the other, guiding the 
+                    dialogue to a conclusion.
+                </p>                            
+                <img src="img/prototype/gun-gamePlay.png" alt="Game Play">
+                <p id="img-caption">
+                    Audiences control conversations that are happening on stage between 
+                    two actors.
+                </p>    
+                
+                <div class="divider"></div>
+
+                <p>
+                    To guide the audience along, whenever a key story fact is achieved, it is shown on screen. 
+                    The web interface is temporarily locked and a live cut scene acted out, with hints to unlocking the next key fact. 
+                    The name of the player who unlocked the key fact is also shown in order to give them a sense of agency.
+                </p>
+                
+                <img src="img/prototype/gun-gamePlay_2.png" alt="Game Play">
+                <p id="img-caption">
+                    The name of the player who unlocked the key fact is shown.                    
+                </p>   
+                
+                <h1 class="header__work--sub">User Flow</h1>
+                <img src="img/prototype/gun-flow.png" alt="Flow">
+
+                <h1 class="header__work--sub">Phone Interaction</h1>
+                <ul class="bulletPoint">
+                    <li><b>Key Fact Unlocked</b>
+                        When an fact was unlocked, a popup window directs audience's attention to the stage in order to increase engagement.
+                    </li>
+                    <li><b>Dynamic Voting System</b>
+                        Dynamic voting mechanism gives audiences sense of playing in a large group, and shows the continuous message stream.
+                    </li>
+                </ul>
+                <div class="flexBox">
+                    <div>                        
+                        <img src="img/prototype/gun-phone-ui.gif" alt="UI">
+                        <p id="img-caption">Key Fact Unlocked</p>
+                    </div>
+                    <div>
+                        <img src="img/prototype/gun-phone-ui-2.gif" alt="UI-2">
+                        <p id="img-caption">Dynamic Voting System<br>
+                    </div>
+                </div>
+
+                <!-- <h1 class="header__work--sub">Validation</h1>
+                <p>
+                    We conducted many playtests to evaluate UI, story, and gameplay.
+                </p>
+                <img src="img/prototype/ui-playtest.gif" alt="Playtest"> -->
+
+                <h1 class="header__work--sub">​Service Blueprint</h1>
+                <p>
+                    In order to deliver our project to the G4C festival, 
+                    we promoted the game, installed it in the space, and gave gameplay 
+                    instructions during the showcase itself. To help our audience 
+                    understand the gameplay, we used a detailed visualisation of how the 
+                    actions and processes between the audience and the game affected the experience.
+                </p>
+                <img src="img/prototype/gun-serviceBlue.png" alt="Service Blueprint">
+
+                <h1 class="header__work--sub">​Result</h1>
+                <p>
+                    We designed this theater game with the aim of transforming our audience 
+                    beyond their experience playing. Impacting players' emotions as they directed 
+                    the actors onstage served as our emotional goal, all while we tried to build up 
+                    their understanding and mastery of the specific mechanics of the performance. 
+                </p>
+
+            </div> 
+
+            <div class="divider--underline"></div>
+
+            <div class="section__content--section">  
+                <h1 class="header__work--up red">VR - Oculus Rift</h1>
+                <h1 class="header__work">Hindsight</h1>
+                <h1 class="header__work--sub">Context</h1>
+                <div class="grid-2">
+                        <div>
+                            <iframe src="https://www.youtube.com/embed/rG2c5lsEaME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p id="img-caption">Hindsight overview</p>
+                        </div>
+                        <div>                            
+                            <p>
+                                <span class="bold">Hindsight</span> is an exploration into VR interactive storytelling about bad driving habits                           
+                                We combined film and game development techniques to craft an choice-driven, interactive, 
+                                live-action 360 film for the Oculus Rift.<br>
+                                <a class="bold red" href="https://dl.acm.org/citation.cfm?doid=3130859.3130869" target="blank">
+                                    Hindsight was a finalist in the CHI PLAY 2017 (Amsterdam). 
+                                </a>                             
+                                <br>
+                                <a class="bold red" href="https://www.worlddesignsummit.com/talk/?id=1162" target="blank">
+                                    Also Published at World Design Summit 2017 (Montreal).
+                                </a> 
+
+                                
+                            </p>
+                        </div>
+                </div>
+
+                <h1 class="header__work--sub">The Challenge</h1>
+                <p>
+                    Creating an amalgam of live action 360 film with 3D assets in VR with an 
+                    emotional story dealing with bad driving habits and the themes of choice, 
+                    consequences, guilt and responsibility.
+                </p>
+                <div class="flexBox">                     
+                        <div>
+                            <img src="img/prototype/vr-ex-1.png" alt="Live Action 360 film">
+                            <p id="img-caption">live action 360 film with 3D assets in VR</p>
+                        </div>
+                        <div>
+                            <img src="img/prototype/vr-ex-2.jpg" alt="Emotional Story">
+                            <p id="img-caption">Emotional story about bad driving habits</p>
+                        </div>                   
+                </div>
+                <!-- <img src="img/prototype/gun-challenge.png" alt="Criteria"> -->
+                <h1 class="header__work--sub">The Approach</h1>
+                <p class="bold">-- Ideation</p>
+                <p>
+                    On a high level, we sought to create a VR experience allows
+                    users to interact with the branching narrative flow.
+                    During the ideation phase, we tried to identify what are the cirticle 
+                    story elements that will switch between story segments in response to player actions.           
+                </p>
+                <p>
+                    We decided to focuse on themes of bad driving habits and using <b>Guilt</b> as 
+                    a motivator in the story.
+                </p>
+                <img src="img/prototype/vr-ideation" alt="Ideation">
+                
+                <h1 class="header__work--sub">Designing The Experience</h1> 
+                <p>
+                    To design this narrative VR experience, I started with analyzing user's engagement during                           
+                    different story stages, then illustrated more detailed experience with storyboards and animations.
+                </p>           
+                <p class="bold">-- User Emotion Map</p>   
+                <p>
+                    I staged the high level story structure by analyzing user's emotion and engagement through the story progression
+                    in the VR space. In this way, the team had a clear roadmap to develop the experience.                    
+                </p>            
+                <img src="img/prototype/vr-emotionMap.png" alt="Emotion Map">                     
+
+                <p class="bold">-- Storyboarding</p>   
+                <p>
+                    Next, I drew storyboards to illustrate the experience and interaction events in each stage based on the emotion map.
+                    The storyboards helped the team so identify the visual elements in the time frame.
+                </p>               
+                <div class="flexBox">  
+                    <div>
+                        <img src="img/prototype/vr_storyBoard_intro_1.jpg" alt="Storyboard-1">
+                        <p id="img-caption">Awareness stage</p>
+                    </div>
+                    <div>
+                        <img src="img/prototype/vr_storyBoard_intro_2.jpg" alt="Storyboard-2">
+                        <p id="img-caption">Exploration stage</p>
+                    </div>                   
+                </div>    
+
+                <p class="bold">-- Interaction Mockup Animation</p>   
+                <p>
+                    With the storyboards, I created some simple animations to visualize the phone/radio interaction in the VR space.
+                </p>                                  
+                <img src="img/prototype/vr-phone.gif" alt="Phone Interaction">
+                    <p id="img-caption">Interact with the phone</p>
+                <img src="img/prototype/vr-radio.gif" alt="Radio Interaction">
+                    <p id="img-caption">Interact with the radio</p>
+
+                <p class="bold">-- Interaction Flow</p>  
+                <p>
+                    Last, with the design framework I built, I was able to create the detailed interaction flow for the final implement.
+                </p>
+                <img src="img/prototype/vr-phoneFlow.png" alt="Phone Interaction">
+                <p id="img-caption">Phone interaction flow</p>
+
+                <h1 class="header__work--sub">Result</h1>    
+                <p>
+                    In Hindsight, we have seen that it is possible to make a choice based experience that 
+                    merges 360 live-action footage with CG objects, and can see where it can be improved. 
+                    Having an actor look you directly in the eyes and having your brain tell you they are next 
+                    to you is a truly powerful interaction. Blending that with an experience that is highly 
+                    interactive and blurs the boundary of the cinema and CG will spawn some fascinating and 
+                    likely moving experiences.                      
+                </p>        
+                
+
+
+
+            <div class="gotop__btn">
+                <a href="#header">
+                    <svg>
+                        <use href="img/sprite.svg#icon-triangle-up"></use>
+                    </svg>
+                    <p class="link">Back to Top</p>
+                </a> 
+            </div>                               
+        </section>
+
+        <div class="lightbox" data-state="hidden">
+                <div class="lightbox--container">                                        
+                    <img class="lightbox--img" alt="">          
+                </div>
+                <div class="btn--close">
+                    <img src="img/close.png" alt="close">                    
+                </div>
+        </div>
+        
+        
+        <section class="section__page">
+            <div class="section__page--box">
+                <a href="work-music-everywhere-branding.html">
+                    <svg class="social-btn">
+                        <use xlink:href="img/sprite.svg#icon-triangle-left"></use>
+                    </svg>
+                </a>
+                <a href="index.html">
+                    <svg class="social-btn grid">
+                        <use xlink:href="img/sprite.svg#icon-grid"></use>
+                    </svg>
+                </a>
+                <a href="work-design-ideas.html">
+                    <svg class="social-btn">
+                        <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                    </svg>
+                </a>
+            </div>           
+        </section>
+
+        <section class="section__home section__contact" id="contact">              
+                <div class="section__contact__btn-box">
+                        <a href="https://www.linkedin.com/in/fuyenh" target="blank">
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                        <a href="http://fuyenh.dribbble.com/" target="blank">
+                            <svg class="social-btn contact-social-btn linkedin">
+                                <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/fuyenh" target="blank">
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>                      
+                        <a href="http://medium.com/@fuyenh" target="blank"> 
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-medium"></use>
+                            </svg>
+                        </a>                                        
+                 </div>                                                       
+        </section>             
+         
+        <footer class="footer" id="footer">                                       
+        </footer>
+         
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script src="js/vendors/jquery.waypoints.min.js"></script>
+         <script src="js/script.js"></script>   
+         <script src="js/lightbox.js?v=1.1"></script>                                    
+    </body>
+</html>
