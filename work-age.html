@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <meta name="description" content="Fu Yen Hsiao is the startup co-funder and product designer at Music Everywhere, Inc. Skill: 2D / 3D Interaction, UI Design" />
+        <meta property="og:url"                content="http://www.fuyenh.com" />
+        <meta property="og:type"               content="profile" />
+        <meta property="og:title"              content="Fu Yen Hsiao - Design Portfolio" />
+        <meta property="og:description"        content="Startup Co-Funder / Product Designer" />
+        <meta property="og:image"              content="https://s3.us-east-2.amazonaws.com/www.fuyenh.com/img/fb-thumbnail-logo.jpg" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120602130-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-120602130-1');
+        </script>                     
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.9">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <title>Fu Yen Hsiao - Age-Progression</title>
+    </head>
+    <body class="container__work">
+        <nav class="navigation" id="nav">          
+        </nav>
+
+        <section class="section__home section__header" id="header">      
+            <div class="work__header work__header--age">
+                <div>
+                    <div class="divider"></div>
+                    <h1 class="header__work--main white">Age-Progression Research Software
+                    </h1>                                      
+                    <h3 class="white">Department of Engineering & Public Policy, CMU</h4>  
+                    <div class="divider"></div>                    
+                    <p class="white">Oct.2017 - Sept.2018</p>                                                        
+                </div>                    
+            </div> 
+        </section>  
+
+        <section class="section__home section__meta"> 
+            <h1 class="header__work">My Role & Project Goal</h1>
+            <p>
+                I designed and integrated a system to streamline the client’s research process, 
+                keeping in mind that it needed to be for non-technical users. 
+                It needed to build age-progression 3D assets for eventual use in a 
+                VR environment with Unity. I worked with a programmer, and a project manager.
+           
+            </p>                                     
+        </section>  
+            
+        
+        <section class="section__content">
+            <div class="section__content--section" id="gmyg">                                  
+                <h1 class="header__work">Clinical Trials </h1>
+                <p>
+                    This research software is for use in hospital clinical trials. 
+                    In the trial, patients will see themselves age in VR.
+                </p>
+                
+                <!-- <div class="flexBox">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/cHpVhyQnHHI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p id="img-caption">30 seconds trailer</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/B8iuOhzfr0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p id="img-caption">Full experience at the Games for Change Festival</p>
+                    </div>
+                </div> -->
+
+                <h1 class="header__work--up">Phase 1</h1>                
+                <h1 class="header__work">Building A Viable Deployment Pipeline</h1>
+                <p>
+                    The FaceGen software developed by Singular Inversions was required by the client to 
+                    generate facial age progression 3D model based on other successful studies.
+                </p>
+                <p>
+                    Our early mission was to incorporate the output of FaceGen with Oculus Go VR headset.
+                </p>
+                <p class="bold">
+                    What FaceGen can do: 
+                </p>
+                <p>
+                    Generate a parameter-driven 3D head model with one frontal, and 2 side (left, right) photos.
+                </p>
+
+                <p class="bold">
+                        What FaceGen can't do: 
+                    </p>
+                    <p>
+                        Generate specific characteristics that help personalize the 3D representation of the user’s face (e.g. hairstyles, facial features etc)
+                    </p>
+
+                <img src="img/age/fg-function.png" alt="FaceGen Function">
+                
+                <!-- <img src="img/gmyg/gun-challenge.png" alt="Criteria"> -->
+                <h1 class="header__work--sub">Looking at hairstyle creation:</h1>
+                <p class="bold">Plans to create hairstyles:</p>
+                <p>I decided to generate hair by making a variety of 3D mesh hairstyles, 
+                    due to processing performance, good fidelity, and reasonable development time.</p>
+                <p>After I decided how to create the hairstyles, the pipeline became clear. 
+                    I needed to create a software to load the 3D head model from FaceGen, 
+                    attach the hairstyle, then push the final model to the Oculus Go.</p>
+                <h1 class="header__work--up">Phase 2</h1>
+                <h1 class="header__work">Building The Core Functions</h1>
+                <p>
+                    The 3 core functions of this software are:
+                </p>
+
+                <h1 class="header__work">User Interface & Flow</h1>                            
+                <img src="img/gmyg/gun-flow_2.png" alt="Flow">                
+               
+                <h1 class="header__work">​Design Iterations</h1>
+               
+                <img src="img/gmyg/gun-serviceBlue.png" alt="Service Blueprint">
+
+                <h1 class="header__work--up">Phase 3</h1>                
+                <h1 class="header__work">Final Result In Oculus Go</h1>
+                <p>Our client wanted a simple VR experience that simulates looking into 
+                    a mirror with the natural scape background.</p>
+                <div class="flexBox">
+                        <div>
+                            <img src="img/gmyg/half-sheet.png" alt="card">
+                            <p id="img-caption">Game card</p>
+                        </div>
+                        <div>
+                            <img src="img/gmyg/game-poster_orig.jpg" alt="card">
+                            <p id="img-caption">Game poster</p>
+                        </div>                        
+                </div>              
+
+                <h1 class="header__work">Lesson Learned</h1>
+                <h1 class="header__work--sub">Design perspective:</h1>
+                <ul class="bulletPoint">
+                    <li class="bold">Creating workarounds in the design when our team ran into technical hurdles.</li>
+                    <p class="indent">Making a modular framework for installing different hairstyles on the models.</p>
+                    
+                    <br>
+                    <li class="bold">Understanding the context of the research trial and updating the design accordingly.</li>
+                    <p class="indent"> 
+                            The researchers needed an approximation of facial features, and quickly generating models was more valuable for them vs. photorealistic mockups. As a result, I slimmed down the options to emphasize ease and quickness for the researchers to focus more of their attention on participant interaction.
+                    </p>
+                </ul>                                 
+                
+                <h1 class="header__work--sub">Client relationship perspective:</h1>
+                <ul class="bulletPoint">
+                    <li class="bold">Working hard in the beginning of the project to define scope and accurately determine time commitment needed to ensure staying under budget.</li><br>
+                    <li class="bold">Meeting frequently with the client to update the pipeline and design. This meant shorter sprints to allow the client to have more input in the design features.</li>
+                </ul>               
+            </div>  
+
+
+
+
+            <div class="gotop__btn">
+                <a href="#header">
+                    <svg>
+                        <use href="img/sprite.svg#icon-triangle-up"></use>
+                    </svg>
+                    <p class="link">Back to Top</p>
+                </a> 
+            </div>                               
+        </section>
+
+        <div class="lightbox" data-state="hidden">
+                <div class="lightbox--container">                                        
+                    <img class="lightbox--img" alt="">          
+                </div>
+                <div class="btn--close">
+                    <img src="img/close.png" alt="close">                    
+                </div>
+        </div>
+        
+        
+        <section class="section__page">
+            <div class="section__page--box">
+                <a href="work-instant-musician.html">
+                    <svg class="social-btn">
+                        <use xlink:href="img/sprite.svg#icon-triangle-left"></use>
+                    </svg>
+                </a>
+                <a href="index.html">
+                    <svg class="social-btn grid">
+                        <use xlink:href="img/sprite.svg#icon-grid"></use>
+                    </svg>
+                </a>
+                <a href="work-design-ideas.html">
+                    <svg class="social-btn">
+                        <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                    </svg>
+                </a>
+            </div>           
+        </section>
+
+        <section class="section__home section__contact" id="contact">              
+                <div class="section__contact__btn-box">
+                        <a href="https://www.linkedin.com/in/fuyenh" target="blank">
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                        <a href="http://fuyenh.dribbble.com/" target="blank">
+                            <svg class="social-btn contact-social-btn linkedin">
+                                <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/fuyenh" target="blank">
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>                      
+                        <a href="http://medium.com/@fuyenh" target="blank"> 
+                            <svg class="social-btn contact-social-btn">
+                                <use xlink:href="img/sprite.svg#icon-medium"></use>
+                            </svg>
+                        </a>                                        
+                 </div>                                                       
+        </section>             
+         
+        <footer class="footer" id="footer">                                       
+        </footer>
+         
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script src="js/vendors/jquery.waypoints.min.js"></script>
+         <script src="js/script.js"></script>   
+         <script src="js/lightbox.js?v=1.1"></script>                                    
+    </body>
+</html>

@@ -62,17 +62,17 @@
 
 .header__work {
     font-size: 2.9rem;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.02rem;
     font-weight: 500;        
     text-align: left;
     color: $color-dark-grey; 
     text-transform: capitalize; 
     margin-bottom: 1.2rem;  
-    margin-top: 1.2rem;  
+    margin-top: 1.8rem;  
     
     &--main {
         font-size: 4.2rem;
-        margin-bottom: 0.2rem; 
+        margin-bottom: 1rem; 
         letter-spacing: 0.1rem;
     }
        
@@ -89,8 +89,9 @@
         font-size: 1.9rem;
         text-transform: uppercase;
         font-weight: 500;                  
-        margin-top: 5.0rem;  
-        letter-spacing: -0.05rem;         
+        margin-top: 7rem;  
+        letter-spacing: -0.03rem; 
+        margin-bottom: -1.2rem;          
     }    
 }
 
@@ -115,10 +116,10 @@ h2 {
 
 //H3//
 h3 {  
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: 400;
-        line-height: 1.4;
-        letter-spacing: 0.1rem;
+        line-height: 1.5;
+        letter-spacing: 0.12rem;
         
         @media only screen and (max-width: $bp-small) {
             font-size: 1.4rem;
@@ -164,8 +165,14 @@ span {
 
 p, li {
     font-size: 1.8rem;
-    line-height: 1.4;
+    line-height: 1.6;
     font-weight: 300;
+    letter-spacing: 0.18px;    
+}
+
+.indent {
+    padding-left: 2.0rem;
+    
 }
 
 .link {
@@ -190,6 +197,10 @@ p, li {
     color: $color-red;
 }
 
+.purple {
+    color: $color-purple;
+}
+
 .white {
     color: white;
 }
@@ -206,6 +217,7 @@ p a {
         color: $color-light-grey;
     }
 }
+
 
 
 #img-caption {

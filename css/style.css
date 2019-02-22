@@ -241,16 +241,16 @@ body {
 
 .header__work {
   font-size: 2.9rem;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.02rem;
   font-weight: 500;
   text-align: left;
   color: #4C4C4C;
   text-transform: capitalize;
   margin-bottom: 1.2rem;
-  margin-top: 1.2rem; }
+  margin-top: 1.8rem; }
   .header__work--main {
     font-size: 4.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.1rem; }
   .header__work--sub {
     font-size: 2.2rem;
@@ -262,8 +262,9 @@ body {
     font-size: 1.9rem;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 5.0rem;
-    letter-spacing: -0.05rem; }
+    margin-top: 7rem;
+    letter-spacing: -0.03rem;
+    margin-bottom: -1.2rem; }
 
 h2 {
   font-size: 2rem;
@@ -282,10 +283,10 @@ h2 {
     margin-bottom: 3rem; }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.1rem; }
+  line-height: 1.5;
+  letter-spacing: 0.12rem; }
   @media only screen and (max-width: 37.5em) {
     h3 {
       font-size: 1.4rem; } }
@@ -317,8 +318,12 @@ span {
 
 p, li {
   font-size: 1.8rem;
-  line-height: 1.4;
-  font-weight: 300; }
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.18px; }
+
+.indent {
+  padding-left: 2.0rem; }
 
 .link {
   color: #535353; }
@@ -333,6 +338,9 @@ p, li {
 
 .red {
   color: #E8615B; }
+
+.purple {
+  color: #D994DA; }
 
 .white {
   color: white; }
@@ -632,6 +640,10 @@ p a {
       background-image: linear-gradient(to bottom right, rgba(81, 206, 129, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-instantMusician.png"); }
     .section__header .work__header--meBranding {
       background-image: linear-gradient(to bottom right, rgba(32, 32, 32, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-meBranding.png"); }
+    .section__header .work__header--gmyg {
+      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-gmyg.png"); }
+    .section__header .work__header--age {
+      background-image: linear-gradient(to bottom right, rgba(217, 148, 218, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-age.png"); }
     .section__header .work__header--prototype {
       background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-rapidPrototype.png"); }
     .section__header .work__header--designIdeas {
@@ -677,7 +689,7 @@ p a {
     margin: 2rem 0 2rem 0; }
   .section__content img {
     width: 100%;
-    margin: 1.5rem 0 2rem 0; }
+    margin: 1.5rem 0 5rem 0; }
   .section__content .img-five {
     width: 50%;
     text-align: center;
@@ -703,7 +715,7 @@ p a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 3rem; }
+  margin-bottom: 6rem; }
   .flexBox .store-icon {
     width: 12rem;
     height: auto;
