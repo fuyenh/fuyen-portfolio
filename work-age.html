@@ -36,7 +36,7 @@
             <div class="work__header work__header--age">
                 <div>
                     <div class="divider"></div>
-                    <h1 class="header__work--main white">Age-Progression Research Software
+                    <h1 class="header__work--main white">Age-Progression Research App 
                     </h1>                                      
                     <h3 class="white">Department of Engineering & Public Policy, CMU</h4>  
                     <div class="divider"></div>                    
@@ -48,41 +48,31 @@
         <section class="section__home section__meta"> 
             <h1 class="header__work">My Role & Project Goal</h1>
             <p>
-                I designed and integrated a system to streamline the client’s research process, 
-                keeping in mind that it needed to be for non-technical users. 
-                It needed to build age-progression 3D assets for eventual use in a 
-                VR environment with Unity. I worked with a programmer, and a project manager.
-           
-            </p>                                     
+                <b>I designed a desktop app that allows the researchers to created 3D content for their research experiment,
+                keeping in mind that it's for non-technical users.</b>
+
+                It needed to build age-progression 3D personalized assets for eventual use in a 
+                VR environment built with Unity. I worked with a programmer, and a project manager.                    
+            </p>                
         </section>  
             
         
         <section class="section__content">
-            <div class="section__content--section" id="gmyg">                                  
+            <div class="section__content--section">                                  
                 <h1 class="header__work">Clinical Trials </h1>
                 <p>
-                    This research software is for use in hospital clinical trials. 
+                    This research app is for use in hospital clinical trials. 
                     In the trial, patients will see themselves age in VR.
                 </p>
-                
-                <!-- <div class="flexBox">
-                    <div>
-                        <iframe src="https://www.youtube.com/embed/cHpVhyQnHHI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <p id="img-caption">30 seconds trailer</p>
-                    </div>
-                    <div>
-                        <iframe src="https://www.youtube.com/embed/B8iuOhzfr0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <p id="img-caption">Full experience at the Games for Change Festival</p>
-                    </div>
-                </div> -->
 
-                <h1 class="header__work--up">Phase 1</h1>                
+                
+                <h1 class="header__work--up">Process - Phase 1</h1>                
                 <h1 class="header__work">Building A Viable Deployment Pipeline</h1>
                 <p>
-                    The FaceGen software developed by Singular Inversions was required by the client to 
+                    The FaceGen app developed by Singular Inversions was required by the client to 
                     generate facial age progression 3D model based on other successful studies.
                 </p>
-                <p>
+                <p class="purple">
                     Our early mission was to incorporate the output of FaceGen with Oculus Go VR headset.
                 </p>
                 <p class="bold">
@@ -106,36 +96,65 @@
                 <p class="bold">Plans to create hairstyles:</p>
                 <p>I decided to generate hair by making a variety of 3D mesh hairstyles, 
                     due to processing performance, good fidelity, and reasonable development time.</p>
+                <img src="img/age/compare.png" alt="Plans Compare">
+
                 <p>After I decided how to create the hairstyles, the pipeline became clear. 
-                    I needed to create a software to load the 3D head model from FaceGen, 
+                    I needed to create a app to load the 3D head model from FaceGen, 
                     attach the hairstyle, then push the final model to the Oculus Go.</p>
+                <img src="img/age/pipeline.png" alt="pipeline">
+
                 <h1 class="header__work--up">Phase 2</h1>
                 <h1 class="header__work">Building The Core Functions</h1>
                 <p>
-                    The 3 core functions of this software are:
+                    The 3 core functions of this app are:
+                </p>
+                <img src="img/age/functions.png" alt="functions">
+
+
+                <h1 class="header__work">User Interface Layout</h1>                            
+                <img src="img/age/UILayout.png" alt="UI Layout"> 
+                
+                <div class="flexBox">
+                        <div>
+                            <img src="img/age/load model.gif" alt="Load Model">
+                            <p id="img-caption">Load the head model & Rotate</p>
+                        </div>
+                        <div>
+                            <img src="img/age/select hair.gif" alt="Select Hair">
+                            <p id="img-caption">Select hairstyles</p>
+                        </div>
+                        <div>
+                            <img src="img/age/hair color.gif" alt="Select Hair Color">
+                            <p id="img-caption">Change hair colors & grey hair level</p>
+                        </div>
+                </div>
+
+                <h1 class="header__work--sub">​Hairstyles</h1>
+                <p>I created 9 short hairstyles, 7 long hairstyles in Maya, and itergrated with the app by optimizing the textures, and transformational data.
                 </p>
 
-                <h1 class="header__work">User Interface & Flow</h1>                            
-                <img src="img/gmyg/gun-flow_2.png" alt="Flow">                
+                <img src="img/age/hairstyles.png" alt="Hairstyles">                
+
                
-                <h1 class="header__work">​Design Iterations</h1>
+                <h1 class="header__work--sub">​Design Iterations</h1>
+                <p>I iterated the design based on researchers' feedback through the usability tests.</p>
                
-                <img src="img/gmyg/gun-serviceBlue.png" alt="Service Blueprint">
+                <img src="img/age/iterations.png" alt="Iterations">
 
                 <h1 class="header__work--up">Phase 3</h1>                
                 <h1 class="header__work">Final Result In Oculus Go</h1>
                 <p>Our client wanted a simple VR experience that simulates looking into 
                     a mirror with the natural scape background.</p>
-                <div class="flexBox">
-                        <div>
-                            <img src="img/gmyg/half-sheet.png" alt="card">
-                            <p id="img-caption">Game card</p>
-                        </div>
-                        <div>
-                            <img src="img/gmyg/game-poster_orig.jpg" alt="card">
-                            <p id="img-caption">Game poster</p>
-                        </div>                        
-                </div>              
+                <p class="bold">
+                    Interaction: The mirror will follow along with the head movement.
+                </p>
+                <img src="img/age/vr_compressed.gif" alt="VR mirror">
+                <h1 class="header__work--sub">Other interaction workarounds with controllers</h1>
+                <p> I created and pitched these VR interaction mockups to the client to show how a 3D head could be displayed in the Oculus Go. In the end, the client wanted a simple option that wouldn’t need any controllers. This was because they wanted to eliminate any friction in the patient on boarding that might distract from the core of their clinical trial process.
+                </p>
+
+                <img src="img/age/vr_ideas.png" alt="vr_ideas">
+               
 
                 <h1 class="header__work">Lesson Learned</h1>
                 <h1 class="header__work--sub">Design perspective:</h1>
@@ -182,7 +201,7 @@
         
         <section class="section__page">
             <div class="section__page--box">
-                <a href="work-instant-musician.html">
+                <a href="work-gmyg.html">
                     <svg class="social-btn">
                         <use xlink:href="img/sprite.svg#icon-triangle-left"></use>
                     </svg>
