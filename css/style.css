@@ -266,6 +266,9 @@ body {
     letter-spacing: -0.03rem;
     margin-bottom: -1.2rem; }
 
+.no_cap {
+  text-transform: none; }
+
 h2 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -472,15 +475,18 @@ p a {
 .section__work {
   grid-row: 3 / 4;
   grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: moveInBottom 0.4s ease-in; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-column-gap: 2.8rem;
+  grid-row-gap: 4rem;
+  animation: fadeIn 0.5s ease-in; }
+  @media only screen and (max-width: 37.5em) {
+    .section__work {
+      grid-template-columns: 1fr; } }
   .section__work img {
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
-    margin-bottom: 2.8rem;
     transition: 0.4s; }
     .section__work img, .section__work img:link, .section__work img:visited {
       box-shadow: 0.1rem 0.1rem 1rem rgba(76, 76, 76, 0.2); }
@@ -635,19 +641,19 @@ p a {
     background-repeat: none;
     background-position: 50% 50%; }
     .section__header .work__header--holoLens {
-      background-image: linear-gradient(to bottom right, rgba(255, 178, 78, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-hololens.png"); }
+      background-image: linear-gradient(to bottom right, rgba(255, 178, 78, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-hololens.png"); }
     .section__header .work__header--instantMusician {
-      background-image: linear-gradient(to bottom right, rgba(81, 206, 129, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-instantMusician.png"); }
+      background-image: linear-gradient(to bottom right, rgba(81, 206, 129, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-instantMusician.png"); }
     .section__header .work__header--meBranding {
-      background-image: linear-gradient(to bottom right, rgba(32, 32, 32, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-meBranding.png"); }
+      background-image: linear-gradient(to bottom right, rgba(32, 32, 32, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-meBranding.png"); }
     .section__header .work__header--gmyg {
-      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-gmyg.png"); }
+      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-gmyg.png"); }
     .section__header .work__header--age {
-      background-image: linear-gradient(to bottom right, rgba(217, 148, 218, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-age.png"); }
+      background-image: linear-gradient(to bottom right, rgba(217, 148, 218, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-age.png"); }
     .section__header .work__header--prototype {
-      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-rapidPrototype.png"); }
+      background-image: linear-gradient(to bottom right, rgba(232, 97, 91, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-rapidPrototype.png"); }
     .section__header .work__header--designIdeas {
-      background-image: linear-gradient(to bottom right, rgba(99, 168, 217, 0.9), rgba(0, 0, 0, 0.5)), url("img/work-designIdeas.png"); }
+      background-image: linear-gradient(to bottom right, rgba(99, 168, 217, 0.95), rgba(0, 0, 0, 0.5)), url("img/work-designIdeas.png"); }
     .section__header .work__header .store-icon {
       width: 12rem;
       height: auto;

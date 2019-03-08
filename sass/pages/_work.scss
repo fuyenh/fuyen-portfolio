@@ -8,34 +8,35 @@
         height: 32rem;    
         background-size: cover;
         background-repeat: none;
-        background-position: 50% 50%;        
+        background-position: 50% 50%;  
+              
         
         &--holoLens {
-            background-image: linear-gradient(to bottom right, rgba($color-orange, 0.9), rgba(black, 0.5)), url("img/work-hololens.png");                                        
+            background-image: linear-gradient(to bottom right, rgba($color-orange, 0.95), rgba(black, 0.5)), url("img/work-hololens.png");                                            
         }
 
         &--instantMusician {
-            background-image: linear-gradient(to bottom right, rgba($color-green, 0.9), rgba(black, 0.5)), url("img/work-instantMusician.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-green, 0.95), rgba(black, 0.5)), url("img/work-instantMusician.png");                                 
         }
 
         &--meBranding {
-            background-image: linear-gradient(to bottom right, rgba($color-grey, 0.9), rgba(black, 0.5)), url("img/work-meBranding.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-grey, 0.95), rgba(black, 0.5)), url("img/work-meBranding.png");                                 
         }
 
         &--gmyg {
-            background-image: linear-gradient(to bottom right, rgba($color-red, 0.9), rgba(black, 0.5)), url("img/work-gmyg.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-red, 0.95), rgba(black, 0.5)), url("img/work-gmyg.png");                                 
         }
 
         &--age {
-            background-image: linear-gradient(to bottom right, rgba($color-purple, 0.9), rgba(black, 0.5)), url("img/work-age.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-purple, 0.95), rgba(black, 0.5)), url("img/work-age.png");                                 
         }
 
         &--prototype {
-            background-image: linear-gradient(to bottom right, rgba($color-red, 0.9), rgba(black, 0.5)), url("img/work-rapidPrototype.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-red, 0.95), rgba(black, 0.5)), url("img/work-rapidPrototype.png");                                 
         }
 
         &--designIdeas {
-            background-image: linear-gradient(to bottom right, rgba($color-blue, 0.9), rgba(black, 0.5)), url("img/work-designIdeas.png");                                 
+            background-image: linear-gradient(to bottom right, rgba($color-blue, 0.95), rgba(black, 0.5)), url("img/work-designIdeas.png");                                 
         }
 
 

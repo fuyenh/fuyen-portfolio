@@ -95,6 +95,10 @@
     }    
 }
 
+.no_cap {
+    text-transform: none; 
+}
+
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -217,7 +221,6 @@ p a {
         color: $color-light-grey;
     }
 }
-
 
 
 #img-caption {

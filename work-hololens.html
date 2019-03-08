@@ -36,9 +36,9 @@
             <div class="work__header work__header--holoLens">
                 <div class="work-info">
                     <h1 class="header__work--main white">Music Everywhere</h1>             
-                    <h3 class="white">Microsoft HoloLens AR Piano Learning System</h3>
+                    <h3 class="white">Microsoft HoloLens AR Piano Learning App</h3>
                     <div class="divider"></div>                    
-                    <p class="white">Prototype: Sept.2016 - Dec.2016 / Deliverable: Apr.2017 - Dec.2017</p>
+                    <p class="white">Deliverable: Apr.2017 - Dec.2017 / Prototype: Sept.2016 - Dec.2016</p>
                     
                     <a href="https://goo.gl/4hGtL7" target="blank">
                         <img class="store-icon" src="img/hololens/ms-store.png" alt="microsoft-store">
@@ -129,7 +129,7 @@
                 <h1 class="header__work">Context</h1>
                 <p>
                     Music Everywhere started as a graduate school project during my time at Carnegie Mellon University. Our team consisted of two programmers, one musician and one designer—me. 
-                    <br>
+                    
                     Our goal: build an Augmented Reality (AR) piano learning tool.
                 </p>
                 <!-- <p>
@@ -140,49 +140,63 @@
             </div>
 
             <div class="section__content--section">
-                <h1 class="header__work--up">The Challenge</h1>
-                <h1 class="header__work">Streamline piano learning experience</h1>                                
+                <h1 class="header__work--up">The Problem</h1>
+                <h1 class="header__work no_cap">Hard to Find Which Key to Play From Instructions</h1>                                
                 <p>
                     Most piano learning apps are designed for mobile phones and tablets. A major issue for users during play comes 
-                    when users must mentally translate the instructions from the screen to the physical instrument. This seemed ripe for improvement using AR. 
+                    when users must mentally translate the instructions from the screen to the piano keys.
                 </p>       
                 
-                <h1 class="header__work--up">The Approach</h1>
+                <h1 class="header__work--up">Our Solution</h1>
                 <h1 class="header__work">Augmented Reality</h1> 
                 <p>
-                    With AR technology, we align the 3D interface (the piano instructions) directly on the physical piano keys. This makes discerning our AR  
-                    instructions with the actual instrument easier and more intuitive. 
+                    With AR technology, <b>we align the 3D interface (the piano instructions) </b> directly on the physical piano keys. This makes discerning our AR  
+                    instructions with the actual instrument easier and more intuitive.
                     <br><a class="orange bold" href="http://homes.create.aau.dk/dano/nime17/papers/0104/paper0104.pdf" target="blank">To read more about the AR Interface Design, please see this NIME2017 paper we published.</a>
                 </p>   
                 <img src="img/hololens/solution.jpg" alt="solution">                                                                                     
 
-                <!-- <h1 class="header__work--up orange">The Discovery</h1>
-                <h1 class="header__work">Customer Insights</h1> 
+                <h1 class="header__work--up">The Discovery</h1>
+                <h1 class="header__work">Target Customer</h1> 
                 <p>
-                    In order to create a great musical experience, we conducted customer and market research to 
-                    explore key insights to build the final deliverable.        
+                    One segment of our userbase included music teachers who wanted to explore new ways of reaching students in music education. 
+                    Below is an example of a persona that reflects this customer.
+
+                    <!-- Our AR solution presents a flexible approach and innovative 
+                    technology that opens the door for students to discover real musical experiences that can enrich their lives.  -->
+                </p>                           
+                <img src="img/hololens/persona.png" alt="persona"> 
+
+                <div class="challengeBox border-orange">
+                
+                <h1 class="header__work--sub orange">Customer Insights</h1> 
+                <p>
+                    In order to create viable features, we interviewed music educators and pianists in Pittsburgh & New York.
                 </p>
                 <ul class="bulletPoints">
                     <li>
                         <h1 class="header__work--sub">Improvisation</h1> 
-                        <p>Often missing from traditional curriculums, musical improvisation can enhance performance skills, 
-                            develop one's ear and improve understanding of theory and context.
+                        <p>
+                            Often missing from traditional curricula, musical improvisation is important because it enhances performance skills, 
+                            develops one's musical ear and improves understanding of theory and context.
                         </p>                        
                     </li>
                     <li>
                         <h1 class="header__work--sub">Virtual Hands</h1> 
-                        <p> The Virtual Hand would be a good tool to demonstrate hand positioning and 
-                            performance techniques in the AR space.
+                        <p> 
+                            The Virtual Hand would be a good tool to demonstrate hand positioning and performance 
+                            techniques in the AR space.
                         </p>            
                     </li>
                     <li>
                         <h1 class="header__work--sub">Virtual Musicians</h1> 
-                        <p>3D virtual musicians provide an optimal environment to 
-                            learn about and practice improvisation concepts, scales and techniques.
+                        <p>
+                            3D virtual musicians provide an optimal environment to learn about and practice improvisation concepts, 
+                            scales and techniques.
                         </p>            
                     </li>
-                </ul> -->
-                                                                            
+                </ul>
+                </div>                                                   
                 <!-- <h1 class="header__work--up orange">The Vision</h1>
                 <h1 class="header__work">Unleash Your Musical Expression</h1> 
                 <p>
@@ -213,8 +227,9 @@
                     </li>
                 </ul>          -->
                 <div class="challengeBox border-orange">
-                    <h1 class="header__work--sub orange">Sketch First</h1>
-                    <p>I previsualized the experience by sketching down the key component - Interactive piano lessons.</p>
+                    <h1 class="header__work--sub orange">Envisioning the experience</h1>
+                    <p>I previsualized the interactive piano lessons, where users can follow the play guidance from virtual musicians.</p>                    
+
                     <div class="flexBox">
                         <div>
                             <img src="img/hololens/12_1_stage_3_1.jpg" alt="sketch-1">
@@ -236,13 +251,13 @@
                     <h1 class="header__work--sub">2 - Design approach</h1>
                     <ul class="bulletPoint">
                         <li>
-                            First, Start with overlays on keys, then cut the overlay to half to quarter in order to decrease the dependency of the overlay gradually. 
+                            First, start with overlays on keys, then cut the overlay to half to quarter in order to decrease the dependency of the overlay gradually. 
                         </li>
                         <li>
                             Second, in order to guide users to look up a little bit, we remove the overlay on keys and put markers which point the key to play.
                         </li>
                         <li>
-                            Last, we design floating keys hovering in the air and a mirror keyboard in order to encourage users to look up.                            
+                            Last, I designed floating keys hovering in the air and a mirror keyboard in order to encourage users to look up.                            
                         </li>
                     </ul>          
                     <img  src="img/hololens/ui-ARKeyboardDev_2.png" alt="AR UI Dev FOV">
@@ -331,13 +346,13 @@
               
                 
                     <h1 class="header__work--sub">2 - Account for different piano keyboard sizes</h1>
-                    <p>
+                    <!-- <p>
                          Our first version was intended for the full 88 keyed piano (full size), but there are many products in 
                          the market that feature different sizes. How do we design an experience that works for the majority of these products?
                     </p>                     
                     <img src="img/hololens/measureSize.png" alt="Measure piano size">                   
                     <p id="img-caption">We gathered data from different piano size</p>
-                    <div class="divider"></div>
+                    <div class="divider"></div> -->
 
                     <!-- <h1 class="header__work--sub">Solution - Piano Size Configuration</h1> -->
                     <p>
@@ -348,7 +363,7 @@
             
                 
                     <h1 class="header__work--sub">3 - Guiding users to setup keyboard alignment</h1>
-                    <p>
+                    <!-- <p>
                         Calibration to ensure proper alignment gives the foundation for the entire experience. 
                         Without it, the instructions are useless. In our academic project, 
                         our team was always on hand to help assist users in tech setup and user calibration - 
@@ -358,7 +373,7 @@
                     <p id="img-caption">
                         In the first version, we often relied on instinct to setup keyboard alignment.
                     </p>   
-                    <div class="divider"></div>
+                    <div class="divider"></div> -->
                     <p>
                         For a shipped product, we knew we needed to create an intuitive process for users to do this themselves, successfully and reliably.                  
                     </p>                                 
@@ -378,7 +393,7 @@
 
             <div class="section__content--section">
                 <div class="challengeBox border-orange">
-                 <h1 class="header__work--sub orange">Making lessons more engaging</h1>
+                 <h1 class="header__work--sub orange">Making engaging lessons</h1>
                  <div class="thumbnails">
                     <a href="img/hololens/LessonFlow.png">
                         <img src="img/hololens/LessonFlow.png" alt="lessonflow">
@@ -392,14 +407,14 @@
                                      
                     <div class="divider"></div>
                     <h1 class="header__work--sub">1 - Designing a scalable lesson structure</h1>
-                    <p>
+                    <!-- <p>
                         Our first version enabled user to pick lessons according to genre, which posed some problems when we tried to expand the lesson content later. 
                         The problem we faced in this structure was the difficulty in making it modular and scalable. 
                         We knew we needed to redesign it.
                     </p>    
                     <img src="img/hololens/oldLessons.jpg" alt="Old Lessons">
                     <p id="img-caption">Old version: Pick a lesson accoring to genre</p>
-                    <div class="divider"></div>
+                    <div class="divider"></div> -->
                     <!-- <h1 class="header__work--sub">Solution - Lesson Structure</h1> -->
                     <p>
                         We designed the lesson packages which included several lessons within them. 
@@ -408,11 +423,11 @@
                     <div class="flexBox">
                         <div>
                             <img src="img/hololens/lesson_package.jpg" alt="lesson package">
-                            <p id="img-caption">New version: Pick a lesson package accoring to music level</p>
+                            <p id="img-caption">Pick a lesson package accoring to music level</p>
                         </div>
                         <div>
                             <img src="img/hololens/lessons.jpg" alt="lessons">
-                            <p id="img-caption">New version: Pick a lesson inside the package</p>
+                            <p id="img-caption">Pick a lesson inside the package</p>
                         </div>
                     </div>  
 
@@ -435,26 +450,27 @@
                     <h1 class="header__work--sub">3 - AR character development & energizing the experience</h1>
                     <p>
                        People love animated characters. They’re fun, liven up a scene, and provide a fun way to instill the context of music playing with a band. 
-                       To achieve this in a meaningful way, I built up more animations to sync with music beats and created more interaction scenarios.
-                    </p>  
+                       To achieve this in a meaningful way, I built up animations to sync with music beats and created more interaction scenarios.
+                    </p>                     
+                    <!-- <p>
+                            I optimized all the 3D topology which allowed me to create more complicated animations.
+                            With these changes, the animated virtual musician step towards the user to teach them how to play, and react to the music rhythm beat by beat. This captures the user’s attention in a playful way. 
+                        </p>                                                                        -->
+                        <div class="flexBox">
+                            <div>
+                                <img src="img/hololens/character_talk.jpg" alt="talk">
+                                <p id="img-caption"> A Virtual musician step towards the user to teach them how to play</p>  
+                            </div>
+                            <div>
+                                <img src="img/hololens/character_play.jpg" alt="play">
+                                <p id="img-caption">Animations sync with music beats</p>                              
+                            </div>
+                        </div>            
                     <img src="img/hololens/oldBands.jpg" alt="Old virtual bands"> 
-                    <p id="img-caption">Old virtual bands</p>  
-                    <div class="divider"></div>
+                    <p id="img-caption">Virtual band prototype</p>  
+                    <!-- <div class="divider"></div> -->
                     <!-- <h1 class="header__work--sub">Solution - Better virtual bands</h1> -->
-                    <p>
-                        I optimized all the 3D topology which allowed me to create more complicated animations.
-                        With these changes, the animated virtual musician step towards the user to teach them how to play, and react to the music rhythm beat by beat. This captures the user’s attention in a playful way. 
-                    </p>                                                                       
-                    <div class="flexBox">
-                        <div>
-                            <img src="img/hololens/character_talk.jpg" alt="talk">
-                            <p id="img-caption">New virtual band: More interaction</p>  
-                        </div>
-                        <div>
-                            <img src="img/hololens/character_play.jpg" alt="play">
-                            <p id="img-caption">New virtual band: Better visual quality</p>                              
-                        </div>
-                    </div>                
+                        
             </div>
 
             <div class="section__content--section">
@@ -550,7 +566,7 @@
 
         <section class="section__page">
             <div class="section__page--box">
-                <a href="work-music-everywhere-branding.html">
+                <a href="work-instant-musician.html">
                     <svg class="social-btn">
                         <use xlink:href="img/sprite.svg#icon-triangle-left"></use>
                     </svg>
@@ -560,7 +576,7 @@
                         <use xlink:href="img/sprite.svg#icon-grid"></use>
                     </svg>
                 </a>
-                <a href="work-instant-musician.html">
+                <a href="work-gmyg.html">
                     <svg class="social-btn">
                         <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
                     </svg>
