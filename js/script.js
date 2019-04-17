@@ -50,7 +50,7 @@ $(document).ready(function() {
                 $('.js--wp-1').addClass('swing');
                 $('.hello').fadeTo( "slow", 0 );  
             }     
-        }, {offset: '50%'}
+        }, {offset: '78%'}
         );
 
 

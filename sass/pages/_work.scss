@@ -39,6 +39,10 @@
             background-image: linear-gradient(to bottom right, rgba($color-blue, 0.95), rgba(black, 0.5)), url("img/work-designIdeas.png");                                 
         }
 
+        &--penguins {
+            background-image: linear-gradient(to bottom right, rgba(black, 0.7), rgba(black, 0.5)), url("img/work-penguins.png");
+        }
+
 
         
 
@@ -120,13 +124,8 @@
         margin-bottom: 4rem;
         ul {
             list-style: none;
-        }
-    
-        p {
-            margin: 0.1rem 0 0.5rem 0;       
-        }   
-    }
-        
+        }            
+    }          
 }
 
 .challengeBox {      

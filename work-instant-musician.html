@@ -79,11 +79,13 @@
             <div class="section__content--section">                
                 <h1 class="header__work">Context</h1>
                 <p>
-                    Instant Musician is an iOS app that guides people through playing music on the piano. 
-                    It leverages ARKit, and is a sister product to our award-winning HoloLens app, Music Everywhere.
-                     This product is the second AR music app from my startup <i>Music Everywhere, Inc</i> which consists of one 
+                    <i>Instant Musician</i> is an iOS app that guides people through playing music on the piano. 
+                    It leverages ARKit, and is a sister product to our award-winning HoloLens app, <a class="green" href="/work-hololens.html"><i>Music Everywhere</i></a>.
+                     This product is the second AR music app from my startup <a class="green "href="http://www.music-everywhere.co"><i>Music Everywhere, Inc</i></a> which consists of one 
                      programmer, one musician and one designer - me.
                 </p>
+                <iframe src="https://www.youtube.com/embed/b9qNS_KLGXg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                                   
+
                 <!-- <p>
                     After our success on the HoloLens platform with <a class="green" href="/work-hololens.html"><i>Music Everywhere</i></a>, we connected with many other AR hardware manufacturers in the 
                     hope that we’d land on a platform that could reach a larger user base; in other words, something that was cheaper than the enterprise-focused
@@ -113,7 +115,6 @@
                     Learning how to play an instrument is really hard. You have to stay committed to learning this instrument 
                     for a long time before you can start playing the songs you enjoy.                     
                 </p>  
-                <img src="img/instanMusician/learningCurve_before.png" alt="learning curve">       
                 <!-- <p>
                     While playtesting Music Everywhere with the HoloLens, we observed a funny thing: <br>
                     <span class="green">People didn’t want to learn, they just wanted to play.</span> 
@@ -123,10 +124,19 @@
                 <p>
                      Using Augmented Reality with mobile phones, we let people bypass this tough music learning curve, 
                      and skip to fun part - playing songs!                                        
-                </p>   
-                <iframe src="https://www.youtube.com/embed/b9qNS_KLGXg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>                  
 
-                <img src="img/instanMusician/learningCurve_bypass.png" alt="shortcut">
+                <div class="flexBox">
+                    <div>
+                        <img src="img/instanMusician/learningCurve_before.png" alt="learning curve">
+                        <p id="img-caption">It takes 6 months~1year to learn how to play songs</p>       
+                    </div>
+                    <div>
+                        <img src="img/instanMusician/learningCurve_bypass.png" alt="shortcut">
+                        <p id="img-caption">With Instant Musician, users can play songs in 1 day</p>       
+                    </div>
+                </div>
+                
                 <!-- <img src="img/instanMusician/IMproduct.jpg" alt="solution"> -->
 <!--                       
                 <h1 class="header__work--up green">The Vision</h1>
@@ -159,7 +169,18 @@
                     <a href="img/instanMusician/IM-flow.png">
                         <img src="img/instanMusician/IM-flow.png" alt="flow">
                     </a>                                                         
-                </div>         
+                </div>   
+                
+                <div class="flexBox">
+                    <div>
+                        <img src="img/instanMusician/onboarding.gif" alt="onboard animation">
+                        <p id="img-caption">Onboarding interaction</p>
+                    </div>
+                    <div>
+                        <img src="img/instanMusician/woops.jpg" alt="woops">
+                        <p id="img-caption">Error pages- No internet / Under maintenance</p>
+                    </div>
+                </div>
 
 
             <div class="section__content--section">
@@ -168,13 +189,13 @@
                 <div class="challengeBox border-green">
                     <h1 class="header__work--sub green">Integrating mobile AR with the piano</h1>
                     
-                        <h1 class="header__work--sub">1 - Holding the phone while playing</h1>
+                        <!-- <h1 class="header__work--sub">1 - Holding the phone while playing</h1>
                         <p class="bold"><i>-- Why is Portrait orient?</i></p>
                         <p> 
                             Although landscape is an ideal layout because of its wider FOV of the piano keys, 
                             I discovered that during early testing that landscape mode left users feeling queasy.
                             <br>                          
-                            <!-- <i>Why? The hand movement on the screen didn’t match what was happening in real life.</i>                              -->
+                            <i>Why? The hand movement on the screen didn’t match what was happening in real life.</i>                             
                             <img src="img/instanMusician/ui_visualDistortion.png" alt="Visual Distortion">
                             <p id="img-caption">d might cause people sick. d is bigger in landscape mode</p>
                                                      
@@ -186,7 +207,7 @@
                             However, in landscape mode(camera on the right side), the right hand can be seen one the screen even the phone 
                             is in the distance.
                                                         
-                        </p>
+                        </p> -->
                         <!-- <p class="bold"><i>-- Is it tired to play the piano while holding a phone?</i></p>                                                                                                
                         <p> 
                             I know, holding a phone can get tiring. 
@@ -195,7 +216,7 @@
                         </p>                        -->
               
                     
-                        <h1 class="header__work--sub">2 - Designing the AR image tracking marker</h1>                    
+                        <h1 class="header__work--sub">1 - Designing the AR image tracking marker</h1>                    
                         <p class="bold"><i>-- What is the one dollar bill for?</i></p>
                         <p> 
                             To ensure stable alignment, image tracking markers are used in many AR experiences. 
@@ -219,7 +240,7 @@
                                 </p>
                             </div>
                         </div> 
-                        <h1 class="header__work--sub">3 - Developing the AR 3D keyboard interface</h1>  
+                        <h1 class="header__work--sub">2 - Developing the AR 3D keyboard interface</h1>  
                         <p class="bold"><i>-- AR 3D keyboard interface</i></p>
                         <img src="img/instanMusician/AR Interface design - keyboard.png" alt="AR keybaord dev">
                         <p class="bold"><i>-- AR 3D music notation</i></p>

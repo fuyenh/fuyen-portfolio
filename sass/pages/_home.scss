@@ -6,12 +6,13 @@
     grid-column: 2 / 3;   
     text-align: center;   
     animation: moveInUp $transition-time-base ease-in;  
+    padding-bottom: 3rem;   
 }
 
 .section__work {
 
     grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-column: 2 / 3;    
     
     // display: flex;
     // flex-direction: column;    
@@ -23,8 +24,8 @@
     }
 
     //grid-gap: 3.5rem; 
-    grid-column-gap: 2.8rem; 
-    grid-row-gap: 4rem;  
+    grid-column-gap: 3.5rem; 
+    grid-row-gap: 5rem;  
 
 
     animation: fadeIn 0.5s ease-in;    
@@ -32,21 +33,23 @@
     img {        
         width: 100%;
         object-fit: cover;
-        border-radius: 1rem; 
+        border-radius: 2rem; 
         //margin-bottom: 2rem;
-        transition: $transition-time-base;
+        transition: $transition-time-base / 2;
         
         &,
         &:link,
         &:visited {
-            box-shadow: 0.1rem 0.1rem 1rem rgba($color-dark-grey, 0.2);  
+            box-shadow: 0.1rem 0.1rem 1rem rgba($color-dark-grey, 0.2); 
+            
             
         }
         
         &:hover,
         &:active
         {        
-            box-shadow: 0.1rem 0.7rem 2rem rgba($color-primary, 1);                                
+            box-shadow: 0.2rem 0.8rem 2rem rgba($color-primary, 1); 
+            width: 101%;                                
         }                 
     }
 }
@@ -55,7 +58,7 @@
     grid-row: more-start / more-end;
     grid-column: 2 / 3;
     text-align: center;
-    margin-bottom: 25rem; 
+    margin-bottom: 10rem; 
 
     animation: swing $transition-time-base ease-in;  
 }
